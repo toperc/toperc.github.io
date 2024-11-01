@@ -1,31 +1,48 @@
-# Estructura del sitio TopeRC.es utilizando Jekyll
-
+# Social usernames
 tiktok_username: "toperc.es"
 instagram_username: "toperc.es"
 youtube_username: "@TopeRC-es"
 
-
-# Archivo de configuración principal de Jekyll
+# Base Config
 baseurl: "" # La URL base de tu sitio web
 url: "http://toperc.es" # La URL completa de tu sitio web
 title: "TopeRC"
+author: "TopeRC Team"
 description: >-
   El sitio número uno para amantes de coches radiocontrol.
   Reviews, guías, modificaciones y recambios para coches 
   RC de diferentes escalas y marcas.
-author: "TopeRC Team"
 markdown: kramdown
 permalink: /:categories/:title/
-google_analytics: "G-VGVKC0JB5C"
-theme: minima # Tema base para facilitar el diseño
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-toc
 
-disqus: toperc # Para comentarios en las reviews
+# Third-party applications
+google_analytics: "G-VGVKC0JB5C"
+disqus: toperc
 
+# Paginación del blog
+paginate: 5
+paginate_path: "/blog/page:num"
+
+
+# Collections
 collections:
-  recambios:
+  tag:
+    permalink: /tag/:title
     output: true
-    permalink: /recambios/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "tag"
+    values:
+      layout: tag_page
+  - scope:
+      path: ""
+    values:
+      toc: true

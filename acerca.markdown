@@ -2,9 +2,7 @@
 layout: page
 title: "Sobre nosotros"
 permalink: /acerca/
-enable_toc: true
 ---
-{%- include table-of-contents.html -%}
 
 # Acerca de TopeRC.es
 

@@ -4,8 +4,6 @@ title: "Inicio"
 permalink: /
 ---
 
-
-
 # Bienvenidos a TopeRC.es
 
 Tu lugar de referencia para **coches radiocontrol**. En **TopeRC.es** te ofrecemos toda la información, recursos y herramientas que necesitas para sumergirte en el emocionante mundo del radiocontrol. Desde reviews detalladas y guías para principiantes hasta modificaciones avanzadas y un catálogo de recambios, somos tu mejor aliado para disfrutar al máximo de este hobby.
