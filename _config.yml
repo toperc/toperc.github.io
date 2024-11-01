@@ -16,7 +16,7 @@ description: >-
 author: "TopeRC Team"
 markdown: kramdown
 permalink: /:categories/:title/
-
+google_analytics: "G-VGVKC0JB5C"
 theme: minima # Tema base para facilitar el diseño
 plugins:
   - jekyll-feed
