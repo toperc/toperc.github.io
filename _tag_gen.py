@@ -19,17 +19,18 @@ used_tags = []
 
 # find all the tags currently in use
 # if you have other collections be aware that tags on those are not processed by default
-for post in Path("_posts/").glob('*.md'):
-    with open(post) as f:
-        end = False
-        for line in f:
-            if line.startswith("---"):
-                if end:
-                    # got to the end of the front matter so stop now
-                    break
-                end = True
-            elif line.startswith("tag"):
-                used_tags.extend(line.split(":")[1].split())
+for p in Path("_posts/").iterdir():
+    for post in p.glob('*.md'):
+        with open(post) as f:
+            end = False
+            for line in f:
+                if line.startswith("---"):
+                    if end:
+                        # got to the end of the front matter so stop now
+                        break
+                    end = True
+                elif line.startswith("tag"):
+                    used_tags.extend(line.split(":")[1].split())
 
 used_tags = set(used_tags)
 
