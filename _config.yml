@@ -36,6 +36,8 @@ collections:
     permalink: /tag/:title
     output: true
 
+show_excerpts: true
+
 defaults:
   - scope:
       path: ""
@@ -46,3 +48,4 @@ defaults:
       path: ""
     values:
       toc: true
+      excerpt_separator: <!--more-->

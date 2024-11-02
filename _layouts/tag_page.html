@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-<h2>Etiqueta: {{ page.tag }}</h2>
+<h1>Etiqueta: {{ page.tag | capitalize }}</h1>
+{% assign posts_by_type = site.tags[page.tag] | group_by: "categories" %}
+{% for category in posts_by_type %}
+<h2>{{category.name | remove: '[' | remove: ']' | remove: '"' | trim }}</h2>
 <ul>
-{% for post in site.tags[page.tag] %}
+{% for post in category.items %}
   <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})
   {%- if site.show_excerpts -%}
     {{ post.excerpt }}
@@ -11,3 +14,4 @@ layout: default
   </li>
 {% endfor %}
 </ul>
+{% endfor %}

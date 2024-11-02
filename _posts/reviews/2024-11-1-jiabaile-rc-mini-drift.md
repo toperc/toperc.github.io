@@ -4,6 +4,7 @@ title: "Jiabaila 1:43: Compacto y Divertido a Gran Escala"
 date: 2024-11-01
 categories: reviews
 tags: jiabaila mini-rc drift
+car_brand: jiabaila
 ---
 
 El **Jiabaila 1:43** es un coche de radio control compacto que, a pesar de su tamaño reducido, ofrece un gran rendimiento para quienes buscan diversión en un modelo más pequeño y asequible. Este coche RC es perfecto tanto para principiantes como para aquellos que buscan un modelo manejable y fácil de transportar. Aquí te cuento mi experiencia con el Jiabaila 1:43 y por qué es una excelente opción para la diversión en espacios reducidos.
