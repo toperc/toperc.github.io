@@ -11,13 +11,7 @@ Tu lugar de referencia para **coches radiocontrol**. En **TopeRC.es** te ofrecem
 ## Descubre el Contenido Destacado
 
 ### 🚗 **Reviews de Coches RC**
-¿Quieres saber cuál es el mejor coche RC para ti? Explora nuestras [reviews detalladas](/reviews/) de los últimos modelos. Analizamos características, rendimiento y relación calidad-precio para ayudarte a tomar la mejor decisión.
-
-### 🔧 **Modificaciones y Mejoras**
-Mejora tu coche RC con nuestras guías y tutoriales. Aprende cómo aumentar la **velocidad**, ajustar la **suspensión** o **personalizar la carrocería**. Visita nuestra sección de [modificaciones](/modificaciones/) para sacar el máximo provecho de tu vehículo.
-
-### 📚 **Guías y Tutoriales para Todos los Niveles**
-¿Eres nuevo en el mundo del radiocontrol o ya tienes experiencia? No importa tu nivel, nuestras [guías y tutoriales](/guias-tutoriales/) están diseñados para ayudarte a aprender y disfrutar más de tu coche RC.
+¿Quieres saber cuál es el mejor coche RC para ti? Explora nuestras [reviews detalladas](/reviews) de los últimos modelos. Analizamos características, rendimiento y relación calidad-precio para ayudarte a tomar la mejor decisión.
 
 ### 🛠️ **Catálogo de Recambios**
 Mantén tu coche en perfecto estado con nuestro [catálogo de recambios](/recambios/). Encuentra piezas para las principales marcas y modelos para asegurarte de que tu coche siempre funcione a la perfección.
@@ -29,8 +23,6 @@ Mantente al tanto de las últimas tendencias, lanzamientos y novedades del mundo
 
 Queremos que TopeRC.es sea un lugar donde los aficionados puedan **compartir, aprender y crecer juntos**. Comparte tus opiniones en nuestras reviews, participa en el blog, y síguenos en redes sociales para mantenerte conectado con la comunidad.
 
-![Imagen de coches RC en acción](assets/images/coches_rc.jpg)
-
 ## ¿Por Qué Elegir TopeRC.es?
 
 - **Contenido de Calidad**: Artículos escritos por entusiastas del radiocontrol con años de experiencia.
@@ -40,10 +32,8 @@ Queremos que TopeRC.es sea un lugar donde los aficionados puedan **compartir, ap
 ## ¡Empezar es Fácil!
 
 Explora nuestras secciones más populares:
-- [Reviews de Coches RC](/reviews/)
-- [Guías y Tutoriales](/guias-tutoriales/)
-- [Catálogo de Recambios](/recambios/)
-- [Modificaciones y Mejoras](/modificaciones/)
+- [Reviews de Coches RC](/reviews)
+- [Catálogo de Recambios](/recambios)
 
 Para cualquier duda o sugerencia, no dudes en [contactarnos](/contacto.html). ¡Estamos aquí para ayudarte a disfrutar al máximo de este hobby!
 

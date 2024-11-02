@@ -2,14 +2,14 @@
 layout: page
 title: "Reviews"
 permalink: /reviews
-toc: true
+toc: false
 ---
 
 # Nuestras últimas 5 reviews
 
 {% assign last_reviews = site.categories.reviews | sort: "date" %}
 {% for post in site.categories.reviews limit:5 %}
-- [{{ post.title }}]({{post.url}}) 
+- [{{ post.title }}]({{post.url}})  {{ post.excerpt | strip_html | truncate: 200 }}
 {% endfor %}
 
 # Nuestras reviews agrupadas por marca

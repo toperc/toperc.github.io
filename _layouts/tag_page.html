@@ -8,9 +8,7 @@ layout: default
 <ul>
 {% for post in category.items %}
   <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})
-  {%- if site.show_excerpts -%}
-    {{ post.excerpt }}
-  {%- endif -%}
+  {{ post.excerpt | strip_html | truncate: 100}}
   </li>
 {% endfor %}
 </ul>

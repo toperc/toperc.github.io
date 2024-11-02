@@ -9,6 +9,8 @@ car_brand: traxxas
 
 El **Traxxas Maxx V2** es un coche RC todoterreno que lleva la potencia y la durabilidad a otro nivel. Diseñado para enfrentar terrenos difíciles y alcanzar velocidades impresionantes, este modelo es perfecto para los entusiastas de coches RC que buscan emoción en cada carrera. Tras días de prueba en diferentes terrenos, aquí te cuento todo lo que hace al Traxxas Maxx V2 uno de los mejores del mercado.
 
+<!--more-->
+
 ## Especificaciones Principales
 
 - **Escala:** 1/10
