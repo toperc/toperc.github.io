@@ -2,6 +2,7 @@
 layout: page
 title: "Sobre nosotros"
 permalink: /acerca/
+navbar: true
 ---
 
 # Acerca de TopeRC.es

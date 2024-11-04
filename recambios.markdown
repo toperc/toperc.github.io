@@ -2,6 +2,7 @@
 layout: page
 title: "Recambios"
 permalink: /recambios
+navbar: true
 toc: false
 ---
 

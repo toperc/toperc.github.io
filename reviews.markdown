@@ -3,6 +3,7 @@ layout: page
 title: "Reviews"
 permalink: /reviews
 toc: false
+navbar: true
 ---
 
 # Nuestras últimas 5 reviews

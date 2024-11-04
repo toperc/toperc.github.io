@@ -2,6 +2,7 @@
 layout: default
 title: "Inicio"
 permalink: /
+navbar: true
 ---
 
 # Bienvenidos a TopeRC.es

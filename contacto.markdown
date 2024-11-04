@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Contacto"
-permalink: /contacto.html
+permalink: /contacto/
 ---
 
 Gracias por visitar **TopeRC.es**. Estamos siempre felices de conectar con otros apasionados del radiocontrol. Si tienes alguna pregunta, sugerencia, o simplemente quieres saludarnos, aquí tienes las formas de contactarnos:
