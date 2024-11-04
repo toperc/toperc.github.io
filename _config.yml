@@ -22,7 +22,6 @@ plugins:
   - jekyll-toc
 
 # Third-party applications
-google_analytics: "G-VGVKC0JB5C"
 disqus: toperc
 
 # Paginación del blog
