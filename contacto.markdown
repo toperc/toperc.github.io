@@ -13,8 +13,7 @@ Gracias por visitar **TopeRC.es**. Estamos siempre felices de conectar con otros
 [**Canal de Telegram: @toperc_es**](https://t.me/toperc_es)
 
 ## Envíanos un Mensaje
-
-Si prefieres enviarnos un mensaje directamente, completa el formulario de contacto a continuación y nos pondremos en contacto contigo lo antes posible.
+Puede enviarnos un e-mail a nuestra dirección de <a class="u-email" href="mailto:{{ site.email }}">correo electrónico</a> o si prefieres enviarnos un mensaje directamente, completa el formulario de contacto a continuación y nos pondremos en contacto contigo lo antes posible.
 
 <form id="main_contact_form" action="https://formspree.io/f/xzzbebyn" method="POST">
   <label for="email">Correo Electrónico:</label><br>

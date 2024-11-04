@@ -37,7 +37,7 @@ El contenido de **TopeRC.es** tiene un propósito meramente informativo y educat
 
 ## 6. Política de Privacidad
 
-Para saber cómo recopilamos y utilizamos tus datos personales, consulta nuestra [Política de Privacidad](/legal/politica-privacidad).
+Para saber cómo recopilamos y utilizamos tus datos personales, consulta nuestra [Política de Privacidad](/politica-privacidad).
 
 ## 7. Modificación de los Términos y Condiciones
 

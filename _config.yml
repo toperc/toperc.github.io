@@ -8,6 +8,7 @@ baseurl: "" # La URL base de tu sitio web
 url: "http://toperc.es" # La URL completa de tu sitio web
 title: "TopeRC"
 author: "TopeRC Team"
+email: "toperc.es@gmail.com"
 description: >-
   El sitio número uno para amantes de coches radiocontrol.
   Reviews, guías, modificaciones y recambios para coches 

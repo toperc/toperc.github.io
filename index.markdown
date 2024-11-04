@@ -2,7 +2,7 @@
 layout: default
 title: "Inicio"
 permalink: /
-navbar: true
+navbar: false
 ---
 
 # Bienvenidos a TopeRC.es
@@ -36,7 +36,7 @@ Explora nuestras secciones más populares:
 - [Reviews de Coches RC](/reviews)
 - [Catálogo de Recambios](/recambios)
 
-Para cualquier duda o sugerencia, no dudes en [contactarnos](/contacto.html). ¡Estamos aquí para ayudarte a disfrutar al máximo de este hobby!
+Para cualquier duda o sugerencia, no dudes en [contactarnos](/contacto/). ¡Estamos aquí para ayudarte a disfrutar al máximo de este hobby!
 
 ---
 

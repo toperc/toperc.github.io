@@ -45,7 +45,7 @@ Queremos que TopeRC.es sea un espacio donde todos los aficionados al radiocontro
 
 # Ponte en Contacto
 
-Si tienes alguna pregunta, sugerencia o simplemente quieres charlar sobre coches RC, no dudes en [contactarnos](/contacto.html). Nos encanta recibir comentarios de otros apasionados como nosotros y siempre estamos abiertos a nuevas ideas y colaboraciones.
+Si tienes alguna pregunta, sugerencia o simplemente quieres charlar sobre coches RC, no dudes en [contactarnos](/contacto/). Nos encanta recibir comentarios de otros apasionados como nosotros y siempre estamos abiertos a nuevas ideas y colaboraciones.
 
 ---
 
