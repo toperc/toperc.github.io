@@ -16,7 +16,7 @@ Gracias por visitar **TopeRC.es**. Estamos siempre felices de conectar con otros
 
 Si prefieres enviarnos un mensaje directamente, completa el formulario de contacto a continuación y nos pondremos en contacto contigo lo antes posible.
 
-<form action="https://formspree.io/f/xzzbebyn" method="POST">
+<form id="main_contact_form" action="https://formspree.io/f/xzzbebyn" method="POST">
   <label for="email">Correo Electrónico:</label><br>
   <input type="email" id="email" name="_replyto" required><br><br>
   
