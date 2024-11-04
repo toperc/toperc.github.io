@@ -1,3 +1,0 @@
----
-tag: "monster-truck"
----
