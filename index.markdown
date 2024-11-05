@@ -3,6 +3,7 @@ layout: home
 title: "Inicio"
 permalink: /
 navbar: false
+background: '/img/toperc_logo_full_white.jpg'
 ---
 
 # Bienvenidos a TopeRC.es
