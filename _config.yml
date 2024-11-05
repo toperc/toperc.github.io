@@ -15,7 +15,6 @@ description: >-
   RC de diferentes escalas y marcas.
 markdown: kramdown
 permalink: /:categories/:title/
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

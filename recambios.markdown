@@ -4,6 +4,7 @@ title: "Recambios"
 permalink: /recambios
 navbar: true
 toc: false
+background: '/img/bg-recambios.jpeg'
 ---
 
 {% assign recambios_by_brand = site.categories.recambios | group_by: "car_brand" %}

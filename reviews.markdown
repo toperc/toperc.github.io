@@ -4,6 +4,7 @@ title: "Reviews"
 permalink: /reviews
 toc: false
 navbar: true
+background: '/img/bg-review-buggy-lab.jpg'
 ---
 
 # Nuestras últimas 5 reviews
