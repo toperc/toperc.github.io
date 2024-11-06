@@ -5,7 +5,7 @@ youtube_username: "@TopeRC-es"
 
 # Base Config
 baseurl: "" # La URL base de tu sitio web
-url: "http://toperc.es" # La URL completa de tu sitio web
+url: "https://toperc.es" # La URL completa de tu sitio web
 title: "TopeRC"
 author: "TopeRC Team"
 email: "toperc.es@gmail.com"
