@@ -17,14 +17,23 @@ Gracias por visitar **TopeRC.es**. Estamos siempre felices de conectar con otros
 Puede enviarnos un e-mail a nuestra dirección de <a class="u-email" href="mailto:{{ site.email }}">correo electrónico</a> o si prefieres enviarnos un mensaje directamente, completa el formulario de contacto a continuación y nos pondremos en contacto contigo lo antes posible.
 
 <form id="main_contact_form" action="https://formspree.io/f/xzzbebyn" method="POST">
-  <label for="email">Correo Electrónico:</label><br>
-  <input type="email" id="email" name="_replyto" required><br><br>
+  <div class="form-group">
+    <label for="email">Correo Electrónico</label>
+    <input type="email" class="form-control" id="email" required placeholder="nombre@email.com">
+    <small id="emailHelp" class="form-text text-muted">No te preocupes, no lo usaremos con fines comerciales ;)</small>
+  </div>
   
-  <label for="message">Mensaje:</label><br>
-  <textarea id="message" name="message" rows="5" required></textarea><br><br>
-  
-  <button type="submit">Enviar</button>
+  <div class="form-group">
+    <label for="message">Mensaje</label>
+    <textarea class="form-control" id="message" rows="5"></textarea>
+
+  </div>
+  <div class="form-group">
+    <button type="reset" class="btn btn-primary">Borrar</button>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </div>
 </form>
+
 
 ## Redes Sociales
 
