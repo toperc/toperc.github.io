@@ -8,18 +8,21 @@ La estructura del proyecto sigue las mejores prácticas para sitios construidos 
 
 ```
 .
-├── _config.yml          # Archivo de configuración principal de Jekyll
-├── _data                # Datos globales en formato YAML/JSON
-├── _includes            # Fragmentos de HTML reutilizables
-├── _posts               # Entradas de blog o reviews
-├── _recambios           # Contenido sobre recambios de coches RC
-├── _modificaciones      # Tutoriales y guías de modificación
-├── _tutoriales          # Contenido educativo para principiantes y avanzados
-├── blog                 # Noticias y artículos de la comunidad RC
-├── galeria              # Imágenes y videos de coches RC
-├── contacto.html        # Página de contacto
-├── acerca.html          # Página "Acerca de Nosotros"\├── index.html           # Página principal del sitio
-└── _sass                # Archivos SCSS para estilos
+├── _config.yml                        # Archivo de configuración principal de Jekyll
+├── _includes                          # Fragmentos de HTML reutilizables
+├── _layouts                           # Definiciones de layouts de las diferentes páginas 
+├── _posts                             # Entradas de blog, reviews y recambios
+├── _sass                              # Archivos SCSS para estilos
+├── _tag                               # Páginas de tags autogenerados
+├── assets                             # Ficheros necesarios en la web
+├── acerca.markdown                    # Página "Acerca de Nosotros"
+├── contacto.markdown                  # Página de contacto
+├── index.markdown                     # Página principal del sitio
+├── legal.markdown                     # Página legal
+├── politica_privacidad.markdown       # Página política de privacidad
+├── recambios.markdown                 # Página principal de los recambios
+├── reviews.markdown                   # Página principal de las reviews
+└── _sass                              # Archivos SCSS para estilos
 ```
 
 ## Requisitos
