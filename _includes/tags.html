@@ -1,8 +1,8 @@
 {% if page.tags %}
     <div class="tag-list">
-        Tags:
+        Etiquetas:
         {% for tag in page.tags %}
-            <a href="/tag/{{ tag }}">{{ tag }}</a>
+            <i class="bi bi-tag"></i><a href="/tag/{{ tag }}">{{ tag }}</a>
         {% endfor %}
     </div>
 {% endif %}

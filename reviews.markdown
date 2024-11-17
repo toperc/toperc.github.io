@@ -11,14 +11,21 @@ background: '/img/bg-review-buggy-lab.jpg'
 
 {% assign last_reviews = site.categories.reviews | sort: "date" %}
 {% for post in site.categories.reviews limit:5 %}
-- [{{ post.title }}]({{post.url}})  {{ post.excerpt | strip_html | truncate: 200 }}
+<div>
+{% include article_summary.html post=post %}
+
+</div>
 {% endfor %}
 
 # Nuestras reviews agrupadas por marca
 {% assign reviews_by_brand = site.categories.reviews | group_by: "car_brand" %}
  {% for brand in reviews_by_brand %}
 ## {{ brand.name | capitalize}}
- {% for page in brand.items %}
-- [{{ page.title }}]({{page.url}}) 
+ {% for post in brand.items %}
+
+<div>
+{% include article_summary.html post=post %}
+</div>
+ 
 {% endfor %}
 {%endfor%}
