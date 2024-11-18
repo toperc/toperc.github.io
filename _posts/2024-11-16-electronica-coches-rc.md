@@ -48,7 +48,7 @@ Pero por lo general, lo básico que necesitaremos serán:
 La batería es la fuente de energía del coche radiocontrol. De baterías tenemos muchos tipos, potencias y capacidades diferentes.
 
 Lo más común hoy en día son las baterías Li-Po. La potencia de las baterías Li-Po se mide en "celdas" (S). Un celda (S) 
-equivale a 3.7v, por lo que una batería de 2S podrá proporcionar 2 x 3.7v = 7,4v, y una de 3s podrá proporcionar 3 x 3,7v = 11,2v.
+equivale a 3.7v, por lo que una batería Li-Po de 2S podrá proporcionar 2 x 3.7v = 7,4v, y una de 3s podrá proporcionar 3 x 3,7v = 11,2v.
 
 La capacidad la medimos en miliamperios hora (mah), y esto nos indica cuánta energía puede almacenar la batería y, en consecuencia,
 cuanto tiempo de uso puede ofrecer al coche antes de la siguiente carga.
