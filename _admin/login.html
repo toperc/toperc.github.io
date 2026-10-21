@@ -15,11 +15,14 @@
     <p class="eyebrow">GESTIÓN DE AFILIACIÓN / ACCESO PRIVADO</p>
     <h1>Tu cuenta.<br>Tu catálogo.</h1>
     <p>Identifícate con GitHub para acceder al gestor. Solo pueden entrar las cuentas autorizadas de TopeRC.</p>
-    <form id="login-form">
+    <a id="github-login" class="button" href="/auth/github/" hidden>Entrar con GitHub ↗</a>
+    <p id="github-status" class="micro">Comprobando el acceso con GitHub…</p>
+    <a id="github-setup" class="back" href="/setup/github/" hidden>Configurar GitHub para esta prueba</a>
+    <details class="token-fallback"><summary>Acceso alternativo con token</summary><form id="login-form">
       <label>Token personal de GitHub<input id="login-token" name="token" type="password" autocomplete="off" spellcheck="false" required maxlength="255" placeholder="Introduce tu token temporal"></label>
       <p class="micro">Usa un token limitado al repositorio de TopeRC con permiso Contents: Read and write. El token no se guarda en el navegador.</p>
       <button type="submit" id="login-button">Entrar al gestor</button>
-    </form>
+    </form></details>
     <div id="login-notice" class="notice" role="status" aria-live="polite"></div>
     <a class="back" href="/">Volver a TopeRC</a>
   </main>

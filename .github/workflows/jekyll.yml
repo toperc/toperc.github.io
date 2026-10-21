@@ -47,7 +47,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check affiliate catalog and GitHub saves
-        run: node --test _checks/affiliate_core.test.mjs _checks/affiliate_access.test.mjs
+        run: node --test _checks/affiliate_core.test.mjs _checks/affiliate_access.test.mjs _checks/github_oauth.test.mjs
       - name: Build private affiliate context
         run: bundle exec ruby _admin/build_context.rb
       - name: Build with Jekyll
