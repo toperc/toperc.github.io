@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="{{ '/assets/affiliate-products.css' | relative_url }}">
+<div class="affiliate-catalog">
+  <p class="affiliate-disclosure">Estos son enlaces de afiliado. TopeRC puede recibir una comisión o recompensa por las compras realizadas a través de ellos. Como Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
+  <ol class="affiliate-products">
+    {% for product_id in page.affiliate_products %}
+      {% assign affiliate_product = site.data.affiliate_links.products | where: 'id', product_id | first %}
+      {% if affiliate_product %}
+        <li>{% include affiliate_product.html product=affiliate_product %}</li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</div>

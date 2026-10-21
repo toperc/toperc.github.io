@@ -1,0 +1,14 @@
+{% assign product = include.product %}
+{% assign active_offers = product.offers | where: 'status', 'active' %}
+<div class="affiliate-product" data-affiliate-product="{{ product.id | escape }}">
+  <strong>{{ product.name | escape }}</strong>
+  <div class="affiliate-offers">
+    {% for offer in active_offers %}
+      {% assign store_name = offer.store %}
+      {% case offer.store %}{% when 'amazon' %}{% assign store_name = 'Amazon' %}{% when 'aliexpress' %}{% assign store_name = 'AliExpress' %}{% when 'rlaarlo' %}{% assign store_name = 'Rlaarlo' %}{% when 'hobbyking' %}{% assign store_name = 'HobbyKing' %}{% endcase %}
+      <a href="{{ offer.url | escape }}" target="_blank" rel="sponsored noopener noreferrer">Ver en {{ store_name }} <span aria-hidden="true">↗</span></a>
+    {% else %}
+      <span class="affiliate-pending">Enlaces pendientes de revisión.</span>
+    {% endfor %}
+  </div>
+</div>

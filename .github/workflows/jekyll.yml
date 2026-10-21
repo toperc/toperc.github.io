@@ -42,11 +42,19 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Setup Node for affiliate checks
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check affiliate catalog and GitHub saves
+        run: node --test _checks/affiliate_core.test.mjs
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Validate generated affiliate links
+        run: node _checks/validate_affiliates.mjs
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3

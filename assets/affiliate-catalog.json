@@ -1,0 +1,5 @@
+---
+layout: null
+sitemap: false
+---
+{{ site.data.affiliate_links | jsonify }}
