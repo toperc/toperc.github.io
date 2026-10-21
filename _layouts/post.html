@@ -9,7 +9,7 @@ layout: default
     <h1>{{ page.title | escape }}</h1>{% if page.subtitle %}<p class="page-description">{{ page.subtitle | escape }}</p>{% endif %}
     <div class="article-meta"><span>{{ page.author | default: site.author | escape }}</span><span>Publicado el {{ page.date | date: '%d/%m/%Y' }}</span><span>{% include read_time.html content=page.content %}</span></div>
   </header>
-  <div class="shell article-body">{% include model_context.html model_id=page.model_id %}{% include tags.html %}<div class="prose article-content">{{ content }}</div><nav class="post-navigation" aria-label="Más artículos">
+  <div class="shell article-body">{% include model_context.html model_id=page.model_id %}{% include model_photos.html model_id=page.model_id %}{% include tags.html %}<div class="prose article-content">{{ content }}</div><nav class="post-navigation" aria-label="Más artículos">
     {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}"><span class="eyebrow">← Artículo anterior</span><span>{{ page.previous.title | escape }}</span></a>{% endif %}
     {% if page.next.url %}<a href="{{ page.next.url | relative_url }}"><span class="eyebrow">Siguiente artículo →</span><span>{{ page.next.title | escape }}</span></a>{% endif %}
   </nav></div>

@@ -1,0 +1,13 @@
+jiabaila-1-43:
+  - src: /img/models/jiabaila-1-43/carrocerias.webp
+    preview: /img/models/jiabaila-1-43/carrocerias-640.webp
+    width: 960
+    height: 1280
+    alt: "Cuatro coches RC con carrocerías distintas, alineados sobre la mesa"
+    caption: "Los coches con sus carrocerías montadas."
+  - src: /img/models/jiabaila-1-43/chasis.webp
+    preview: /img/models/jiabaila-1-43/chasis-640.webp
+    width: 1200
+    height: 1600
+    alt: "Tres chasis de coches RC abiertos; se ven los motores y una placa electrónica"
+    caption: "Detalle de los chasis con las carrocerías retiradas."

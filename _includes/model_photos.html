@@ -1,0 +1,7 @@
+{% assign model_photos = site.data.model_photos[include.model_id] %}
+{% if model_photos %}
+<section class="photo-gallery" aria-labelledby="model-photos-title">
+  <div class="photo-gallery-heading"><h2 id="model-photos-title">Fotos del garaje</h2><p>Pulsa una foto para ampliarla.</p></div>
+  <div class="photo-gallery-grid">{% for photo in model_photos %}<figure><a href="{{ photo.src | relative_url }}" aria-label="Ampliar foto: {{ photo.alt | escape }}"><img src="{{ photo.preview | relative_url }}" alt="{{ photo.alt | escape }}" width="{{ photo.width }}" height="{{ photo.height }}" loading="lazy" decoding="async"><span aria-hidden="true">Ampliar ↗</span></a><figcaption>{{ photo.caption | escape }}</figcaption></figure>{% endfor %}</div>
+</section>
+{% endif %}
