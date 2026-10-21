@@ -42,7 +42,7 @@ El repositorio de TopeRC también es público, al igual que los enlaces de afili
 
 ## Rama y publicación
 
-`_data/affiliate_admin.json` fija repositorio, rama y cuentas configuradas. La POC guarda en **codex/poc-afiliados**. Esos commits no publican la web. Al integrar la rama en `main`, GitHub Actions compila y publica en Pages. Si se cambia deliberadamente la rama del gestor a `main`, sus guardados inician ese flujo de publicación.
+`_data/affiliate_admin.json` fija repositorio, rama y cuentas configuradas. El gestor publicado guarda en **main**. Cada guardado confirmado crea un commit e inicia la compilación y publicación de GitHub Pages; los enlaces públicos cambian cuando ese despliegue termina. La POC se comprobó previamente en `codex/poc-afiliados`.
 
 El catálogo se carga siempre de la rama remota, no de una copia incrustada en el HTML. El SHA leído protege frente a cambios de otras pestañas: un conflicto conserva el borrador y exige combinar los cambios. No se reintentan escrituras automáticamente. Si falla la red durante un guardado, consulta el historial antes de reintentarlo.
 

@@ -71,6 +71,8 @@ Las publicaciones relacionadas llevan en su front matter el mismo `model_id`, un
 
 Una página de recambios que todavía no contiene piezas se marca con `resource_status: pending`; el sitio comunica que el listado está en preparación. El campo no indica disponibilidad comercial de productos.
 
+Las fotos propias de un coche se declaran en `_data/model_photos.yml`, bajo su `model_id`, con imagen completa (`src`), vista previa (`preview`), dimensiones, texto alternativo y pie. Se muestran automáticamente en la ficha y sus reviews, con enlaces para ampliarlas. El campo opcional `image` del modelo o artículo añade una miniatura a las tarjetas. Los originales se conservan fuera de la web; las copias WebP publicadas no incluyen metadatos de cámara o ubicación.
+
 El blog admite enlaces con `marca`, `modelo`, `tipo`, `q` y la categoría histórica `categoria` en la URL. Los filtros necesitan JavaScript; las fichas y enlaces entre publicaciones se generan con Jekyll y funcionan también sin él.
 
 Para comprobar las relaciones y las URLs publicadas:
