@@ -80,7 +80,7 @@
           && (!state.category || (item.dataset.postCategories || '').split('|').includes(state.category))
           && (!state.type || item.dataset.postType === state.type)
           && (!state.brand || item.dataset.postBrand === state.brand)
-          && (!state.model || item.dataset.postModel === state.model);
+          && (!state.model || item.dataset.postModel === state.model || (item.dataset.postRelatedModels || '').split('|').includes(state.model));
         item.hidden = !matches;
         if (matches) visible += 1;
       });
