@@ -57,6 +57,14 @@ bundle exec ruby _checks/validate_content.rb
 
 El flujo de publicación ejecuta los tests de afiliación y comprueba el catálogo, los modelos, las referencias de artículos y el resultado HTML antes de desplegar.
 
+### Verificación de la POC, 21 de octubre de 2026
+
+- Nueve tests automáticos superados: esquema, Unicode y seguimiento, enlaces inválidos, credenciales, conflictos y resultados de red inciertos.
+- Compilación Jekyll correcta; 50 páginas comprobadas sin enlaces internos rotos. Las URLs, categorías y etiquetas de las once publicaciones se conservan.
+- Panel comprobado en navegador: búsqueda, edición, incorporación de una segunda tienda, estado para revisar y vista previa. Revisión a 390 px sin desbordamiento horizontal. El artículo piloto presenta los tres enlaces originales desde el catálogo.
+- Persistencia real comprobada contra la API de GitHub en `codex/poc-afiliados`: guardar un cambio temporal, recuperarlo con una segunda sesión y rechazar la escritura desde una sesión con SHA antiguo. Los datos originales se restauraron al terminar. Se utilizó el mismo módulo de guardado del panel con el transporte autenticado de GitHub CLI; no se extrajo ninguna credencial ni se probó el formulario con un token personal real.
+- La rama está publicada en GitHub. El panel se sirve en la vista previa local; no se ha desplegado en la web pública.
+
 ## Alcance de esta prueba
 
 La autenticación por token es una solución para validar el guardado remoto sin desplegar un servicio de autenticación. El panel es público, pero GitHub exige una credencial con permiso de escritura para guardar. `noindex` evita solicitar su indexación; no es una medida de acceso. El panel no carga Google Tag Manager ni scripts externos y aplica una política de contenido limitada a sus archivos y a la API de GitHub.
