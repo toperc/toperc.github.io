@@ -1,0 +1,13 @@
+eyebrow: La revista de TopeRC
+title: El radiocontrol se disfruta.
+highlight: Y también se aprende.
+description: Reviews, guías y experiencias para disfrutar de cada vuelta y de cada rato en el taller.
+primary_link:
+  title: Explorar el blog
+  url: /blog/
+secondary_link:
+  title: Buscar por categoría
+  url: /categorias/
+featured_title: Del taller a la pista.
+featured_description: Lo último que hemos compartido, reunido en un mismo sitio.
+categories_title: Cada afición tiene su camino.

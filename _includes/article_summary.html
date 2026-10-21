@@ -1,19 +1,11 @@
-<article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">Creado por
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            el
-            {{ post.date | date: '%d-%m-%Y' }} &middot; {% include read_time.html content=post.content %}
-          </p>
+{% assign article = include.post | default: post %}
+{% assign searchable_tags = article.tags | join: ' ' %}
+{% assign searchable_categories = article.categories | join: ' ' %}
+{% assign card_heading = include.heading | default: 'h2' %}
+{% assign category_key = article.categories | first %}
+<article class="article-card" data-search-item data-post-categories="{{ article.categories | join: '|' | escape }}" data-search-text="{{ article.title | append: ' ' | append: article.car_brand | append: ' ' | append: searchable_tags | append: ' ' | append: searchable_categories | escape }}">
+  <div class="card-topline"><span class="eyebrow">{{ site.data.categories[category_key].title | default: category_key | escape }}</span><span class="card-brand">{{ article.car_brand | default: site.title | escape }}</span></div>
+  <{{ card_heading }}><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></{{ card_heading }}>
+  <p>{{ article.subtitle | default: article.description | default: article.excerpt | strip_html | normalize_whitespace | truncatewords: 25 }}</p>
+  <div class="card-bottom"><time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: '%d/%m/%Y' }}</time><a href="{{ article.url | relative_url }}" aria-label="Leer {{ article.title | escape }}">Leer artículo <span aria-hidden="true">↗</span></a></div>
 </article>

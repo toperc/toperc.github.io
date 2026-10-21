@@ -1,15 +1,6 @@
 ---
 layout: page
+wide: true
 ---
-<h1>Etiqueta: {{ page.tag | capitalize }}</h1>
-{% assign posts_by_type = site.tags[page.tag] | group_by: "categories" %}
-{% for category in posts_by_type %}
-<h2>{{category.name | remove: '[' | remove: ']' | remove: '"' | trim }}</h2>
-<ul>
-{% for post in category.items %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})
-  {{ post.excerpt | truncate: 100 | strip_html}}
-  </li>
-{% endfor %}
-</ul>
-{% endfor %}
+<p class="listing-intro">Todo el contenido sobre <strong>{{ page.tag | escape }}</strong>, reunido en un mismo sitio.</p>
+<div class="article-grid">{% for post in site.tags[page.tag] %}{% include article_summary.html post=post %}{% endfor %}</div>

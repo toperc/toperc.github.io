@@ -1,0 +1,16 @@
+---
+layout: page
+wide: true
+---
+{% assign archive_posts = site.posts %}
+{% if page.category %}{% assign archive_posts = site.categories[page.category] %}{% endif %}
+<div class="search-toolbar"><p data-search-count role="status" aria-live="polite">{{ archive_posts.size }} publicaciones</p><label class="search-field" for="archive-search" data-search-controls hidden><span>Buscar en {{ page.title | escape }}</span><input id="archive-search" type="search" placeholder="Tema, marca o modelo…" data-search-input aria-controls="archive-list"></label></div>
+{% unless page.category %}
+<div class="category-filters" role="group" aria-label="Filtrar publicaciones por categoría" data-category-filters hidden>
+  <button type="button" data-category-value="" aria-pressed="true">Todo</button>
+  {% assign sorted_categories = site.categories | sort %}{% for category in sorted_categories %}{% assign key = category[0] %}<button type="button" data-category-value="{{ key | escape }}" aria-pressed="false">{{ site.data.categories[key].title | default: key | escape }} <span>{{ category[1].size }}</span></button>{% endfor %}
+</div>
+{% endunless %}
+<div class="article-grid archive-grid" id="archive-list">{% for post in archive_posts %}{% include article_summary.html post=post %}{% endfor %}</div>
+<p class="search-empty" data-search-empty role="status" hidden>No hay publicaciones con esos filtros. Prueba con otro término o categoría.</p>
+{{ content }}

@@ -1,0 +1,15 @@
+workshop:
+  src: /img/illustrations/taller-rc-cyberpunk.webp
+  alt: "Ilustración cyberpunk de un buggy radiocontrol en un taller con luces de neón"
+  width: 1672
+  height: 941
+parts:
+  src: /img/illustrations/recambios-rc-cyberpunk.webp
+  alt: "Ilustración cyberpunk de un taller de recambios RC con un chasis, herramientas y estanterías iluminadas"
+  width: 1659
+  height: 948
+contact:
+  src: /img/illustrations/contacto-rc-cyberpunk.webp
+  alt: "Ilustración cyberpunk de un coche de carreras transportando sobres de neón por un circuito urbano"
+  width: 1672
+  height: 941

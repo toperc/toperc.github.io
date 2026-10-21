@@ -1,8 +1,1 @@
-{% if page.tags %}
-    <div class="tag-list">
-        Etiquetas:
-        {% for tag in page.tags %}
-            <i class="bi bi-tag"></i><a href="/tag/{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-    </div>
-{% endif %}
+{% if page.tags.size > 0 %}<nav class="tag-list" aria-label="Etiquetas del artículo">{% for tag in page.tags %}<a href="{{ '/tag/' | append: tag | relative_url }}">#{{ tag | escape }}</a>{% endfor %}</nav>{% endif %}

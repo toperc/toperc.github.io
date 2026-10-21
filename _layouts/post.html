@@ -1,59 +1,15 @@
 ---
 layout: default
 ---
-
-<!-- Page Header -->
-{% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h1>{{ page.title }}</h1>
-            {% if page.subtitle %}
-            <h2 class="subheading">{{ page.subtitle }}</h2>
-            {% endif %}
-            <span class="meta">Creado por
-              <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
-              el {{ page.date | date: '%m-%d-%Y' }} &middot; {% include read_time.html
-              content=page.content %}
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+<main id="main-content"><article>
+  <header class="page-header article-header shell">
+    <a class="breadcrumb" href="{% if page.categories contains 'reviews' %}{{ '/reviews' | relative_url }}{% else %}{{ '/guias/' | relative_url }}{% endif %}">← {% if page.categories contains 'reviews' %}Todas las reviews{% else %}Todas las guías{% endif %}</a>
+    <p class="eyebrow">{% if page.categories contains 'reviews' %}En el garaje / Review{% else %}En el taller / Guía{% endif %}</p>
+    <h1>{{ page.title | escape }}</h1>{% if page.subtitle %}<p class="page-description">{{ page.subtitle | escape }}</p>{% endif %}
+    <div class="article-meta"><span>{{ page.author | default: site.author | escape }}</span><span>Publicado el {{ page.date | date: '%d/%m/%Y' }}</span><span>{% include read_time.html content=page.content %}</span></div>
   </header>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-      {% include tags.html %}
-      </div>
-      <div class="col-lg-8 col-md-10 mx-auto">
-        {{ content }}
-        <hr>
-      </div>
-      <div class="col-lg-8 col-md-10 mx-auto">
-      {% include tags.html %}
-      </div>
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="clearfix">
-
-          {% if page.previous.url %}
-          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Entrada<span class="d-none d-md-inline">
-              Anterior</span></a>
-          {% endif %}
-          {% if page.next.url %}
-          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}"> Entrada<span class="d-none d-md-inline">
-              Siguiente</span> &rarr;</a>
-          {% endif %}
-
-        </div>
-
-      </div>
-    </div>
-  </div>
+  <div class="shell article-body">{% if page.categories contains 'manuales' %}{% include illustration.html key='workshop' %}{% endif %}{% include tags.html %}<div class="prose article-content">{{ content }}</div><nav class="post-navigation" aria-label="Más artículos">
+    {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}"><span class="eyebrow">← Artículo anterior</span><span>{{ page.previous.title | escape }}</span></a>{% endif %}
+    {% if page.next.url %}<a href="{{ page.next.url | relative_url }}"><span class="eyebrow">Siguiente artículo →</span><span>{{ page.next.title | escape }}</span></a>{% endif %}
+  </nav></div>
+</article></main>

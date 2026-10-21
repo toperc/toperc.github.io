@@ -1,100 +1,79 @@
-# TopeRC.es - Sitio Web con Jekyll
+# TopeRC · Jekyll
 
-Bienvenido al repositorio de TopeRC.es, un sitio web dedicado a los apasionados de los coches radiocontrol (RC). Aquí encontrarás reviews, guías, tutoriales y recambios para coches RC de diferentes escalas y marcas. Este proyecto está construido utilizando [Jekyll](https://jekyllrb.com/), un generador de sitios estáticos que facilita la creación de contenido dinámico en un sitio estático.
+Web de radiocontrol con artículos en Markdown, categorías y etiquetas nativas de Jekyll. El diseño es propio y el despliegue existente continúa en GitHub Pages.
 
-## Estructura del Proyecto
+## Trabajar en local
 
-La estructura del proyecto sigue las mejores prácticas para sitios construidos con Jekyll:
-
-```
-.
-├── _config.yml                        # Archivo de configuración principal de Jekyll
-├── _includes                          # Fragmentos de HTML reutilizables
-├── _layouts                           # Definiciones de layouts de las diferentes páginas 
-├── _posts                             # Entradas de blog, reviews y recambios
-├── _sass                              # Archivos SCSS para estilos
-├── _tag                               # Páginas de tags autogenerados
-├── assets                             # Ficheros necesarios en la web
-├── acerca.markdown                    # Página "Acerca de Nosotros"
-├── contacto.markdown                  # Página de contacto
-├── index.markdown                     # Página principal del sitio
-├── legal.markdown                     # Página legal
-├── politica_privacidad.markdown       # Página política de privacidad
-├── recambios.markdown                 # Página principal de los recambios
-├── reviews.markdown                   # Página principal de las reviews
-└── _sass                              # Archivos SCSS para estilos
+```sh
+git clone git@github.com:toperc/toperc.github.io.git
+cd toperc.github.io
+bundle install
+bundle exec jekyll serve
 ```
 
-## Requisitos
+La vista previa está en `http://localhost:4000`. Para comprobar la compilación:
 
-Para contribuir a este proyecto, necesitarás tener instalado lo siguiente:
+```sh
+bundle exec jekyll build
+```
 
-- [Ruby](https://www.ruby-lang.org/en/)
-- [Bundler](https://bundler.io/)
-- [Jekyll](https://jekyllrb.com/)
+## Dónde se cambia cada cosa
 
-## Instalación Local
+| Qué quieres cambiar | Archivo o carpeta |
+| --- | --- |
+| Artículos, reviews y listados de piezas | `_posts/` |
+| Menú principal | `_data/navigation.yml` |
+| Textos y enlaces de la portada | `_data/home.yml` |
+| Nombres visibles y descripciones de categorías | `_data/categories.yml` |
+| Datos generales, redes y reglas de URLs | `_config.yml` |
+| Colores, tipografía y diseño adaptable | `_sass/styles.scss` |
+| Estructura de las páginas | `_layouts/` |
+| Componentes compartidos | `_includes/` |
+| Menú móvil y filtros del blog | `assets/scripts.js` |
+| Logo | `img/toperc-logo.png` |
 
-1. Clona el repositorio en tu máquina local:
-   ```sh
-   git clone https://github.com/usuario/TopeRC.es.git
-   ```
+Los filtros necesitan JavaScript; sin él, los archivos muestran todas sus publicaciones y los enlaces siguen funcionando. No se cargan Bootstrap, jQuery ni Clean Blog.
 
-2. Navega al directorio del proyecto:
-   ```sh
-   cd TopeRC.es
-   ```
+## Añadir una publicación
 
-3. Instala las dependencias con Bundler:
-   ```sh
-   bundle install
-   ```
+Crea un archivo `_posts/AAAA-MM-DD-titulo.md` o guárdalo en una de sus subcarpetas. Por ejemplo:
 
-4. Inicia el servidor Jekyll en tu máquina local:
-   ```sh
-   bundle exec jekyll serve
-   ```
-
-5. Abre tu navegador y navega a `http://localhost:4000` para ver el sitio.
-
-## Cómo Contribuir
-
-¡Nos encantaría que contribuyeras a este proyecto! Aquí te explicamos cómo hacerlo:
-
-1. **Forkea este repositorio** y clónalo en tu máquina local.
-2. Crea una **rama nueva** para tu modificación o nueva funcionalidad:
-   ```sh
-   git checkout -b mi-rama-nueva
-   ```
-3. **Realiza tus cambios** y asegúrate de probar el sitio localmente.
-4. **Commitea** tus cambios con un mensaje descriptivo:
-   ```sh
-   git commit -m "Agrega nueva review del coche RC Traxxas Slash 4X4"
-   ```
-5. Sube tu rama al repositorio remoto:
-   ```sh
-   git push origin mi-rama-nueva
-   ```
-6. Abre un **Pull Request** en GitHub y describe los cambios que has hecho.
-
-## Buenas Prácticas
-
-- Usa un lenguaje claro y descriptivo para los commits.
-- Sigue la estructura de archivos ya establecida para asegurar la consistencia del sitio.
-- Asegúrate de probar el sitio localmente antes de enviar tus cambios.
-
-## Reporte de Problemas
-
-Si encuentras algún problema, por favor abre un **Issue** en GitHub con una descripción detallada del problema. Intentaremos resolverlo lo antes posible.
-
-## Licencia
-
-Este proyecto está bajo la **Licencia MIT**. Consulta el archivo `LICENSE` para más detalles.
-
-## Contacto
-
-Para cualquier duda o consulta, puedes contactarnos a través de la [página de contacto](https://toperC.es/contacto.html) del sitio.
-
+```yaml
 ---
+layout: post
+title: "El título de tu artículo"
+date: 2026-10-21
+categories: manuales
+tags: [rc, electronica, tutoriales]
+---
+```
 
-¡Gracias por contribuir a TopeRC.es! Estamos entusiasmados de ver cómo podemos mejorar la experiencia para la comunidad de radiocontrol juntos.
+Escribe el contenido en Markdown. Puedes añadir `<!--more-->` para marcar el final de la introducción que aparecerá en los listados. El blog, la portada, los contadores y el índice de categorías se actualizan al compilar.
+
+Los identificadores de las categorías existentes (`reviews`, `manuales`, `recambios`, `wltoys`, `mjx`) se conservan. Los nombres visibles se pueden cambiar en `_data/categories.yml` sin modificar esos identificadores ni las URLs de los artículos. Una categoría nueva aparece automáticamente en el blog y en su índice aunque todavía no tenga una descripción en YAML.
+
+Al añadir etiquetas, genera sus páginas con Python:
+
+```sh
+python _tag_gen.py
+python _tag_gen.py --check
+```
+
+El generador recorre todas las subcarpetas de artículos y conserva las páginas de etiquetas antiguas.
+
+## Secciones
+
+- `/`: portada editorial basada en las publicaciones.
+- `/blog/`: archivo de todas las publicaciones, con búsqueda y filtros por categoría.
+- `/categorias/`: índice de todas las categorías de Jekyll.
+- `/reviews`, `/guias/`, `/recambios`: secciones temáticas.
+- `/tag/…`: archivos de etiquetas existentes.
+- `/posts/`: acceso compatible al archivo del blog.
+
+Los artículos existentes no se han reescrito. Las páginas de contacto, equipo y legales se conservan. El formulario mantiene Formspree y la cabecera mantiene la integración existente de Google Tag Manager.
+
+## Publicación e iteraciones
+
+El flujo de `.github/workflows/jekyll.yml` publica en GitHub Pages cuando se suben cambios a `main`. El trabajo actual está en `codex/renovacion-web`.
+
+Esta primera iteración establece la estructura del contenido y las plantillas compartidas. Las siguientes pueden centrarse en la identidad visual, la portada o la lectura de artículos, manteniendo el contenido independiente del diseño.

@@ -1,48 +1,64 @@
-#!python3
-"""
-Generate a tag file for each tag in use on your Jekyll blog
-"""
-
+#!/usr/bin/env python3
+"""Crea páginas de etiquetas sin eliminar URLs ya publicadas. No requiere librerías externas."""
+import argparse
 from pathlib import Path
+import re
+import shlex
 
 
-class CommitError(BaseException):
-    """Raised when tags have changed to prompt the user to restart the process."""
+def split_tags(value):
+    lexer = shlex.shlex(value.strip().strip("[]"), posix=True)
+    lexer.whitespace += ","
+    lexer.whitespace_split = True
+    return list(lexer)
 
 
-tags_path = Path("_tag")
+def tags_in_post(path):
+    lines = path.read_text(encoding="utf-8-sig").splitlines()
+    if not lines or lines[0].strip() != "---":
+        return set()
+    tags = set()
+    reading_tags = False
+    for line in lines[1:]:
+        if line.strip() == "---":
+            break
+        match = re.match(r"^tags:\s*(.*)$", line)
+        if match:
+            reading_tags = True
+            tags.update(split_tags(match.group(1)))
+        elif reading_tags and re.match(r"^\s*-\s+", line):
+            tags.update(split_tags(re.sub(r"^\s*-\s+", "", line)))
+        elif line.strip() and not line.lstrip().startswith("#"):
+            reading_tags = False
+    return tags
 
-# get a list of all the tag pages that already exist
-existing_tag_files = [f.stem for f in tags_path.glob("*.md")]
 
-used_tags = []
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Comprueba las etiquetas sin escribir archivos.")
+    args = parser.parse_args()
+    root = Path(__file__).resolve().parent
+    tag_dir = root / "_tag"
+    tags = set()
+    for path in (root / "_posts").rglob("*"):
+        if path.suffix in (".md", ".markdown"):
+            tags.update(tags_in_post(path))
+    missing = sorted(tag for tag in tags if not (tag_dir / (tag + ".md")).is_file())
+    if args.check:
+        if missing:
+            print("Faltan etiquetas: " + ", ".join(missing))
+            return 1
+        print(f"Etiquetas comprobadas: {len(tags)}. Todas tienen página.")
+        return 0
+    tag_dir.mkdir(exist_ok=True)
+    for tag in missing:
+        if tag in (".", "..") or "/" in tag or "\\" in tag:
+            raise ValueError(f"Etiqueta no válida como nombre de archivo: {tag}")
+        safe_tag = tag.replace('"', '\\"')
+        (tag_dir / (tag + ".md")).write_text('---\ntag: "' + safe_tag + '"\n---\n', encoding="utf-8")
+    print(f"Etiquetas creadas: {len(missing)}. Se conservan todas las páginas existentes.")
+    return 0
 
-# find all the tags currently in use
-# if you have other collections be aware that tags on those are not processed by default
-for p in Path("_posts/").iterdir():
-    for post in p.glob('*.md'):
-        with open(post) as f:
-            end = False
-            for line in f:
-                if line.startswith("---"):
-                    if end:
-                        # got to the end of the front matter so stop now
-                        break
-                    end = True
-                elif line.startswith("tag"):
-                    used_tags.extend(line.split(":")[1].split())
 
-used_tags = set(used_tags)
-
-# generate new tag files
-for tag in used_tags.difference(existing_tag_files):
-    tag_file_content = f"---\ntag: \"{tag}\"\n---"
-    tags_path.joinpath(f"{tag}.md").write_text(tag_file_content)
-
-# remove any files that are no longer in use
-for tag in set(existing_tag_files).difference(used_tags):
-    tags_path.joinpath(f"{tag}.md").unlink()
-
-# if any of the files have changed stop the commit so they can be added
-if used_tags.symmetric_difference(existing_tag_files):
-    raise CommitError("Tags have changed. Add tag file changes to commit.")
+if __name__ == "__main__":
+    raise SystemExit(main())

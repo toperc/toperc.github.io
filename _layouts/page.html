@@ -1,37 +1,12 @@
 ---
 layout: default
 ---
-
-<!-- Page Header -->
-{% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ page.title }}</h1>
-            {% if page.description %}
-            <span class="subheading">{{ page.description }}</span>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="row">
-      {% if page.toc %}
-
-      {% endif %}
-      <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
-
-      </div>
-    </div>
+<main id="main-content">
+  <header class="page-header shell"><a class="breadcrumb" href="{{ '/' | relative_url }}">Inicio <span aria-hidden="true">/</span></a><p class="eyebrow">{{ page.eyebrow | default: 'El universo TopeRC' }}</p><h1>{{ page.title | escape }}</h1>{% if page.description %}<p class="page-description">{{ page.description | escape }}</p>{% endif %}</header>
+  {% assign page_category = page.category %}{% unless page_category %}{% assign page_category = page.categories | first %}{% endunless %}
+  {% assign illustration_key = page.illustration | default: site.data.categories[page_category].illustration %}
+  <div class="shell page-body {% if page.wide or layout.wide %}page-wide{% else %}prose{% endif %}">
+    {% if illustration_key %}{% include illustration.html key=illustration_key %}{% endif %}
+    {{ content }}
   </div>
+</main>

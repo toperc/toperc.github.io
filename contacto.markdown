@@ -2,7 +2,7 @@
 layout: page
 title: "Contacto"
 permalink: /contacto/
-background: '/img/bg-contact-formula-one.jpeg'
+illustration: contact
 ---
 
 Gracias por visitar **TopeRC.es**. Estamos siempre felices de conectar con otros apasionados del radiocontrol. Si tienes alguna pregunta, sugerencia, o simplemente quieres saludarnos, aquí tienes las formas de contactarnos:
@@ -19,13 +19,13 @@ Puede enviarnos un e-mail a nuestra dirección de <a class="u-email" href="mailt
 <form id="main_contact_form" action="https://formspree.io/f/xzzbebyn" method="POST">
   <div class="form-group">
     <label for="email">Correo Electrónico</label>
-    <input type="email" class="form-control" id="email" required placeholder="nombre@email.com">
+    <input type="email" class="form-control" id="email" name="email" required autocomplete="email" aria-describedby="emailHelp" placeholder="nombre@email.com">
     <small id="emailHelp" class="form-text text-muted">No te preocupes, no lo usaremos con fines comerciales ;)</small>
   </div>
   
   <div class="form-group">
     <label for="message">Mensaje</label>
-    <textarea class="form-control" id="message" rows="5"></textarea>
+    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
 
   </div>
   <div class="form-group">

@@ -1,0 +1,24 @@
+reviews:
+  title: Reviews
+  description: Modelos, características y experiencias con coches radiocontrol.
+  url: /reviews
+  illustration: workshop
+  home: true
+manuales:
+  title: Guías y tutoriales
+  description: Electrónica, componentes y conceptos para conocer mejor tu RC.
+  url: /guias/
+  illustration: workshop
+  home: true
+recambios:
+  title: Recambios y mejoras
+  description: Piezas y mejoras organizadas por modelo de coche.
+  url: /recambios
+  illustration: parts
+  home: true
+wltoys:
+  title: Wltoys
+  description: Publicaciones de la categoría Wltoys.
+mjx:
+  title: MJX
+  description: Publicaciones de la categoría MJX.

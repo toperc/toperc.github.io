@@ -5,7 +5,7 @@ youtube_username: "@TopeRC-es"
 
 # Base Config
 baseurl: "" # La URL base de tu sitio web
-url: "https://toperc.es" # La URL completa de tu sitio web
+url: "https://toperc.com" # La URL completa de tu sitio web
 title: "TopeRC"
 author: "TopeRC Team"
 email: "toperc.es@gmail.com"
@@ -23,11 +23,6 @@ plugins:
 
 # Third-party applications
 disqus: toperc
-
-# Paginación del blog
-paginate: 5
-paginate_path: "/blog/page:num"
-
 
 # Collections
 collections:

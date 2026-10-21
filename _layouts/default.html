@@ -4,7 +4,9 @@
 
 {% include head.html %}
 
-<body>
+<body id="top" class="{% if page.layout == 'home' %}home-page{% else %}inner-page{% endif %}">
+
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
 
   {% include navbar.html %}
 
