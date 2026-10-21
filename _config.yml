@@ -15,6 +15,7 @@ description: >-
   RC de diferentes escalas y marcas.
 markdown: kramdown
 permalink: /:categories/:title/
+timezone: Europe/Madrid
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
