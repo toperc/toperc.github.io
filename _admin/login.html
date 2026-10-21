@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Acceso privado · TopeRC</title>
+  <link rel="stylesheet" href="/assets/affiliate-access.css">
+  <script type="module" src="/admin/afiliados/acceso/login.mjs"></script>
+</head>
+<body>
+  <main class="access-card">
+    <a class="brand" href="/">TOPE<span>RC</span></a>
+    <p class="eyebrow">GESTIÓN DE AFILIACIÓN / ACCESO PRIVADO</p>
+    <h1>Tu cuenta.<br>Tu catálogo.</h1>
+    <p>Identifícate con GitHub para acceder al gestor. Solo pueden entrar las cuentas autorizadas de TopeRC.</p>
+    <form id="login-form">
+      <label>Token personal de GitHub<input id="login-token" name="token" type="password" autocomplete="off" spellcheck="false" required maxlength="255" placeholder="Introduce tu token temporal"></label>
+      <p class="micro">Usa un token limitado al repositorio de TopeRC con permiso Contents: Read and write. El token no se guarda en el navegador.</p>
+      <button type="submit" id="login-button">Entrar al gestor</button>
+    </form>
+    <div id="login-notice" class="notice" role="status" aria-live="polite"></div>
+    <a class="back" href="/">Volver a TopeRC</a>
+  </main>
+</body>
+</html>

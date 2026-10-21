@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { GitHubCatalog, validateCatalog, serializeCatalog, encodeContent, decodeContent, isHttpsUrl } from '../assets/affiliate-core.mjs';
+import { GitHubCatalog, validateCatalog, serializeCatalog, encodeContent, decodeContent, isHttpsUrl } from '../_admin/assets/affiliate-core.mjs';
 
 const actual = JSON.parse(await readFile(new URL('../_data/affiliate_links.json', import.meta.url), 'utf8'));
 const source = { version: 1, products: [{ id: 'bateria-de-prueba', name: 'Batería de prueba', category: 'Baterías', model_ids: ['wltoys-144001'], notes: '', offers: [{ store: 'amazon', url: 'https://amzn.to/test-fixture', status: 'active' }] }] };

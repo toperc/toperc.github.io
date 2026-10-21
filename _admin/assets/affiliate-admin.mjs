@@ -1,4 +1,5 @@
-import { STORES, STATUSES, GitHubCatalog, validateCatalog, serializeCatalog } from './affiliate-core.mjs';
+import { STORES, STATUSES, validateCatalog, serializeCatalog } from './affiliate-core.mjs';
+import { ProtectedCatalog } from './session-client.mjs';
 
 const $ = id => document.getElementById(id);
 const state = { catalog: null, context: null, saved: '', selected: null, editorOpen: false, formDirty: false, busy: false, remote: null };
@@ -14,6 +15,7 @@ function element(tag, text, className) {
 }
 function notify(message, type = '', link) {
   const notice = $('notice');
+  if (!notice) return;
   notice.className = `notice ${type}`;
   notice.replaceChildren(document.createTextNode(message));
   if (link) {
@@ -25,27 +27,25 @@ function canLeaveForm() {
   return !state.formDirty || window.confirm('Hay cambios sin aplicar en este formulario. ¿Quieres descartarlos?');
 }
 function renderControls() {
+  if (!$('remote-save')) return;
   const dirty = changed();
   $('remote-save').disabled = state.busy || !state.remote || !dirty;
   $('export').disabled = state.busy || !state.catalog;
   $('new-product').disabled = state.busy || !state.catalog;
   $('editor-fields').disabled = state.busy || !state.editorOpen;
-  $('connect-button').disabled = state.busy || !state.context;
-  $('connect-button').hidden = Boolean(state.remote);
-  $('disconnect').disabled = state.busy;
-  $('disconnect').hidden = !state.remote;
-  for (const id of ['repository', 'branch', 'token']) $(id).disabled = state.busy || Boolean(state.remote);
+  $('logout').disabled = state.busy;
   for (const id of ['search', 'store-filter', 'status-filter']) $(id).disabled = state.busy;
   document.querySelector('.session').classList.toggle('connected', Boolean(state.remote));
-  $('mode').textContent = state.remote ? `GitHub · ${state.remote.repository} · ${state.remote.branch}` : 'Modo de prueba · sin conexión';
+  $('mode').textContent = state.remote ? `GitHub · ${state.remote.login} · ${state.remote.branch}` : 'Comprobando sesión…';
   $('form-state').textContent = state.formDirty ? 'Sin aplicar' : 'Sin cambios';
   $('save-help').textContent = state.remote
     ? `${dirty ? 'Hay cambios pendientes.' : 'Catálogo sincronizado.'} Destino: ${state.remote.branch}.${state.remote.branch === 'main' ? ' Guardar inicia la publicación de la web.' : ' Esta rama no publica la web.'}`
-    : 'Prueba en memoria. Conecta GitHub para guardar en remoto.';
+    : 'Comprobando sesión…';
 }
 function setBusy(value) { state.busy = value; renderControls(); }
 function markFormDirty() { state.formDirty = true; renderControls(); }
 function renderCatalog() {
+  if (!state.catalog) return;
   const products = state.catalog.products;
   const offers = products.flatMap(p => p.offers);
   $('product-count').textContent = products.length;
@@ -176,25 +176,12 @@ $('new-product').addEventListener('click', () => {
   if (canLeaveForm()) { openProduct(null); $('product-form').scrollIntoView({ behavior: 'smooth', block: 'start' }); $('product-name').focus({ preventScroll: true }); }
 });
 for (const id of ['search', 'store-filter', 'status-filter']) $(id).addEventListener(id === 'search' ? 'input' : 'change', renderCatalog);
-$('connect-form').addEventListener('submit', async event => {
-  event.preventDefault();
-  if (unsaved() && !window.confirm('Conectar cargará el catálogo de GitHub y sustituirá tus cambios locales. Descarga antes el borrador si quieres conservarlo. ¿Continuar?')) return;
-  let client;
+$('logout').addEventListener('click', async () => {
+  if (unsaved() && !window.confirm('Tienes cambios sin guardar. Descárgalos antes si quieres conservarlos. ¿Cerrar sesión?')) return;
   try {
-    client = new GitHubCatalog({ repository: $('repository').value.trim(), branch: $('branch').value.trim(), token: $('token').value });
-    $('token').value = ''; setBusy(true); notify('Cargando el catálogo desde GitHub…');
-    const catalog = await client.load();
-    state.remote?.disconnect(); state.remote = client; state.catalog = catalog; state.saved = serializeCatalog(catalog); state.formDirty = false;
-    $('search').value = ''; $('store-filter').value = ''; $('status-filter').value = '';
-    if (catalog.products.length) openProduct(catalog.products[0]); else openProduct(null);
-    $('connection').open = false;
-    notify(`Conectado. Los cambios se guardarán en ${client.repository}, rama ${client.branch}.`, 'success');
-  } catch (error) { client?.disconnect(); notify(error.message, 'error'); }
-  finally { setBusy(false); renderCatalog(); }
-});
-$('disconnect').addEventListener('click', () => {
-  state.remote?.disconnect(); state.remote = null; $('token').value = ''; renderControls();
-  notify('Sesión desconectada. El catálogo y tus cambios siguen en memoria; puedes descargarlos.');
+    await state.remote.logout(); state.formDirty = false; state.catalog = null;
+    document.body.replaceChildren(); window.location.replace('/admin/afiliados/acceso/');
+  } catch (error) { notify(error.message, 'error'); }
 });
 $('remote-save').addEventListener('click', async () => {
   if (formHasPendingChanges() || !state.remote || !changed()) return;
@@ -213,18 +200,25 @@ $('export').addEventListener('click', () => {
   notify('Catálogo descargado. Para publicarlo manualmente, sustituye _data/affiliate_links.json en el repositorio.');
 });
 window.addEventListener('beforeunload', event => { if (unsaved()) { event.preventDefault(); event.returnValue = ''; } });
+window.addEventListener('admin-session-expired', () => {
+  state.formDirty = false; state.catalog = null; state.remote = null;
+  document.body.replaceChildren(); window.location.replace('/admin/afiliados/acceso/');
+});
+window.addEventListener('pageshow', event => { if (event.persisted) window.location.reload(); });
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && state.remote && Date.now() >= state.remote.expires_at) window.dispatchEvent(new Event('admin-session-expired'));
+});
 
 async function init() {
   try {
-    const [catalogResponse, contextResponse] = await Promise.all([
-      fetch(document.body.dataset.catalogUrl, { cache: 'no-store' }), fetch(document.body.dataset.contextUrl, { cache: 'no-store' })
-    ]);
-    if (!catalogResponse.ok || !contextResponse.ok) throw new Error('No se ha podido cargar el catálogo. Comprueba que la web está compilada con Jekyll.');
-    state.catalog = validateCatalog(await catalogResponse.json()); state.context = await contextResponse.json();
+    state.remote = await ProtectedCatalog.connect();
+    setTimeout(() => window.dispatchEvent(new Event('admin-session-expired')), Math.max(0, state.remote.expires_at - Date.now()));
+    const [catalog, context] = await Promise.all([state.remote.load(), state.remote.context()]);
+    state.catalog = validateCatalog(catalog); state.context = context;
     state.saved = serializeCatalog(state.catalog);
-    $('repository').value = state.context.repository; $('branch').value = state.context.branch;
+    $('session-user').textContent = `${state.remote.login} · ${state.remote.repository} · sesión de 30 minutos`;
     if (state.catalog.products.length) openProduct(state.catalog.products[0]); else openProduct(null);
-    notify('Puedes probar el editor. Los cambios están solo en memoria hasta que conectes GitHub o descargues el catálogo.');
+    notify(`Acceso verificado. Los cambios se guardarán en la rama ${state.remote.branch}.`);
   } catch (error) { notify(error.message, 'error'); }
 }
 init();

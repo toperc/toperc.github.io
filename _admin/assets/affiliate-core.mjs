@@ -83,7 +83,7 @@ export class GitHubCatalog {
         409: 'El catálogo ha cambiado en GitHub. Descarga tu borrador antes de volver a conectar y combinar los cambios.',
         422: 'GitHub no acepta este cambio. Revisa si otra sesión ha guardado o si la rama tiene reglas de protección.'
       };
-      throw new Error(errors[response.status] || `GitHub ha devuelto un error (${response.status}). Conservamos tu borrador.`);
+      throw Object.assign(new Error(errors[response.status] || `GitHub ha devuelto un error (${response.status}). Conservamos tu borrador.`), { status: response.status });
     }
     return response.json();
   }

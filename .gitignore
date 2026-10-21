@@ -9,3 +9,4 @@ Gemfile.lock
 /.bundle/
 /vendor/bundle/
 __pycache__/
+/_admin/generated/

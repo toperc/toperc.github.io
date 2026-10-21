@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Enlaces de afiliado · TopeRC</title>
+  <link rel="icon" href="/img/toperc-logo.png">
+  <link rel="stylesheet" href="/admin/afiliados/assets/affiliate-admin.css">
+  <script type="module" src="/admin/afiliados/assets/affiliate-admin.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#catalog">Saltar al catálogo</a>
+  <header class="topbar">
+    <a class="brand" href="/">TOPE<span>RC</span><small>ESTUDIO / AFILIACIÓN</small></a>
+    <div class="session"><span class="dot"></span><span id="mode">Comprobando sesión…</span></div>
+    <a href="/recambios/wltoys/144001/" class="quiet-link" id="article-link">Ver artículo piloto ↗</a>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">HERRAMIENTAS TOPE<span>RC</span> <span class="badge">POC</span></p><h1>Tus enlaces.<br><span>En un solo sitio.</span></h1><p class="lead">Actualiza una vez. Reutiliza en todas tus publicaciones.</p></div>
+      <div class="intro-actions"><button id="export" type="button" disabled>Descargar catálogo ↓</button><button id="remote-save" type="button" class="primary" disabled>Guardar en GitHub ↗</button><p id="save-help">Comprobando sesión…</p></div>
+    </section>
+    <div id="notice" class="notice" role="status" aria-live="polite">Cargando catálogo…</div>
+    <section class="connection session-bar"><div><p class="eyebrow">01 / ACCESO AUTORIZADO</p><p id="session-user">Comprobando tu identidad…</p></div><button id="logout" type="button">Cerrar sesión</button></section>
+    <section class="metrics" aria-label="Resumen del catálogo"><div><strong id="product-count">—</strong><span>productos</span></div><div><strong id="offer-count">—</strong><span>enlaces activos</span></div><div><strong id="review-count">—</strong><span>para revisar</span></div><div><strong>04</strong><span>tiendas disponibles</span></div></section>
+    <div class="workspace">
+      <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+        <div class="section-title"><h2 id="catalog-title">Catálogo</h2><button id="new-product" type="button" disabled>+ Producto</button></div>
+        <label class="search-label">Buscar producto<input id="search" type="search" placeholder="Nombre, referencia o modelo…"></label>
+        <div class="filters"><label>Tienda<select id="store-filter"><option value="">Todas las tiendas</option value="amazon">Amazon</option><option value="aliexpress">AliExpress</option><option value="rlaarlo">Rlaarlo</option><option value="hobbyking">HobbyKing</option></select></label><label>Estado<select id="status-filter"><option value="">Todos los estados</option><option value="active">Activos</option><option value="review">Para revisar</option><option value="disabled">Desactivados</option></select></label></div>
+        <p class="micro" id="results"></p><div id="product-list" class="product-list"></div>
+      </section>
+      <section class="editor" aria-labelledby="editor-title">
+        <form id="product-form">
+          <div class="section-title"><div><p class="eyebrow">02 / EDITAR PRODUCTO</p><h2 id="editor-title">Selecciona un producto</h2></div><span id="form-state" class="badge">Sin cambios</span></div>
+          <fieldset id="editor-fields" disabled>
+            <div class="field-pair"><label>Nombre<input id="product-name" required maxlength="160"></label><label>Referencia estable<input id="product-id" required pattern="[a-z0-9]+(-[a-z0-9]+)*" maxlength="80" placeholder="bateria-zeee-2200"></label></div>
+            <div class="field-pair"><label>Categoría<input id="product-category" maxlength="80" placeholder="Baterías, recambios, coches…"></label><label>Modelos relacionados<select id="product-models" multiple size="3"></select></label></div>
+            <label>Notas del catálogo <span class="muted">· información pública</span><textarea id="product-notes" rows="2" maxlength="1000" placeholder="Variante, referencia del fabricante…"></textarea></label>
+            <div class="subheading"><h3>Enlaces por tienda</h3><button id="add-offer" type="button">+ Tienda</button></div>
+            <p class="micro">Pega el enlace de afiliado completo o corto. Se conserva tal cual, incluido su seguimiento.</p>
+            <div id="offer-fields"></div>
+            <div class="editor-actions"><button type="submit" class="primary">Aplicar al catálogo</button><span class="micro">Después, guarda en GitHub o descarga el archivo.</span></div>
+          </fieldset>
+        </form>
+        <section class="usage"><p class="eyebrow">DÓNDE APARECE</p><div id="usages"></div><p class="micro">Las referencias se actualizan al compilar la web. Seleccionar un modelo no inserta el producto automáticamente en sus artículos.</p></section>
+        <section class="preview"><div class="subheading"><h3>Vista previa</h3><span class="micro">Versión aplicada al catálogo</span></div><div id="preview"></div></section>
+      </section>
+    </div>
+    <footer><span>TOPE<span class="red">RC</span> / GESTOR DE AFILIACIÓN</span><span>Amazon · AliExpress · Rlaarlo · HobbyKing</span><p>Acceso privado verificado en el servidor. La generación automática de enlaces y el acceso mediante OAuth quedan para la siguiente iteración.</p></footer>
+  </main>
+  <noscript>Activa JavaScript para utilizar el panel. Los enlaces públicos de la web siguen funcionando sin él.</noscript>
+</body>
+</html>

@@ -1,5 +1,0 @@
----
-layout: null
-sitemap: false
----
-[{% assign separator = '' %}{% for post in site.posts %}{% if post.affiliate_products %}{{ separator }}{"title": {{ post.title | jsonify }}, "url": {{ post.url | relative_url | jsonify }}, "path": {{ post.url | jsonify }}, "products": {{ post.affiliate_products | jsonify }}}{% assign separator = ',' %}{% endif %}{% endfor %}]
