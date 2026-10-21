@@ -6,7 +6,18 @@ El vídeo principal se declara en el front matter del artículo:
 video_id: TPRoxYSce7I
 ```
 
-El layout `post` muestra una sola incrustación adaptable y un enlace directo a YouTube. No añadas otro iframe en el cuerpo. Las fichas de coche y sus tarjetas toman el vídeo de su review; el campo histórico de la ficha sirve como alternativa y no debe contradecir al artículo.
+El layout `post` muestra una incrustación adaptable y un enlace directo a YouTube por cada vídeo declarado. No añadas otro iframe en el cuerpo. Las fichas de coche y sus tarjetas toman el vídeo de su review; el campo histórico de la ficha sirve como alternativa y no debe contradecir al artículo.
+
+Para una serie, conserva `video_id` como primera parte y declara las siguientes en orden, con título propio:
+
+```yaml
+video_title: "Parte 1: desmontaje"
+additional_videos:
+  - id: yRPoNjrecJA
+    title: "Parte 2: montaje y comprobaciones"
+```
+
+Una guía compartida puede declarar `related_model_ids: [wltoys-124017]`, además de su `model_id` principal. Las fichas de ambos coches la muestran como guía, sin convertirla en una review. La zona horaria del sitio es `Europe/Madrid` para que las fechas de publicación correspondan al día local.
 
 Al revisar una entrada existente, conserva su nombre de archivo y su fecha original. Añade `last_modified_at` con la fecha real de la revisión: el artículo muestra ambas fechas. Un artículo nuevo lleva su propia fecha de publicación.
 
@@ -23,4 +34,4 @@ bundle exec jekyll build
 bundle exec ruby _checks/validate_videos.rb
 ```
 
-El validador comprueba IDs, vídeos únicos por entrada, enlace directo, título accesible, fechas de actualización visibles y coherencia entre fichas y reviews.
+El validador comprueba IDs, ausencia de repeticiones dentro de cada entrada, orden de las partes, enlaces directos, títulos accesibles, fechas de actualización visibles y coherencia con las fichas. El segundo lote reúne cinco guías a partir de siete vídeos consultados en Studio el 22/10/2026; sus transcripciones y notas se conservan fuera del repositorio.
