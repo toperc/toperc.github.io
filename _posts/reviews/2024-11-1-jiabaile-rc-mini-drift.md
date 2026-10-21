@@ -4,65 +4,59 @@ brand_id: jiabaila
 model_id: jiabaila-1-43
 image: /img/models/jiabaila-1-43/carrocerias-640.webp
 layout: post
-title: "Jiabaila 1:43: Compacto y Divertido a Gran Escala"
+title: "Jiabaila 1:43: drift en casa con giroscopio ajustable"
+subtitle: "Un coche diminuto para montar unos piques en el salón, con sus detalles buenos y sus limitaciones."
+description: "Probamos el Jiabaila 1:43 con giroscopio: qué incluye, cómo se controla, qué tal derrapa en casa y el fallo que encontramos en un faro."
 date: 2024-11-01
+last_modified_at: 2026-10-22
 categories: reviews
 tags: jiabaila mini-rc drift
 car_brand: jiabaila
+video_id: TPRoxYSce7I
 ---
 
-El **Jiabaila 1:43** es un coche de radio control compacto que, a pesar de su tamaño reducido, ofrece un gran rendimiento para quienes buscan diversión en un modelo más pequeño y asequible. Este coche RC es perfecto tanto para principiantes como para aquellos que buscan un modelo manejable y fácil de transportar. Aquí te cuento mi experiencia con el Jiabaila 1:43 y por qué es una excelente opción para la diversión en espacios reducidos.
+El **Jiabaila 1:43** tiene una propuesta muy sencilla: hacer drift dentro de casa con un coche que cabe en la palma de la mano. Ya había tenido otras versiones, con y sin giroscopio, y esta vez he probado una de las carrocerías nuevas. Me sigue pareciendo un juguete muy divertido para pasar el rato, especialmente si tienes otra unidad con la que echar unos piques.
 
 <!--more-->
 
-## Especificaciones Principales
+## Qué incluye la unidad de la review
 
-- **Escala:** 1/43
-- **Velocidad Máxima:** Hasta 25 km/h
-- **Motor:** Motor de alto torque adecuado para su tamaño
-- **Suspensión:** Básica pero efectiva, ideal para superficies planas
-- **Batería:** 3.7V 500mAh
-- **Tiempo de Carga:** Aproximadamente 1 hora para una carga completa
-- **Tiempo de Ejecución:** Entre 10-15 minutos
+En la caja vienen el coche, la emisora, unos conos, un destornillador y un cable USB-C para cargarlo. También incluye dos tipos de neumáticos: los de drift vienen montados y hay otro juego de goma con más agarre.
 
-## Diseño y Construcción
+La unidad que enseño es la versión **con giroscopio** y carrocería de estilo AE86, con faros escamoteables que se bajan manualmente. Hay distintas carrocerías y versiones: conviene comprobar cuál estás comprando, sobre todo si quieres el giroscopio.
 
-A primera vista, el Jiabaila 1:43 destaca por su diseño compacto y colorido, lo cual es ideal para quienes buscan un coche RC que no requiera mucho espacio. Su chasis de plástico es ligero, y aunque no es tan resistente como el de modelos más grandes, es adecuado para el uso en interiores y superficies lisas. El coche tiene detalles en la carrocería que le dan un aspecto divertido y juvenil, perfecto para usuarios jóvenes y principiantes.
+## El giroscopio ayuda, pero hay que hacerse al coche
 
-La suspensión es básica, pero cumple con su función en superficies planas o ligeramente rugosas. No es el coche para terrenos difíciles, pero en interiores o asfalto responde bien, brindando estabilidad y maniobrabilidad.
+La emisora permite regular la intensidad del giroscopio. En el vídeo se ve cómo el coche corrige la dirección sin que yo gire el volante; esa ayuda se agradece al empezar, porque hacer trompos es bastante fácil.
 
-## Rendimiento en el Terreno
+También hay tres niveles de velocidad y un control para las luces. **El acelerador y la dirección son proporcionales**, de modo que puedes dosificar el mando en lugar de tener únicamente todo o nada.
 
-En términos de rendimiento, el Jiabaila 1:43 sorprende para su tamaño. Puede alcanzar velocidades de hasta 25 km/h, lo cual es rápido considerando su tamaño compacto. En interiores, se desliza con facilidad y tiene un radio de giro pequeño, lo cual es ideal para maniobrar en espacios reducidos. En exteriores, funciona bien en superficies lisas como el pavimento, aunque no se recomienda para terrenos irregulares.
+En la unidad probada, las cuatro ruedas giran solidariamente: no hay diferenciales que repartan el giro. Lleva motor de escobillas y una suspensión muy sencilla. Todo ello encaja con lo que es: un coche pequeño para divertirse derrapando, con una mecánica bastante básica.
 
-La respuesta de los controles es rápida, lo cual permite un buen control del coche, aunque es importante señalar que en superficies rugosas puede perder estabilidad. En general, es un coche pensado para espacios pequeños y superficies planas.
+## Cómo se comporta en casa
 
-## Duración de la Batería
+Hace falta un rato de práctica. Ajustar el giroscopio facilita las cosas, pero no convierte el coche en un modelo que puedas llevar de lado a la primera. Para mi gusto, le vendría bien más ángulo de dirección para controlar mejor el drift.
 
-La batería de 3.7V 500mAh ofrece un tiempo de uso de unos 10-15 minutos, lo cual es estándar para un coche RC de esta escala. Con aproximadamente una hora de carga, puedes tener el coche listo para una segunda ronda rápidamente. Si planeas usarlo frecuentemente, te sugeriría tener una batería adicional a mano para extender el tiempo de juego.
+La superficie también cuenta. En la prueba sobre parquet **el ruido de las ruedas resulta bastante notable**. Si vas a usarlo en el salón, es un detalle que merece la pena tener en cuenta.
 
-## Mantenimiento y Piezas de Repuesto
+Yo lo reservaría para interiores y superficies lisas. No es la unidad que elegiría para sacarla a la calle o meterla por terreno irregular. Donde le encuentro más gracia es montando un circuito pequeño con los conos y compartiendo un rato con otra persona.
 
-Dado que el Jiabaila 1:43 es un modelo básico, no requiere mucho mantenimiento. Sin embargo, debido a su construcción en plástico, es importante ser cuidadoso con impactos fuertes, ya que algunas piezas pueden ser más delicadas. No es un coche diseñado para modificaciones extensas, pero su diseño simple hace que sea fácil de desmontar para un mantenimiento básico.
+## Carga y autonomía
 
-## Pros y Contras
+La carga se hace por USB-C. En el vídeo comento que me sorprendieron tanto la rapidez de carga como lo que duraba la batería respecto a las unidades que había tenido antes.
 
-**Pros:**
+Esa es una impresión de uso: **esta prueba no incluye una medición cronometrada de autonomía o carga**. Tampoco permite confirmar la capacidad de la batería. Por eso no doy una cifra de minutos ni de mAh para esta unidad.
 
-- Tamaño compacto y fácil de transportar.
-- Velocidad adecuada para su escala.
-- Ideal para interiores y superficies planas.
-- Precio asequible, excelente para principiantes.
+## El fallo que tuve que reparar
 
-**Contras:**
+Uno de los faros llegó con un cable suelto. Tuve que abrir el coche, soldar el cable del LED y volver a cerrar la carrocería. Se accede con pocos tornillos, pero que resulte sencillo abrirlo no quita que sea un fallo de la unidad recibida.
 
-- No es adecuado para terrenos accidentados.
-- La duración de la batería es limitada.
+Cambiar las ruedas también es posible, aunque sacar las que vienen montadas y colocar las otras cuesta más de lo que parece por el tamaño de las piezas.
 
-## Conclusión
+## ¿Me lo volvería a comprar?
 
-El Jiabaila 1:43 es un coche RC ideal para principiantes y para quienes buscan un modelo compacto y fácil de controlar. Su velocidad es sorprendente para su tamaño y se desempeña de forma óptima en superficies lisas, lo cual lo hace perfecto para uso en interiores o en áreas pequeñas. Si bien no es adecuado para terrenos accidentados ni cuenta con características avanzadas, es una excelente opción para la diversión sin complicaciones. En resumen, el Jiabaila 1:43 es un modelo divertido, asequible y fácil de manejar.
+Sí, para hacer drift en casa y echar unas risas. Me gustan especialmente el tamaño, los dos juegos de neumáticos y la posibilidad de ajustar el giroscopio. A cambio, hay que aceptar una dirección con margen de mejora, el ruido sobre algunas superficies y una calidad de montaje que en mi unidad necesitó una reparación.
 
-¿Ya probaste el Jiabaila 1:43? ¡Déjame saber qué te pareció en los comentarios!
+Si te apetece este tipo de mini-RC, **comprueba que eliges la versión con giroscopio**. Es la que he probado aquí y la que me parece más agradecida para empezar a derrapar.
 
----
+Los enlaces de compra utilizados en esta review están en la descripción del vídeo.
