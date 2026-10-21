@@ -5,25 +5,49 @@
       "id": "lipo-ovionic-2200",
       "name": "Lipo ovionic 2200mah 50c",
       "category": "Baterías",
-      "model_ids": ["wltoys-144001"],
-      "notes": "",
-      "offers": [{ "store": "amazon", "url": "https://amzn.to/4kdWL5b", "status": "active" }]
+      "model_ids": [
+        "wltoys-144001"
+      ],
+      "notes": "Prueba temporal de persistencia de la POC de afiliación.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4kdWL5b",
+          "status": "active"
+        }
+      ]
     },
     {
       "id": "lipo-zeee-2200",
       "name": "Lipo Zeee 2200mah 50c",
       "category": "Baterías",
-      "model_ids": ["wltoys-144001"],
+      "model_ids": [
+        "wltoys-144001"
+      ],
       "notes": "",
-      "offers": [{ "store": "amazon", "url": "https://amzn.to/4kiKWtJ", "status": "active" }]
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4kiKWtJ",
+          "status": "active"
+        }
+      ]
     },
     {
       "id": "lipo-hrb-2200",
       "name": "Lipo HRB 2200mah 100C",
       "category": "Baterías",
-      "model_ids": ["wltoys-144001"],
+      "model_ids": [
+        "wltoys-144001"
+      ],
       "notes": "",
-      "offers": [{ "store": "amazon", "url": "https://amzn.to/43gloqi", "status": "active" }]
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/43gloqi",
+          "status": "active"
+        }
+      ]
     }
   ]
 }
