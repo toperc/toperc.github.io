@@ -14,6 +14,7 @@ video_title: "Parte 1: diagnóstico, desmontaje y mantenimiento"
 additional_videos:
   - id: yRPoNjrecJA
     title: "Parte 2: recambios, montaje y comprobaciones"
+affiliate_products: [wltoys-144001, llaves-allen-taller, destornilladores-taller, variador-wltoys-144001, aceite-amortiguadores, silicona-diferenciales, eje-primario-wltoys-144001]
 ---
 
 Compré este **Wltoys 144001 de segunda mano con un supuesto fallo de motor**. Antes de pedir recambios, quise comprobar qué fallaba realmente y aprovechar el desmontaje para revisar el resto del coche. El resultado es una restauración en dos partes, con averías, tornillos que se resisten y varias mejoras aprovechando que todo está abierto.
@@ -71,3 +72,9 @@ También sustituyo los soportes de batería que faltaban por piezas impresas en 
 El segundo vídeo termina con el coche montado, la dirección y el motor funcionando y la suspensión trabajando mejor en las comprobaciones de banco. **No incluye una prueba de conducción exterior**, así que no saco conclusiones sobre tiempos, velocidad o duración después de la restauración.
 
 Puedes encontrar el resto de publicaciones del modelo en la [ficha del Wltoys 144001]({{ '/coches/wltoys-144001/' | relative_url }}). El valor de esta serie está en revisar el coche completo: arreglar el fallo que anuncia el vendedor es solo una parte del trabajo.
+
+## Enlaces de compra del vídeo
+
+Comprueba la variante, los conectores y la compatibilidad con tu unidad antes de comprar. Los enlaces no garantizan disponibilidad ni un precio concreto.
+
+{% include affiliate_products.html %}

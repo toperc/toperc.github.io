@@ -13,6 +13,7 @@ categories: reviews
 tags: jiabaila mini-rc drift
 car_brand: jiabaila
 video_id: TPRoxYSce7I
+affiliate_products: [jiabaila-1-43]
 ---
 
 El **Jiabaila 1:43** tiene una propuesta muy sencilla: hacer drift dentro de casa con un coche que cabe en la palma de la mano. Ya había tenido otras versiones, con y sin giroscopio, y esta vez he probado una de las carrocerías nuevas. Me sigue pareciendo un juguete muy divertido para pasar el rato, especialmente si tienes otra unidad con la que echar unos piques.
@@ -59,4 +60,10 @@ Sí, para hacer drift en casa y echar unas risas. Me gustan especialmente el tam
 
 Si te apetece este tipo de mini-RC, **comprueba que eliges la versión con giroscopio**. Es la que he probado aquí y la que me parece más agradecida para empezar a derrapar.
 
-Los enlaces de compra utilizados en esta review están en la descripción del vídeo.
+Tienes los enlaces de compra del vídeo al final de esta entrada.
+
+## Enlaces de compra del vídeo
+
+Comprueba la variante, los conectores y la compatibilidad con tu unidad antes de comprar. Los enlaces no garantizan disponibilidad ni un precio concreto.
+
+{% include affiliate_products.html %}

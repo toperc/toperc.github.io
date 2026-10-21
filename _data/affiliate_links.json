@@ -48,6 +48,511 @@
           "status": "active"
         }
       ]
+    },
+    {
+      "id": "jiabaila-1-43",
+      "name": "Jiabaila RC 1:43",
+      "category": "Coches",
+      "model_ids": [
+        "jiabaila-1-43"
+      ],
+      "notes": "Comprueba la versión con giroscopio: es la utilizada en el vídeo.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4oAugAl",
+          "status": "active"
+        },
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3e7VkUL",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "wltoys-124017",
+      "name": "Wltoys 124017",
+      "category": "Coches",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Revisa la versión y el contenido del pack. Los precios citados al grabar no son precios actuales.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_Ew4ZBfE",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "mjx-hyper-go-14210",
+      "name": "MJX Hyper Go 14210",
+      "category": "Coches",
+      "model_ids": [
+        "mjx-hyper-go-14210"
+      ],
+      "notes": "Selecciona el 14210 y comprueba la batería y los accesorios incluidos en la variante.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c2xCJYh7",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "radiomaster-mt12",
+      "name": "RadioMaster MT12",
+      "category": "Emisoras",
+      "model_ids": [],
+      "notes": "Elige la versión 4 en 1 o ExpressLRS según tus receptores y comprueba el contenido del pack.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3xsOH1R",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "rlaarlo-omni-terminator",
+      "name": "Rlaarlo Omni Terminator",
+      "category": "Coches",
+      "model_ids": [
+        "rlaarlo-omni-terminator"
+      ],
+      "notes": "Comprueba la versión del coche. El montaje experimental del vídeo no acredita compatibilidad universal con 4S.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4txNSbv",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "gorilla-tape",
+      "name": "Gorilla Tape para reforzar la carrocería",
+      "category": "Material de taller",
+      "model_ids": [
+        "rlaarlo-omni-terminator"
+      ],
+      "notes": "El adhesivo puede arrancar pintura al retirarlo; comprueba su aplicación en tu carrocería.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4aIAeLc",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "hobbywing-quicrun-wp-10bl120-g2",
+      "name": "Hobbywing QuicRun WP 10BL120 G2",
+      "category": "Electrónica",
+      "model_ids": [
+        "rlaarlo-omni-terminator"
+      ],
+      "notes": "Comprueba la referencia WP G2, los conectores, el motor admitido y el ajuste del BEC antes de instalarlo.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3wSrWun",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "turnigy-lihv-4s-2400",
+      "name": "Turnigy LiHV 4S 2400 mAh",
+      "category": "Baterías",
+      "model_ids": [
+        "rlaarlo-omni-terminator"
+      ],
+      "notes": "Pack probado en una preparación experimental. Confirma compatibilidad con el voltaje máximo LiHV, medidas y conector; no es una recomendación directa para el coche de serie.",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://fas.st/t/phM9qqGC",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "turnigy-lihv-3s-2400-xt60",
+      "name": "Turnigy LiHV 3S 2400 mAh — XT60",
+      "category": "Baterías",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Comprueba medidas y compatibilidad de cargador y electrónica con LiHV a plena carga, además del conector XT60.",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://fas.st/t/8HbY9Gj8",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "turnigy-lipo-3s-2200-xt60",
+      "name": "Turnigy LiPo 3S 2200 mAh — XT60",
+      "category": "Baterías",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Comprueba formato, conector XT60 y que la electrónica de tu unidad admita 3S.",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://fas.st/t/QPJ1dvKL",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "zeee-lipo-3s-2200-t-plug",
+      "name": "Zeee LiPo 3S 2200 mAh — T-Plug",
+      "category": "Baterías",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Selecciona la variante T-Plug y verifica medidas y compatibilidad con 3S. Es distinta de las baterías del 144001 del catálogo.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://link.amazon/B0hVqMBMW",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "gens-ace-lipo-3s-2200-xt60",
+      "name": "Gens Ace LiPo 3S 2200 mAh — XT60",
+      "category": "Baterías",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Comprueba la variante XT60, las medidas y que tu electrónica admita 3S.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://link.amazon/B0eZDW6ee",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "ovonic-lipo-3s-2200-t-plug",
+      "name": "Ovonic LiPo 3S 2200 mAh — T-Plug",
+      "category": "Baterías",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Comprueba conector T-Plug, medidas y compatibilidad con 3S. No se presupone equivalencia con otros packs de 2200 mAh.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://link.amazon/B0er9hwet",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "dumborc-x6fg",
+      "name": "DumboRC X6FG con receptor con giroscopio",
+      "category": "Emisoras",
+      "model_ids": [
+        "wltoys-124017",
+        "wltoys-144010"
+      ],
+      "notes": "Selecciona el conjunto que incluya receptor con giroscopio; una oferta puede reunir varias emisoras y receptores.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c39xJGyj",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "diferenciales-wltoys-124008",
+      "name": "Diferenciales Wltoys 124008",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-124017",
+        "wltoys-144010"
+      ],
+      "notes": "Enlace de la lista de piezas del comentario del canal. Comprueba la variante y los vasos más gruesos antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3mtNRFD",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "transmision-wltoys-124008",
+      "name": "Dog bones, CVD y copas Wltoys 124008",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-124017",
+        "wltoys-144010"
+      ],
+      "notes": "Enlace de la lista de piezas del comentario del canal. Selecciona cada pieza y comprueba longitudes, medidas y compatibilidad con tu montaje.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3JwAp35",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "embrague-metalico-wltoys",
+      "name": "Conjunto de embrague y corona metálicos Wltoys",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-124017",
+        "wltoys-144010"
+      ],
+      "notes": "Comprueba qué ejes, engranajes y rodamientos incluye la variante seleccionada.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c33DmRI3",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "ruedas-asfalto-wltoys",
+      "name": "Ruedas para asfalto del proyecto Wltoys",
+      "category": "Ruedas",
+      "model_ids": [
+        "wltoys-124017",
+        "wltoys-144010"
+      ],
+      "notes": "Comprueba diámetro, hexágono y holguras; la elección de asfalto no se traslada automáticamente a tierra.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3fnpXHZ",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "wltoys-144001",
+      "name": "Wltoys 144001",
+      "category": "Coches",
+      "model_ids": [
+        "wltoys-144001"
+      ],
+      "notes": "Comprueba la versión y el contenido del pack. Los precios de los vídeos son históricos.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4maqSuv",
+          "status": "active"
+        },
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oDQvw86",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "llaves-allen-taller",
+      "name": "Llaves Allen utilizadas en la restauración",
+      "category": "Herramientas",
+      "model_ids": [],
+      "notes": "Comprueba las medidas y la variante del juego de herramientas.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_onVRj2a",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "destornilladores-taller",
+      "name": "Destornilladores utilizados en la restauración",
+      "category": "Herramientas",
+      "model_ids": [],
+      "notes": "Escoge las puntas y medidas adecuadas para los tornillos de tu coche.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oB9d5rc",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "variador-wltoys-144001",
+      "name": "Variador de recambio para Wltoys 144001",
+      "category": "Electrónica",
+      "model_ids": [
+        "wltoys-144001"
+      ],
+      "notes": "Referencia citada en la primera parte. Verifica compatibilidad con motor brushed, servo, emisora y conectores de tu versión.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oDANM6A",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "aceite-amortiguadores",
+      "name": "Aceite de amortiguadores",
+      "category": "Mantenimiento",
+      "model_ids": [
+        "wltoys-144001"
+      ],
+      "notes": "Selecciona la densidad adecuada. En esta restauración se utiliza 400 cSt; no se presupone que sea la variante seleccionada al abrir la oferta.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4m9qFY9",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "silicona-diferenciales",
+      "name": "Silicona para diferenciales",
+      "category": "Mantenimiento",
+      "model_ids": [
+        "wltoys-144001"
+      ],
+      "notes": "Revisa la densidad. En el delantero de la restauración se prueban 10.000 cSt; no es aceite de amortiguadores.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/3VSRgxS",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "eje-primario-wltoys-144001",
+      "name": "Eje primario de recambio Wltoys 144001",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-144001"
+      ],
+      "notes": "Comprueba la longitud y el contenido del recambio para tu versión del coche.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oFk1I8K",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "recambios-144001-enlace-por-confirmar",
+      "name": "Recambios del 144001 — referencia pendiente",
+      "category": "Recambios",
+      "model_ids": [
+        "wltoys-144001"
+      ],
+      "notes": "Pendiente de confirmar: la descripción de la segunda parte utiliza esta misma URL para variador, CVD y corona. El enlace se conserva en el gestor y no se publica como compra confirmada.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_omK5Gjo",
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "id": "hobbyking-toperc",
+      "name": "HobbyKing — tienda del canal",
+      "category": "Tiendas",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Enlace general de la tienda que aparece en la segunda parte del proyecto. No identifica un motor, variador o batería concretos.",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://hobbyking.com/?ref=toperc&utm_source=tapfiliate&utm_medium=referral&utm_campaign=toperc",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "pinones-proyecto-wltoys-124017",
+      "name": "Piñones del proyecto de pista 124017",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Enlace de la lista del comentario del canal. Comprueba módulo, número de dientes y diámetro del eje: el desarrollo del prototipo necesita ajustes.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3EQKwIr",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "plancha-carbono-proyecto-124017",
+      "name": "Plancha de carbono para el chasis del 124017",
+      "category": "Material de taller",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "En el proyecto se utiliza una placa de 3 mm. Selecciona medidas y grosor; la carrocería y los recortes son específicos de este montaje.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c33U2PgJ",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "baterias-proyecto-pista-124017",
+      "name": "Baterías citadas para el proyecto de pista 124017",
+      "category": "Baterías",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "La lista del comentario no fija aquí una referencia completa. Confirma el pack, medidas, conector y voltaje máximo admisible antes de elegirlo.",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://fas.st/t/19XNek8B",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "electronica-proyecto-pista-124017",
+      "name": "Electrónica citada para el proyecto de pista 124017",
+      "category": "Electrónica",
+      "model_ids": [
+        "wltoys-124017"
+      ],
+      "notes": "Comprueba la variante de motor y variador, el desarrollo y la refrigeración. El proyecto cambió de electrónica y no es un kit de conversión garantizado.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3dddWBp",
+          "status": "active"
+        }
+      ]
     }
   ]
 }

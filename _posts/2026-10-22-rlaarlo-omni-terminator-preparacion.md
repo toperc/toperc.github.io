@@ -10,6 +10,7 @@ date: 2026-10-22
 categories: manuales
 tags: rlaarlo omni-terminator electronica
 video_id: EDj72jlW7t0
+affiliate_products: [rlaarlo-omni-terminator, gorilla-tape, hobbywing-quicrun-wp-10bl120-g2, turnigy-lihv-4s-2400]
 ---
 
 Después de utilizar el **Rlaarlo Omni Terminator** en saltos, vi desgaste en la carrocería alrededor de sus apoyos. También quería cambiar el variador de mi unidad para disponer de más ajustes. En este vídeo reúno ambas tareas: reforzar la carrocería por dentro y montar un Hobbywing QuicRun WP 10BL120 G2.
@@ -53,3 +54,9 @@ En la [guía de baterías]({{ '/manuales/baterias-wltoys-124017/#lihv-fíjate-en
 La última parte muestra el coche rodando y saltando después del montaje. No aporta velocidad medida, autonomía cronometrada o un ensayo de resistencia a largo plazo.
 
 El refuerzo de carrocería y el cambio de variador son decisiones separadas: puedes valorar el primero por el desgaste de tu coche sin aumentar su potencia. Encontrarás las publicaciones del modelo en la [ficha del Rlaarlo Omni Terminator]({{ '/coches/rlaarlo-omni-terminator/' | relative_url }}).
+
+## Enlaces de compra del vídeo
+
+Comprueba la variante, los conectores y la compatibilidad con tu unidad antes de comprar. Los enlaces no garantizan disponibilidad ni un precio concreto.
+
+{% include affiliate_products.html %}

@@ -9,6 +9,7 @@ date: 2026-10-22
 categories: manuales
 tags: radiomaster mt12 electronica
 video_id: -KqncNTqYio
+affiliate_products: [radiomaster-mt12]
 ---
 
 Después de utilizar la **RadioMaster MT12** durante bastante tiempo, lo que más valoro es poder adaptarla a mi forma de conducir. También es lo que más trabajo exige al empezar: hay muchas opciones y no siempre es evidente dónde está el ajuste que necesitas.
@@ -67,3 +68,9 @@ También valoro que RadioMaster ofrezca recambios para distintas partes. Antes d
 La veo interesante si tienes varios coches, disfrutas configurando y quieres conservar una base que puedas adaptar. Si buscas hacer cuatro ajustes y olvidarte de los menús, la flexibilidad de EdgeTX puede pesarte más que sus ventajas.
 
 La MT12 me pide aprender al principio y me deja construir una configuración que puedo reutilizar. Para valorar un cambio de emisora en un Wltoys con un montaje más sencillo, tienes la [guía de mejoras del 124017 y el 144010]({{ '/manuales/mejoras-wltoys-124017-144010/' | relative_url }}).
+
+## Enlaces de compra del vídeo
+
+Comprueba la variante, los conectores y la compatibilidad con tu unidad antes de comprar. Los enlaces no garantizan disponibilidad ni un precio concreto.
+
+{% include affiliate_products.html %}

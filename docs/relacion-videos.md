@@ -25,6 +25,8 @@ El primer lote relaciona las reviews del Jiabaila 1:43 y del Wltoys 124017, aña
 
 Las transcripciones completas, las notas editoriales y la conexión a YouTube se gestionan en una herramienta local independiente, fuera de este repositorio. Las sugerencias del inventario no se convierten automáticamente en relaciones confirmadas ni en artículos publicados.
 
+Al preparar una entrada, revisa también los enlaces de la descripción y del comentario fijado del canal. Contrasta las listas de enlaces y las correcciones del autor en los comentarios; no confundas enlaces de terceros o respuestas sin contexto con recomendaciones del artículo. Conserva las URLs de afiliación completas, incluidos sus parámetros. Reutiliza o crea productos en `_data/affiliate_links.json`, declara `affiliate_products` en la entrada e incluye `affiliate_products.html` en su sección de compra. Así el gestor permite cambiar un enlace una sola vez para todos los artículos que lo usan. Si una referencia no identifica con claridad el producto, consérvala para revisión y no la presentes como una compra confirmada. La procedencia y las alternativas históricas se guardan en las notas editoriales locales.
+
 Fuentes de este lote: vídeos `TPRoxYSce7I`, `vWmrFqEgpYI` y `TtEF9q7u4mU`, consultados como propietario desde YouTube Studio entre el 21 y el 22/10/2026. Se ha conservado la transcripción automática original, con sus errores, en el archivo local de trabajo. No se modificaron ni publicaron subtítulos en el canal. Las cifras dudosas de las transcripciones no se trasladan como especificaciones confirmadas.
 
 Para comprobar la compilación:

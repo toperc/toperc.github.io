@@ -14,6 +14,7 @@ video_title: "Parte 1: fabricar y montar el chasis"
 additional_videos:
   - id: Omfk2LbcGy4
     title: "Parte 2: electrónica, correcciones y pruebas en pista"
+affiliate_products: [wltoys-124017, plancha-carbono-proyecto-124017, pinones-proyecto-wltoys-124017, electronica-proyecto-pista-124017, baterias-proyecto-pista-124017, hobbyking-toperc]
 ---
 
 Este proyecto nace después de ver un coche que iba muy bien en pista y darme cuenta de que tenía en casa buena parte de la electrónica para intentar algo parecido. La idea fue **aprovechar la mecánica del Wltoys 124017 y darle una distribución pensada para asfalto**, con un chasis propio y una carrocería diferente.
@@ -64,3 +65,9 @@ En la segunda parte comento la lectura del GPS después de rodar. La grabación 
 Las ruedas de espuma se prueban sin aditivo y con la pista fría. El coche resulta muy rápido y reactivo, y no consigo abrir gas a fondo en la recta. Quedan por trabajar el agarre, la carrocería y el equilibrio general antes de pensar solo en más velocidad.
 
 Si quieres partir del coche original, empieza por la [review del Wltoys 124017]({{ '/reviews/wltoys-124017/' | relative_url }}). Para elegir un pack que encaje en tu configuración, tienes la [guía de baterías del 124017]({{ '/manuales/baterias-wltoys-124017/' | relative_url }}). Este proyecto muestra hasta dónde se puede experimentar con su mecánica, pero también cuánto trabajo hay entre montar componentes y conseguir un coche fácil de conducir.
+
+## Enlaces de compra del vídeo
+
+Comprueba la variante, los conectores y la compatibilidad con tu unidad antes de comprar. Los enlaces no garantizan disponibilidad ni un precio concreto.
+
+{% include affiliate_products.html %}

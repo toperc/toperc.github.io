@@ -2,6 +2,7 @@
 {% assign active_offers = product.offers | where: 'status', 'active' %}
 <div class="affiliate-product" data-affiliate-product="{{ product.id | escape }}">
   <strong>{{ product.name | escape }}</strong>
+  {% if product.notes != '' %}<p class="affiliate-product-note">{{ product.notes | escape }}</p>{% endif %}
   <div class="affiliate-offers">
     {% for offer in active_offers %}
       {% assign store_name = offer.store %}

@@ -2,6 +2,7 @@
 .affiliate-products { padding-left:22px; }
 .affiliate-products li { margin:16px 0; padding-left:6px; }
 .affiliate-product strong { font-size:16px; }
+.affiliate-product-note { color:#b3b2b1; font-size:13px; margin:6px 0; }
 .affiliate-offers { display:flex; flex-wrap:wrap; gap:10px; margin-top:9px; }
 .affiliate-offers a { display:inline-flex; gap:20px; padding:9px 14px; border:1px solid #704348; color:#ffadb1; font-size:12px; text-decoration:none; }
 .affiliate-offers a:hover { border-color:#ffadb1; }
