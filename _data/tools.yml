@@ -1,0 +1,26 @@
+- id: mt12-overlay-studio
+  name: MT12OverlayStudio
+  url: /herramientas/mt12-overlay-studio/
+  category: Telemetría y vídeo
+  type: App de escritorio
+  platforms: [Windows, macOS, Linux]
+  summary: Convierte los registros de tu RadioMaster MT12 en overlays transparentes para tus vídeos RC. Diseña los indicadores y llévalos a tu editor de vídeo.
+  tagline: Lo que haces con la emisora, también en tus vídeos.
+  image: /img/tools/mt12-overlay-studio/layout.png
+  image_alt: Editor de MT12OverlayStudio con indicadores de dirección, acelerador y tiempo sobre un fondo transparente.
+  download_url: https://github.com/toperc/MT12OverlayStudio/releases/latest
+  repository_url: https://github.com/toperc/MT12OverlayStudio
+  features:
+    - title: Tus datos, a la vista
+      description: Utiliza los canales y sensores presentes en el CSV de tu emisora para mostrar dirección, acelerador, tiempos y otros valores registrados.
+    - title: Diseña cada indicador
+      description: Combina medidores, barras, gráficas y textos. Ajusta su posición, tamaño y colores con una vista previa de la sesión.
+    - title: Exporta con transparencia
+      description: Genera un vídeo MOV ProRes 4444 o una secuencia de imágenes PNG para superponer el resultado en tu montaje.
+  steps:
+    - title: Prepara la emisora
+      description: Instala los scripts Lua de registro en la tarjeta SD de la MT12 con EdgeTX. La app puede ayudarte a copiarlos al conectar la emisora por USB.
+    - title: Carga y diseña
+      description: Abre un registro CSV, elige los datos que quieres mostrar y coloca los indicadores sobre el lienzo. Recorre la sesión para comprobar cómo se animan.
+    - title: Exporta y monta
+      description: Elige resolución y FPS, exporta el overlay con transparencia y añádelo sobre tu vídeo. Ajusta la sincronización en tu editor.

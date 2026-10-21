@@ -23,6 +23,7 @@ bundle exec jekyll build
 | --- | --- |
 | Artículos, reviews y listados de piezas | `_posts/` |
 | Menú principal | `_data/navigation.yml` |
+| Catálogo de apps y sección Herramientas | `_data/tools.yml`, `herramientas.markdown` y `_layouts/tool.html` |
 | Textos y enlaces de la portada | `_data/home.yml` |
 | Nombres visibles y descripciones de categorías | `_data/categories.yml` |
 | Datos generales, redes y reglas de URLs | `_config.yml` |
