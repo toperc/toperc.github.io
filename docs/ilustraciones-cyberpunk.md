@@ -6,6 +6,10 @@ Las versiones WebP conservan la resolución generada y están listas para la web
 
 La configuración de imágenes y textos alternativos está en `_data/illustrations.yml`. Las categorías que usan cada ilustración se configuran en `_data/categories.yml`; una página puede elegirla con `illustration: workshop`, `illustration: parts` o `illustration: contact` en su front matter.
 
+Las ilustraciones se integran como fondos decorativos de cabecera, con degradados oscuros y sin añadir un bloque de imagen al contenido. El garaje usa el taller; recambios y contacto conservan sus motivos. La portada también integra su ilustración conceptual detrás del artículo destacado. Las fotografías reales mantienen su presentación propia.
+
+En escritorio hay un parallax suave, limitado a 28 px. En móvil y con `prefers-reduced-motion: reduce` el fondo permanece estático; sin JavaScript también es estático. La etiqueta visible identifica la ilustración conceptual y la imagen decorativa no se anuncia a lectores de pantalla.
+
 ## Taller RC
 
 Archivo: [taller-rc-cyberpunk.webp](../img/illustrations/taller-rc-cyberpunk.webp).

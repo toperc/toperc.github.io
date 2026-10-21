@@ -2,11 +2,11 @@
 layout: default
 ---
 <main id="main-content">
-  <header class="page-header shell"><a class="breadcrumb" href="{{ '/' | relative_url }}">Inicio <span aria-hidden="true">/</span></a><p class="eyebrow">{{ page.eyebrow | default: 'El universo TopeRC' }}</p><h1>{{ page.title | escape }}</h1>{% if page.description %}<p class="page-description">{{ page.description | escape }}</p>{% endif %}</header>
   {% assign page_category = page.category %}{% unless page_category %}{% assign page_category = page.categories | first %}{% endunless %}
   {% assign illustration_key = page.illustration | default: site.data.categories[page_category].illustration %}
+  <header class="page-header shell{% if illustration_key %} page-header-art{% endif %}">{% if illustration_key %}{% include illustration.html key=illustration_key %}{% endif %}<a class="breadcrumb" href="{{ '/' | relative_url }}">Inicio <span aria-hidden="true">/</span></a><p class="eyebrow">{{ page.eyebrow | default: 'El universo TopeRC' }}</p><h1>{{ page.title | escape }}</h1>{% if page.description %}<p class="page-description">{{ page.description | escape }}</p>{% endif %}</header>
   <div class="shell page-body {% if page.wide or layout.wide %}page-wide{% else %}prose{% endif %}">
-    {% if illustration_key %}{% include illustration.html key=illustration_key %}{% endif %}
+    {% unless page.layout == 'model' %}{% include model_context.html model_id=page.model_id %}{% endunless %}
     {{ content }}
   </div>
 </main>

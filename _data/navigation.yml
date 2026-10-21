@@ -1,6 +1,9 @@
 - title: Blog
   url: /blog/
   section: blog
+- title: Coches
+  url: /coches/
+  section: models
 - title: Reviews
   url: /reviews
   section: reviews

@@ -6,11 +6,14 @@ wide: true
 {% if page.category %}{% assign archive_posts = site.categories[page.category] %}{% endif %}
 <div class="search-toolbar"><p data-search-count role="status" aria-live="polite">{{ archive_posts.size }} publicaciones</p><label class="search-field" for="archive-search" data-search-controls hidden><span>Buscar en {{ page.title | escape }}</span><input id="archive-search" type="search" placeholder="Tema, marca o modelo…" data-search-input aria-controls="archive-list"></label></div>
 {% unless page.category %}
-<div class="category-filters" role="group" aria-label="Filtrar publicaciones por categoría" data-category-filters hidden>
-  <button type="button" data-category-value="" aria-pressed="true">Todo</button>
-  {% assign sorted_categories = site.categories | sort %}{% for category in sorted_categories %}{% assign key = category[0] %}<button type="button" data-category-value="{{ key | escape }}" aria-pressed="false">{{ site.data.categories[key].title | default: key | escape }} <span>{{ category[1].size }}</span></button>{% endfor %}
-</div>
+<div class="category-filters" role="group" aria-label="Filtrar publicaciones por tipo" data-search-controls hidden><button type="button" data-type-value="" aria-pressed="true">Todo</button>{% for type in site.data.content_types %}{% assign type_posts = archive_posts | where: 'content_type', type[0] %}{% if type_posts.size > 0 %}<button type="button" data-type-value="{{ type[0] | escape }}" aria-pressed="false">{{ type[1].plural | escape }} <span>{{ type_posts.size }}</span></button>{% endif %}{% endfor %}</div>
 {% endunless %}
+<div class="archive-filters" data-search-controls hidden>
+  <label class="filter-field" for="archive-brand">Marca<select id="archive-brand" data-brand-filter><option value="">Todas las marcas</option>{% assign sorted_brands = site.data.brands | sort %}{% for item in sorted_brands %}{% assign brand_posts = archive_posts | where: 'brand_id', item[0] %}{% if brand_posts.size > 0 %}<option value="{{ item[0] | escape }}">{{ item[1].name | escape }} ({{ brand_posts.size }})</option>{% endif %}{% endfor %}</select></label>
+  <label class="filter-field" for="archive-model">Modelo<select id="archive-model" data-model-filter><option value="">Todos los modelos</option>{% assign sorted_models = site.models | sort: 'title' %}{% for car in sorted_models %}{% assign model_posts = archive_posts | where: 'model_id', car.model_id %}{% if model_posts.size > 0 %}<option value="{{ car.model_id | escape }}" data-brand="{{ car.brand_id | escape }}">{{ car.title | escape }} ({{ model_posts.size }})</option>{% endif %}{% endfor %}</select></label>
+  <button class="filter-reset" type="button" data-search-reset>Limpiar filtros</button>
+</div>
+<p class="legacy-category" data-legacy-category hidden></p>
 <div class="article-grid archive-grid" id="archive-list">{% for post in archive_posts %}{% include article_summary.html post=post %}{% endfor %}</div>
-<p class="search-empty" data-search-empty role="status" hidden>No hay publicaciones con esos filtros. Prueba con otro término o categoría.</p>
+<p class="search-empty" data-search-empty role="status" hidden>No hay publicaciones con esos filtros. Prueba con otro término, marca o modelo.</p>
 {{ content }}

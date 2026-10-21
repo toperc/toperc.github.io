@@ -63,9 +63,31 @@ El generador recorre todas las subcarpetas de artículos y conserva las páginas
 
 ## Secciones
 
+### Coches, marcas y publicaciones relacionadas
+
+Cada coche se define en un archivo Markdown de `_models/`, con `title`, `model_id` y `brand_id`. Los nombres visibles de las marcas se mantienen en `_data/brands.yml`. El índice está en `/coches/`.
+
+Las publicaciones relacionadas llevan en su front matter el mismo `model_id`, un `brand_id` y un `content_type` (`review`, `guide` o `parts`). Esto conecta automáticamente sus fichas, reviews y recambios, sin cambiar las categorías históricas ni las URLs de los artículos. Las guías generales pueden tener solo `content_type: guide`.
+
+Una página de recambios que todavía no contiene piezas se marca con `resource_status: pending`; el sitio comunica que el listado está en preparación. El campo no indica disponibilidad comercial de productos.
+
+El blog admite enlaces con `marca`, `modelo`, `tipo`, `q` y la categoría histórica `categoria` en la URL. Los filtros necesitan JavaScript; las fichas y enlaces entre publicaciones se generan con Jekyll y funcionan también sin él.
+
+Para comprobar las relaciones y las URLs publicadas:
+
+```sh
+bundle exec ruby _checks/validate_content.rb
+```
+
+La referencia de URLs, categorías y etiquetas originales está en `_checks/fixtures/published-posts.json`. Una modificación deliberada de esos datos requiere actualizar también esa referencia y resolver cualquier cambio de dirección publicado.
+
+### Rutas principales
+
 - `/`: portada editorial basada en las publicaciones.
-- `/blog/`: archivo de todas las publicaciones, con búsqueda y filtros por categoría.
+- `/blog/`: archivo de todas las publicaciones, con búsqueda y filtros por tipo, marca y modelo; admite enlaces históricos por categoría.
 - `/categorias/`: índice de todas las categorías de Jekyll.
+- `/coches/`: índice de coches, con búsqueda por marca y modelo.
+- `/coches/…/`: ficha que reúne las publicaciones relacionadas con cada coche.
 - `/reviews`, `/guias/`, `/recambios`: secciones temáticas.
 - `/tag/…`: archivos de etiquetas existentes.
 - `/posts/`: acceso compatible al archivo del blog.

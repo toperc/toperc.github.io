@@ -26,6 +26,9 @@ disqus: toperc
 
 # Collections
 collections:
+  models:
+    permalink: /coches/:name/
+    output: true
   tag:
     permalink: /tag/:title
     output: true
@@ -33,6 +36,15 @@ collections:
 show_excerpts: true
 
 defaults:
+  - scope:
+      path: ""
+      type: "models"
+    values:
+      layout: model
+      section: models
+      eyebrow: "El garaje / Modelo"
+      wide: true
+      toc: false
   - scope:
       path: ""
       type: "tag"

@@ -1,0 +1,8 @@
+{% assign linked_model = site.models | where: 'model_id', include.model_id | first %}
+{% if linked_model %}
+{% assign linked_brand = site.data.brands[linked_model.brand_id] %}
+<aside class="model-context" aria-label="Contenido de este coche">
+  <div><span class="eyebrow">{{ linked_brand.name | escape }}</span><a href="{{ linked_model.url | relative_url }}">{{ linked_model.title | escape }}</a>{% if page.resource_status == 'pending' %}<span class="resource-status">Listado de piezas en preparación</span>{% endif %}</div>
+  <a class="text-link" href="{{ linked_model.url | relative_url }}">Todo sobre este coche <span aria-hidden="true">↗</span></a>
+</aside>
+{% endif %}

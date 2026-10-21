@@ -1,4 +1,7 @@
 ---
+content_type: review
+brand_id: jiabaila
+model_id: jiabaila-1-43
 layout: post
 title: "Jiabaila 1:43: Compacto y Divertido a Gran Escala"
 date: 2024-11-01

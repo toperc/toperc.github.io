@@ -1,4 +1,5 @@
 ---
+content_type: guide
 layout: post
 title: "¿Cómo funciona la electrónica de un coche RC?"
 date: 2024-11-16

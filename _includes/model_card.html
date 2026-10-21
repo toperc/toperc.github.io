@@ -1,0 +1,11 @@
+{% assign car = include.model %}
+{% assign brand_info = site.data.brands[car.brand_id] %}
+{% assign car_posts = site.posts | where: 'model_id', car.model_id %}
+{% assign car_reviews = car_posts | where: 'content_type', 'review' %}
+{% assign car_parts = car_posts | where: 'content_type', 'parts' %}
+<article class="article-card model-card" data-search-item data-post-brand="{{ car.brand_id | escape }}" data-post-model="{{ car.model_id | escape }}" data-post-type="" data-post-categories="" data-search-text="{{ car.title | append: ' ' | append: brand_info.name | escape }}">
+  <div class="card-topline"><span class="eyebrow">El garaje</span><a class="card-brand" href="{{ '/blog/' | relative_url }}?marca={{ car.brand_id | url_encode }}">{{ brand_info.name | escape }}</a></div>
+  <h2><a href="{{ car.url | relative_url }}">{{ car.title | escape }}</a></h2>
+  <p>{{ car_reviews.size }} {% if car_reviews.size == 1 %}review{% else %}reviews{% endif %}{% if car_parts.size > 0 %} · {% assign parts_page = car_parts | first %}{% if parts_page.resource_status == 'pending' %}Recambios en preparación{% else %}Listado de recambios{% endif %}{% endif %}{% if car.video_id %} · Vídeo enlazado{% endif %}</p>
+  <div class="card-bottom"><span>{{ car_posts.size }} {% if car_posts.size == 1 %}publicación{% else %}publicaciones{% endif %}</span><a href="{{ car.url | relative_url }}">Ver el coche <span aria-hidden="true">↗</span></a></div>
+</article>

@@ -1,7 +1,7 @@
 {% assign artwork = site.data.illustrations[include.key] %}
 {% if artwork %}
-<figure class="artwork">
-  <img src="{{ artwork.src | relative_url }}" alt="{{ artwork.alt | escape }}" width="{{ artwork.width }}" height="{{ artwork.height }}" loading="lazy" decoding="async">
-  <figcaption>Ilustración conceptual · TopeRC</figcaption>
-</figure>
+<div class="section-art" aria-hidden="true">
+  <img src="{{ artwork.src | relative_url }}" alt="" width="{{ artwork.width }}" height="{{ artwork.height }}" decoding="async" data-parallax-art>
+  <span>Ilustración conceptual · TopeRC</span>
+</div>
 {% endif %}

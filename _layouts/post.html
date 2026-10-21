@@ -2,13 +2,14 @@
 layout: default
 ---
 <main id="main-content"><article>
-  <header class="page-header article-header shell">
+  <header class="page-header article-header shell{% if page.categories contains 'manuales' %} page-header-art{% endif %}">
+    {% if page.categories contains 'manuales' %}{% include illustration.html key='workshop' %}{% endif %}
     <a class="breadcrumb" href="{% if page.categories contains 'reviews' %}{{ '/reviews' | relative_url }}{% else %}{{ '/guias/' | relative_url }}{% endif %}">← {% if page.categories contains 'reviews' %}Todas las reviews{% else %}Todas las guías{% endif %}</a>
     <p class="eyebrow">{% if page.categories contains 'reviews' %}En el garaje / Review{% else %}En el taller / Guía{% endif %}</p>
     <h1>{{ page.title | escape }}</h1>{% if page.subtitle %}<p class="page-description">{{ page.subtitle | escape }}</p>{% endif %}
     <div class="article-meta"><span>{{ page.author | default: site.author | escape }}</span><span>Publicado el {{ page.date | date: '%d/%m/%Y' }}</span><span>{% include read_time.html content=page.content %}</span></div>
   </header>
-  <div class="shell article-body">{% if page.categories contains 'manuales' %}{% include illustration.html key='workshop' %}{% endif %}{% include tags.html %}<div class="prose article-content">{{ content }}</div><nav class="post-navigation" aria-label="Más artículos">
+  <div class="shell article-body">{% include model_context.html model_id=page.model_id %}{% include tags.html %}<div class="prose article-content">{{ content }}</div><nav class="post-navigation" aria-label="Más artículos">
     {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}"><span class="eyebrow">← Artículo anterior</span><span>{{ page.previous.title | escape }}</span></a>{% endif %}
     {% if page.next.url %}<a href="{{ page.next.url | relative_url }}"><span class="eyebrow">Siguiente artículo →</span><span>{{ page.next.title | escape }}</span></a>{% endif %}
   </nav></div>

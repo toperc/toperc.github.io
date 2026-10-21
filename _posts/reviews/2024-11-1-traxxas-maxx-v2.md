@@ -1,4 +1,7 @@
 ---
+content_type: review
+brand_id: traxxas
+model_id: traxxas-maxx-v2
 layout: post
 title: "Traxxas Maxx V2: El Rey de los Coches RC Todoterreno"
 date: 2024-11-01

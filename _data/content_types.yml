@@ -1,0 +1,9 @@
+review:
+  name: Review
+  plural: Reviews
+guide:
+  name: Guía
+  plural: Guías y tutoriales
+parts:
+  name: Recambios
+  plural: Recambios y mejoras
