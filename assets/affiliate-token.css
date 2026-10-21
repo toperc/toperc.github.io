@@ -1,0 +1,22 @@
+body[data-mode="access"] { display:grid; place-items:center; min-height:100vh; padding:28px; }
+#app-root { width:100%; max-width:none; padding:0; }
+.manager-content { max-width:1240px; margin:auto; padding:0 28px; }
+.access-card { width:100%; max-width:530px; margin:auto; padding:38px; border:1px solid #36373d; border-top:3px solid #ed343a; border-radius:5px; background:#191a1d; }
+.access-card .brand { display:inline-block; margin-bottom:34px; }
+.access-card .brand span { color:#ed343a; }
+.access-card h1 { font-size:35px; line-height:1.13; letter-spacing:-1.4px; margin:0 0 19px; }
+.access-card>p:not(.eyebrow) { color:#c5c3cd; font-size:13px; margin:15px 0; }
+.access-card #token-form { margin-top:24px; }
+.access-card #access-button { width:100%; margin-top:14px; }
+.access-card #access-notice { margin-top:18px; }
+.access-card .micro { font-size:11px !important; color:#aaa8b4 !important; }
+.token-help { margin-top:24px; border-top:1px solid #36373d; padding-top:16px; font-size:12px; }
+.token-help summary { cursor:pointer; color:#d7d0d6; }
+.token-help ol { padding-left:20px; color:#bbb7c2; }
+.token-help li { padding:3px 0; }
+.token-help a { color:#ffadb7; }
+.public-note { border-left:2px solid #65535a; padding-left:12px; margin-top:24px !important; }
+.access-back { display:inline-block; margin-top:14px; color:#d3c2c7; font-size:12px; }
+body[data-mode="manager"] { display:block; padding:0; }
+@media(max-width:540px) { body[data-mode="access"] { padding:18px; } .access-card { padding:28px 23px; } .access-card h1 { font-size:30px; } }
+@media(max-width:680px) { .manager-content { padding:0 18px; } }

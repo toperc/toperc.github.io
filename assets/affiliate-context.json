@@ -1,0 +1,16 @@
+---
+layout: null
+sitemap: false
+---
+{
+  "repository": {{ site.data.affiliate_admin.repository | jsonify }},
+  "branch": {{ site.data.affiliate_admin.branch | jsonify }},
+  "allowed_user_ids": {{ site.data.affiliate_admin.allowed_user_ids | jsonify }},
+  "models": [{% for model in site.models %}{"id": {{ model.model_id | jsonify }}, "name": {{ model.title | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}],
+  "usages": {
+    {% for product in site.data.affiliate_links.products %}
+    {{ product.id | jsonify }}: [{% assign separator = '' %}{% for post in site.posts %}{% if post.affiliate_products contains product.id %}{{ separator }}{"title": {{ post.title | jsonify }}, "url": {{ post.url | relative_url | jsonify }}}{% assign separator = ',' %}{% endif %}{% endfor %}]{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  },
+  "references": [{% assign separator = '' %}{% for post in site.posts %}{% if post.affiliate_products %}{{ separator }}{"title": {{ post.title | jsonify }}, "url": {{ post.url | relative_url | jsonify }}, "path": {{ post.url | jsonify }}, "products": {{ post.affiliate_products | jsonify }}}{% assign separator = ',' %}{% endif %}{% endfor %}]
+}

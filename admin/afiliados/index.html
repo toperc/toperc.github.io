@@ -9,21 +9,74 @@ sitemap: false
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow">
-  <title>Acceso restringido · TopeRC</title>
-  <link rel="stylesheet" href="{{ '/assets/affiliate-access.css' | relative_url }}">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self' https://api.github.com; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <title>Enlaces de afiliado · TopeRC</title>
+  <link rel="icon" href="{{ '/img/toperc-logo.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/affiliate-admin.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/affiliate-token.css' | relative_url }}">
+  <script type="module" src="{{ '/assets/affiliate-admin.mjs' | relative_url }}"></script>
 </head>
-<body>
-  <main class="access-card">
+<body data-mode="access" data-context-url="{{ '/assets/affiliate-context.json' | relative_url }}">
+  <main id="app-root">
+  <section id="access-screen" class="access-card" aria-label="Acceso al gestor">
     <a class="brand" href="{{ '/' | relative_url }}">TOPE<span>RC</span></a>
-    <p class="eyebrow">GESTIÓN DE AFILIACIÓN</p>
-    <h1>Acceso restringido.</h1>
-    <p>El gestor está reservado a los administradores autorizados de TopeRC.</p>
-    {% if site.data.affiliate_admin.private_url != '' %}
-    <a class="button" href="{{ site.data.affiliate_admin.private_url | escape }}">Abrir gestor privado ↗</a>
-    {% else %}
-    <p class="muted">El acceso privado todavía no está disponible en esta dirección.</p>
-    {% endif %}
-    <a class="back" href="{{ '/' | relative_url }}">Volver a TopeRC</a>
+    <p class="eyebrow">GESTIÓN DE AFILIACIÓN / GITHUB PAGES</p>
+    <h1>Tus enlaces.<br>Tu cuenta de GitHub.</h1>
+    <p>Introduce tu token para comprobar tu cuenta y cargar el catálogo desde GitHub.</p>
+    <form id="token-form">
+      <label>Token personal de GitHub<input id="access-token" type="password" required maxlength="255" autocomplete="off" spellcheck="false" placeholder="Pega aquí tu token temporal"></label>
+      <button type="submit" id="access-button" class="primary" disabled>Comprobando configuración…</button>
+    </form>
+    <div id="access-notice" class="notice" role="status" aria-live="polite">Cargando configuración…</div>
+    <p class="micro">El token se mantiene solo en esta pestaña. Se elimina al cerrar sesión, recargar o salir de la página.</p>
+    <details class="token-help"><summary>Crear un token para TopeRC</summary><ol><li>Abre GitHub con tu cuenta <strong>dgarana</strong>.</li><li>Selecciona el propietario <strong>toperc</strong> y <strong>Only select repositories → toperc.github.io</strong>.</li><li>Comprueba el permiso <strong>Contents: Read and write</strong> y la caducidad de <strong>7 días</strong> para esta prueba.</li><li>Genera el token, cópialo y pégalo en el campo de arriba. No lo compartas en el chat.</li></ol><a id="create-token" href="https://github.com/settings/personal-access-tokens/new?name=TopeRC%20Afiliados&amp;description=Gestion%20del%20catalogo%20de%20enlaces%20de%20TopeRC&amp;target_name=toperc&amp;expires_in=7&amp;contents=write" target="_blank" rel="noopener noreferrer">Crear token en GitHub ↗</a></details>
+    <p class="micro public-note">La interfaz y el código son públicos. Guardar requiere los permisos reales de tu cuenta en GitHub.</p>
+    <a class="access-back" href="{{ '/' | relative_url }}">Volver a TopeRC</a>
+  </section>
+  <div id="manager" hidden>
+  <a class="skip" href="#catalog">Saltar al catálogo</a>
+  <header class="topbar">
+    <a class="brand" href="{{ '/' | relative_url }}">TOPE<span>RC</span><small>ESTUDIO / AFILIACIÓN</small></a>
+    <div class="session"><span class="dot"></span><span id="mode">Sin conexión</span></div>
+    <a href="{{ '/recambios/wltoys/144001/' | relative_url }}" class="quiet-link" id="article-link">Ver artículo piloto ↗</a>
+  </header>
+  <section class="manager-content">
+    <section class="intro">
+      <div><p class="eyebrow">HERRAMIENTAS TOPE<span>RC</span> <span class="badge">POC</span></p><h1>Tus enlaces.<br><span>En un solo sitio.</span></h1><p class="lead">Actualiza una vez. Reutiliza en todas tus publicaciones.</p></div>
+      <div class="intro-actions"><button id="export" type="button" disabled>Descargar catálogo ↓</button><button id="remote-save" type="button" class="primary" disabled>Guardar en GitHub ↗</button><p id="save-help">Comprobando sesión…</p></div>
+    </section>
+    <div id="notice" class="notice" role="status" aria-live="polite">Cargando catálogo…</div>
+    <section class="connection session-bar"><div><p class="eyebrow">01 / CUENTA COMPROBADA</p><p id="session-user"></p></div><button id="logout" type="button">Cerrar sesión</button></section>
+    <section class="metrics" aria-label="Resumen del catálogo"><div><strong id="product-count">—</strong><span>productos</span></div><div><strong id="offer-count">—</strong><span>enlaces activos</span></div><div><strong id="review-count">—</strong><span>para revisar</span></div><div><strong>04</strong><span>tiendas disponibles</span></div></section>
+    <div class="workspace">
+      <section id="catalog" class="catalog" aria-labelledby="catalog-title">
+        <div class="section-title"><h2 id="catalog-title">Catálogo</h2><button id="new-product" type="button" disabled>+ Producto</button></div>
+        <label class="search-label">Buscar producto<input id="search" type="search" placeholder="Nombre, referencia o modelo…"></label>
+        <div class="filters"><label>Tienda<select id="store-filter"><option value="">Todas las tiendas</option value="amazon">Amazon</option><option value="aliexpress">AliExpress</option><option value="rlaarlo">Rlaarlo</option><option value="hobbyking">HobbyKing</option></select></label><label>Estado<select id="status-filter"><option value="">Todos los estados</option><option value="active">Activos</option><option value="review">Para revisar</option><option value="disabled">Desactivados</option></select></label></div>
+        <p class="micro" id="results"></p><div id="product-list" class="product-list"></div>
+      </section>
+      <section class="editor" aria-labelledby="editor-title">
+        <form id="product-form">
+          <div class="section-title"><div><p class="eyebrow">02 / EDITAR PRODUCTO</p><h2 id="editor-title">Selecciona un producto</h2></div><span id="form-state" class="badge">Sin cambios</span></div>
+          <fieldset id="editor-fields" disabled>
+            <div class="field-pair"><label>Nombre<input id="product-name" required maxlength="160"></label><label>Referencia estable<input id="product-id" required pattern="[a-z0-9]+(-[a-z0-9]+)*" maxlength="80" placeholder="bateria-zeee-2200"></label></div>
+            <div class="field-pair"><label>Categoría<input id="product-category" maxlength="80" placeholder="Baterías, recambios, coches…"></label><label>Modelos relacionados<select id="product-models" multiple size="3"></select></label></div>
+            <label>Notas del catálogo <span class="muted">· información pública</span><textarea id="product-notes" rows="2" maxlength="1000" placeholder="Variante, referencia del fabricante…"></textarea></label>
+            <div class="subheading"><h3>Enlaces por tienda</h3><button id="add-offer" type="button">+ Tienda</button></div>
+            <p class="micro">Pega el enlace de afiliado completo o corto. Se conserva tal cual, incluido su seguimiento.</p>
+            <div id="offer-fields"></div>
+            <div class="editor-actions"><button type="submit" class="primary">Aplicar al catálogo</button><span class="micro">Después, guarda en GitHub o descarga el archivo.</span></div>
+          </fieldset>
+        </form>
+        <section class="usage"><p class="eyebrow">DÓNDE APARECE</p><div id="usages"></div><p class="micro">Las referencias se actualizan al compilar la web. Seleccionar un modelo no inserta el producto automáticamente en sus artículos.</p></section>
+        <section class="preview"><div class="subheading"><h3>Vista previa</h3><span class="micro">Versión aplicada al catálogo</span></div><div id="preview"></div></section>
+      </section>
+    </div>
+    <footer><span>TOPE<span class="red">RC</span> / GESTOR DE AFILIACIÓN</span><span>Amazon · AliExpress · Rlaarlo · HobbyKing</span><p>Conexión directa con GitHub desde esta pestaña. El catálogo y la interfaz son públicos; GitHub comprueba los permisos para guardar.</p></footer>
+  </section>
+  </div>
   </main>
+  <noscript>Activa JavaScript para utilizar el panel. Los enlaces públicos de la web siguen funcionando sin él.</noscript>
 </body>
 </html>
