@@ -5,17 +5,41 @@
     "link_product_id": "hobbyking-toperc",
     "code": "TOPERC",
     "reviews": [
-      { "title": "Rapid 4S en el MJX 7303", "url": "/reviews/turnigy-rapid-4s-mjx-7303/", "detail": "Una sesión real con la 4S de 6.500 mAh." },
-      { "title": "Rapid 2S en la Losi Promoto", "url": "/reviews/turnigy-rapid-2s-losi-promoto/", "detail": "Instalación y tiempo de uso en la moto." },
-      { "title": "Rapid LiHV en pista", "url": "/reviews/turnigy-rapid-lihv-pista/", "detail": "Autonomía, sensaciones y límites de la comparación." }
-    ]
+      {
+        "title": "Rapid 4S en el MJX 7303",
+        "url": "/reviews/turnigy-rapid-4s-mjx-7303/",
+        "detail": "Una sesión real con la 4S de 6.500 mAh."
+      },
+      {
+        "title": "Rapid 2S en la Losi Promoto",
+        "url": "/reviews/turnigy-rapid-2s-losi-promoto/",
+        "detail": "Instalación y tiempo de uso en la moto."
+      },
+      {
+        "title": "Rapid LiHV en pista",
+        "url": "/reviews/turnigy-rapid-lihv-pista/",
+        "detail": "Autonomía, sensaciones y límites de la comparación."
+      }
+    ],
+    "image": "/img/partners/taller-baterias.webp"
   },
   "rlaarlo": {
     "name": "Rlaarlo",
     "store": "rlaarlo",
     "models": [
-      { "product_id": "rlaarlo-x12s", "title": "X12S", "review_url": "/reviews/rlaarlo-x12s/", "detail": "El buggy que probamos y nos resultó fácil de conducir." },
-      { "product_id": "rlaarlo-omni-terminator", "title": "Omni Terminator", "review_url": "/reviews/rlaarlo-omni-terminator/", "detail": "Del primer skatepark a su preparación para bashing." }
-    ]
+      {
+        "product_id": "rlaarlo-x12s",
+        "title": "X12S",
+        "review_url": "/reviews/rlaarlo-x12s/",
+        "detail": "El buggy que probamos y nos resultó fácil de conducir."
+      },
+      {
+        "product_id": "rlaarlo-omni-terminator",
+        "title": "Omni Terminator",
+        "review_url": "/reviews/rlaarlo-omni-terminator/",
+        "detail": "Del primer skatepark a su preparación para bashing."
+      }
+    ],
+    "image": "/img/partners/pista-buggy.webp"
   }
 }

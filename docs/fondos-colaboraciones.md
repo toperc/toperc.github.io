@@ -1,0 +1,16 @@
+# Fondos de las tarjetas de colaboración
+
+Ilustraciones de ambiente creadas con la herramienta integrada de generación de imágenes. No representan modelos comerciales concretos ni fotografías de los productos probados. La interfaz las identifica como ilustraciones de IA; nombres, textos y enlaces se renderizan en HTML.
+
+- `img/partners/taller-baterias.webp`: 1599 × 900 px, 115.684 bytes. Taller con baterías, cargador y luz cálida.
+- `img/partners/pista-buggy.webp`: 1599 × 900 px, 142.184 bytes. Buggy genérico sobre una pista al atardecer.
+
+Las copias WebP se han obtenido reduciendo y codificando los originales PNG, sin modificar la escena. Se reutilizan en portada, colaboraciones y artículos relacionados. Las rutas se configuran en `_data/partners.json`. Carga diferida, degradados CSS para el contraste y animación de acercamiento desactivada con movimiento reducido.
+
+## Prompt final: taller
+
+Use case: illustration-story. Asset type: wide editorial background illustration for a dark Spanish RC hobby website card about workshop support and batteries. Create a polished cinematic 3D illustration, landscape 16:9, of an enthusiast radio-controlled car workbench: two unbranded rectangular hardcase RC battery packs with neatly disconnected yellow connectors, a compact balance charger and small precision tools on a textured black bench. Detail and subject concentrated on the RIGHT HALF, left half mostly dark atmospheric negative space for live HTML text. Warm amber task lighting from upper right with a restrained cool cyan rim light, deep charcoal shadows, precise tactile materials. Match a sophisticated RC garage visual world, warm and inviting, restrained cyberpunk accents rather than a crowded science-fiction scene. The batteries must be clearly small hobby batteries, undamaged, disconnected; no humans. This is conceptual editorial artwork, not a photograph or depiction of any specific commercial product. No text, no numbers, no brand logos, no UI, no watermark, no split screen or borders. Keep enough recognizable image visible even under a dark web gradient.
+
+## Prompt final: pista
+
+Use case: illustration-story. Asset type: wide editorial background illustration for a dark Spanish RC hobby website card about radio-controlled buggies and bashing. Create a polished cinematic 3D illustration, landscape 16:9, of an unbranded hobby radio-controlled off-road buggy with clearly visible large tires, shock absorbers and rear wing, on a textured asphalt track with a low concrete ramp in the distance. Show the whole car in three-quarter front view on the RIGHT HALF, left half mostly dark atmospheric negative space for live HTML text. Sporty electric lime accents on a graphite body, subtle crimson rim light and cool dusk light, a slight trace of dust near the tires, shallow depth of field in background, premium tangible toy-scale detail. Visually coherent with a cinematic amber RC workbench companion image, but outdoors and more energetic. This is conceptual editorial artwork, not a photograph or depiction of a particular Rlaarlo model; no precise branded silhouette, no humans. No words, no numbers, no logos, no watermark, no UI, no split screen or borders. Keep a clear subject that remains recognizable under a dark web gradient.
