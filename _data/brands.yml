@@ -29,3 +29,16 @@ losi:
 tamiya:
   name: Tamiya
   aliases: [tamiya, Tamiya]
+
+serpent:
+  name: Serpent
+  aliases: [serpent, Serpent]
+fastrax:
+  name: Fastrax
+  aliases: [fastrax, Fastrax]
+team-associated:
+  name: Team Associated
+  aliases: [team-associated, associated, Team Associated]
+team-corally:
+  name: Team Corally
+  aliases: [team-corally, corally, Team Corally]
