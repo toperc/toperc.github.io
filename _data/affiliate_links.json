@@ -1237,6 +1237,108 @@
           "status": "active"
         }
       ]
+    },
+    {
+      "id": "traxxas-x-maxx",
+      "name": "Traxxas X-Maxx",
+      "category": "Coches",
+      "model_ids": [
+        "traxxas-x-maxx"
+      ],
+      "notes": "Comprobar versión y contenido. La experiencia del vídeo corresponde a una unidad 8S anterior.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://link.amazon/B0dzw5KLc",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "traxxas-maxx-referencia",
+      "name": "Traxxas Maxx — referencia de la descripción X-Maxx",
+      "category": "Coches",
+      "model_ids": [],
+      "notes": "Modelo distinto al X-Maxx. La descripción no identifica la versión: comprobar el anuncio.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://link.amazon/B06AdwNM7",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "vallejo-pintura-aerografo-por-confirmar",
+      "name": "Material Vallejo — enlace por identificar",
+      "category": "Pintura",
+      "model_ids": [],
+      "notes": "Misma URL en la descripción para pinturas y aerógrafo. No asignar a ambos sin identificarla.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://link.amazon/B0bPdnwLz",
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "id": "sacabocados-neumaticos-rc",
+      "name": "Sacabocados del vídeo de neumáticos",
+      "category": "Taller",
+      "model_ids": [],
+      "notes": "La necesidad y posición de orificios depende de la rueda utilizada.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4mqEsKF",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "recipiente-neumaticos-por-confirmar",
+      "name": "Recipiente del vídeo de neumáticos — compatibilidad pendiente",
+      "category": "Taller",
+      "model_ids": [],
+      "notes": "No se ha confirmado compatibilidad química con acetona; no ofrecer como envase apto para disolventes.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4mqEtOJ",
+          "status": "review"
+        }
+      ]
+    },
+    {
+      "id": "cianoacrilato-neumaticos-rc",
+      "name": "Cianoacrilato para neumáticos del vídeo",
+      "category": "Taller",
+      "model_ids": [],
+      "notes": "Utilizar conforme a las indicaciones del adhesivo y del material de la rueda.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4fgDkXn",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "ventilador-motor-python",
+      "name": "Ventilador con soporte ajustable del Python",
+      "category": "Electrónica",
+      "model_ids": [
+        "team-corally-python-6s"
+      ],
+      "notes": "Comprobar diámetro, tensión, consumo y espacio. La guía muestra montaje, sin comparativa térmica.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oD0CIoe",
+          "status": "active"
+        }
+      ]
     }
   ]
 }
