@@ -21,7 +21,24 @@
         "detail": "Autonomía, sensaciones y límites de la comparación."
       }
     ],
-    "image": "/img/partners/taller-baterias.webp"
+    "image": "/img/partners/taller-baterias.webp",
+    "logos": {
+      "compact": {
+        "src": "/img/partners/hobbyking-logo-capsula.webp",
+        "width": 1000,
+        "height": 160
+      },
+      "wide": {
+        "src": "/img/partners/hobbyking-logo-horizontal.webp",
+        "width": 1400,
+        "height": 299
+      },
+      "icon": {
+        "src": "/img/partners/hobbyking-corona.webp",
+        "width": 160,
+        "height": 160
+      }
+    }
   },
   "rlaarlo": {
     "name": "Rlaarlo",

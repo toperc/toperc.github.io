@@ -3,7 +3,7 @@
   <div class="partners-home-grid">
     <article class="partner-card partner-hobbyking partner-visual">
       {% include partner_scene.html src=site.data.partners.hobbyking.image %}
-      <p class="partner-kind">Colaboración activa</p><h3 class="partner-name">HobbyKing</h3>
+      <p class="partner-kind">Colaboración activa</p><h3 class="partner-name partner-name-logo">{% include partner_logo.html variant="compact" %}</h3>
       <p>Nos apoyan con material que llevamos al taller y a la pista. Estamos muy contentos de seguir compartiendo esta colaboración contigo.</p>
       <div class="partner-actions">{% include partner_link.html product_id=site.data.partners.hobbyking.link_product_id store='hobbyking' label='Ir a HobbyKing' class='button partner-button-hk' %}<a class="partner-secondary" href="{{ '/colaboraciones/#pruebas-hobbyking' | relative_url }}">Ver nuestras pruebas →</a></div>
     </article>
