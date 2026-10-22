@@ -1,1 +1,1 @@
-<script>window.location.replace({{ '/blog/' | relative_url | jsonify }} + window.location.search + window.location.hash);</script>
+<script>window.location.replace({% if page.lang == 'en' %}{{ '/en/blog/' | relative_url | jsonify }}{% else %}{{ '/blog/' | relative_url | jsonify }}{% endif %} + window.location.search + window.location.hash);</script>
