@@ -130,3 +130,12 @@
   .partner-model h3 { margin-top:100px; }
 }
 @media(prefers-reduced-motion:reduce) { .partner-card.partner-visual:hover .partner-scene img { transform:none; } }
+
+// Marca oficial: imagen completa y proporción original, independiente del fondo.
+.partner-logo { display:block; max-width:100%; height:auto; object-fit:contain; }
+.partner-card .partner-name-logo { width:340px; max-width:100%; line-height:1; }
+.partner-feature .partner-name-logo { width:460px; max-width:100%; margin-top:22px; }
+.partner-feature-copy,.partner-feature-note { min-width:0; }
+.partner-article .partner-logo-compact { width:250px; margin-block:5px 19px; }
+.partner-footer-title>a { display:inline-flex; flex-wrap:wrap; align-items:center; gap:5px; }
+.partner-footer .partner-logo-icon { width:32px; height:32px; margin-right:5px; flex:none; }
