@@ -3,7 +3,7 @@
 {% assign car_posts = '' | split: '' %}
 {% for post in site.posts %}{% if post.model_id == car.model_id or post.related_model_ids contains car.model_id %}{% assign car_posts = car_posts | push: post %}{% endif %}{% endfor %}
 {% assign car_reviews = car_posts | where: 'content_type', 'review' %}
-{% assign primary_review = car_reviews | first %}
+{% assign primary_review = car_reviews | where: 'model_id', car.model_id | first %}
 {% assign primary_video = primary_review.video_id | default: car.video_id %}
 {% assign car_parts = car_posts | where: 'content_type', 'parts' %}
 <article class="article-card model-card" data-search-item data-post-brand="{{ car.brand_id | escape }}" data-post-model="{{ car.model_id | escape }}" data-post-type="" data-post-categories="" data-search-text="{{ car.title | append: ' ' | append: brand_info.name | escape }}">

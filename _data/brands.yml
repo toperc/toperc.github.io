@@ -19,3 +19,13 @@ radiomaster:
 jiusi:
   name: Jiusi
   aliases: [jiusi, Jiusi]
+
+dumborc:
+  name: DumboRC
+  aliases: [dumborc, DumboRC]
+losi:
+  name: Losi
+  aliases: [losi, Losi]
+tamiya:
+  name: Tamiya
+  aliases: [tamiya, Tamiya]
