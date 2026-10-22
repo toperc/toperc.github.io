@@ -25,6 +25,8 @@ La fecha del artículo y la del vídeo son independientes. Las fechas originales
 
 Al añadir un vídeo principal o una parte adicional, verifica su fecha en YouTube y añade su registro a ese catálogo. La cabecera separa «Vídeo original», «Artículo publicado» y «Artículo actualizado». Cada parte muestra su propia fecha junto al reproductor; las tarjetas y el destacado muestran la fecha del vídeo principal con la etiqueta «Vídeo del». Las entradas sin vídeo siguen mostrando la fecha del artículo. No cambies `date`, el nombre del archivo ni la URL del artículo para ajustarlos a YouTube.
 
+Los listados, destacados y enlaces anterior/siguiente se ordenan del vídeo más reciente al más antiguo mediante el filtro `video_chronology`. Se usa el instante original `published_at` del vídeo principal; las entradas sin vídeo usan su fecha de publicación en la web. En empates se ordena por URL para mantener el resultado estable. El criterio se aplica al blog, reviews, guías, categorías, etiquetas y publicaciones de cada modelo, en ambos idiomas. Las categorías y los modelos conservan su propia organización; la cronología se aplica a las entradas que contienen.
+
 El primer lote relaciona las reviews del Jiabaila 1:43 y del Wltoys 124017, añade la guía de baterías del 124017 y migra el iframe anterior del MJX 14210 al mismo sistema. La migración del MJX no supone una revisión de su texto.
 
 Las transcripciones completas, las notas editoriales y la conexión a YouTube se gestionan en una herramienta local independiente, fuera de este repositorio. Las sugerencias del inventario no se convierten automáticamente en relaciones confirmadas ni en artículos publicados.
@@ -38,6 +40,7 @@ Para comprobar la compilación:
 ```sh
 bundle exec jekyll build
 bundle exec ruby _checks/validate_videos.rb
+bundle exec ruby _checks/validate_chronology.rb
 ```
 
 El validador comprueba IDs, ausencia de repeticiones dentro de cada entrada, orden de las partes, enlaces directos, títulos accesibles, fechas originales y de actualización visibles en ambos idiomas, conversión horaria, fechas de las tarjetas y coherencia con las fichas. El segundo lote reúne cinco guías a partir de siete vídeos consultados en Studio el 22/10/2026; sus transcripciones y notas se conservan fuera del repositorio.

@@ -57,6 +57,8 @@ jobs:
         run: node _checks/validate_affiliates.mjs
       - name: Validate generated video relationships
         run: bundle exec ruby _checks/validate_videos.rb
+      - name: Validate video chronology
+        run: bundle exec ruby _checks/validate_chronology.rb "${{ steps.pages.outputs.base_path }}"
       - name: Validate language pairs and internal links
         run: bundle exec ruby _checks/validate_languages.rb _site "${{ steps.pages.outputs.base_path }}"
       - name: Upload artifact

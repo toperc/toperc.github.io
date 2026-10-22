@@ -3,4 +3,5 @@ layout: page
 wide: true
 ---
 <p class="listing-intro">Todo el contenido sobre <strong>{{ page.tag | escape }}</strong>, reunido en un mismo sitio.</p>
-<div class="article-grid">{% for post in site.tags[page.tag] %}{% include article_summary.html post=post %}{% endfor %}</div>
+{% assign tag_posts = site.tags[page.tag] | video_chronology %}
+<div class="article-grid">{% for post in tag_posts %}{% include article_summary.html post=post %}{% endfor %}</div>
