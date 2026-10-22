@@ -6,8 +6,8 @@ Eliminar contradicciones heredadas y comprobar que las funciones públicas y el 
 
 ## A. Identidad y textos
 
-- [ ] Sustituir las referencias de presentación a `TopeRC.es` por la marca TopeRC o el dominio actual, `toperc.com`, según el contexto.
-- [ ] Conservar el correo y los nombres de usuario de redes que incluyen `.es` mientras sigan siendo las cuentas reales; no cambiar sus destinos por semejanza con el dominio nuevo.
+- [x] Sustituir las referencias de presentación a `TopeRC.es` por la marca TopeRC o el dominio actual, `toperc.com`, según el contexto.
+- [x] Conservar el correo y los nombres de usuario de redes que incluyen `.es` mientras sigan siendo las cuentas reales; no cambiar sus destinos por semejanza con el dominio nuevo.
 - [ ] Reescribir «Sobre nosotros» con información aportada por el equipo y recursos que existen de verdad.
 - [ ] Revisar afirmaciones genéricas como «el sitio número uno» y promesas de actualizaciones o servicios que no estén documentados.
 - [ ] Sustituir invitaciones a comentar por un canal activo, salvo que decidamos implementar un sistema de comentarios.

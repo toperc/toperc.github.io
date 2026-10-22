@@ -5,14 +5,14 @@ permalink: /acerca/
 navbar: true
 ---
 
-# Acerca de TopeRC.es
+# Acerca de TopeRC.com
 
-Bienvenidos a **TopeRC.es**, el sitio web creado por y para los amantes de los coches radiocontrol. Nuestro objetivo es proporcionar toda la información que necesitas para disfrutar al máximo de este emocionante hobby. Aquí encontrarás **reviews detalladas**, **guías prácticas**, **tutoriales** y un **catálogo de recambios** para los mejores modelos de coches RC del mercado.
+Bienvenidos a **TopeRC.com**, el sitio web creado por y para los amantes de los coches radiocontrol. Nuestro objetivo es proporcionar toda la información que necesitas para disfrutar al máximo de este emocionante hobby. Aquí encontrarás **reviews detalladas**, **guías prácticas**, **tutoriales** y un **catálogo de recambios** para los mejores modelos de coches RC del mercado.
 
 
 # Nuestra Misión
 
-En **TopeRC.es** creemos que el radiocontrol es mucho más que un simple pasatiempo:
+En **TopeRC.com** creemos que el radiocontrol es mucho más que un simple pasatiempo:
 es una pasión que combina tecnología, creatividad y aventura. Nuestra misión es convertirnos
 en el mejor recurso para los entusiastas de los coches RC en español, ofreciendo
 contenido de calidad que ayude tanto a principiantes como a expertos a mejorar sus 
@@ -35,12 +35,12 @@ habilidades y disfrutar del radiocontrol.
 
 # Nuestro Equipo
 
-**TopeRC.es** está compuesto por un grupo de entusiastas del radiocontrol con años de experiencia en la conducción, modificación y mantenimiento de vehículos RC. Nos apasiona compartir nuestros conocimientos y aprender junto con la comunidad. Creemos firmemente en la fuerza de la comunidad y queremos ayudar a que este hobby crezca y llegue a más personas.
+**TopeRC.com** está compuesto por un grupo de entusiastas del radiocontrol con años de experiencia en la conducción, modificación y mantenimiento de vehículos RC. Nos apasiona compartir nuestros conocimientos y aprender junto con la comunidad. Creemos firmemente en la fuerza de la comunidad y queremos ayudar a que este hobby crezca y llegue a más personas.
 
 
 # Nuestra Comunidad
 
-Queremos que TopeRC.es sea un espacio donde todos los aficionados al radiocontrol puedan compartir, aprender y disfrutar juntos. Te invitamos a ser parte activa de nuestra comunidad, ya sea comentando nuestras reviews, participando en el blog, o uniéndote a nosotros en las redes sociales.
+Queremos que TopeRC.com sea un espacio donde todos los aficionados al radiocontrol puedan compartir, aprender y disfrutar juntos. Te invitamos a ser parte activa de nuestra comunidad, ya sea comentando nuestras reviews, participando en el blog, o uniéndote a nosotros en las redes sociales.
 
 
 # Ponte en Contacto
@@ -49,4 +49,4 @@ Si tienes alguna pregunta, sugerencia o simplemente quieres charlar sobre coches
 
 ---
 
-Gracias por visitar **TopeRC.es**. ¡Esperamos que encuentres todo lo que buscas y que disfrutes tanto como nosotros de la aventura del radiocontrol!
+Gracias por visitar **TopeRC.com**. ¡Esperamos que encuentres todo lo que buscas y que disfrutes tanto como nosotros de la aventura del radiocontrol!
