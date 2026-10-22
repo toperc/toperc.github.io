@@ -1,0 +1,5 @@
+{%- assign partner_product = site.data.affiliate_links.products | where: 'id', include.product_id | first -%}
+{%- assign partner_offer = partner_product.offers | where: 'store', include.store | where: 'status', 'active' | first -%}
+{%- if partner_offer -%}
+<a class="{{ include.class | default: 'button button-primary' | escape }}" href="{{ partner_offer.url | escape }}" target="_blank" rel="sponsored noopener noreferrer" data-partner-product="{{ partner_product.id | escape }}" data-partner-store="{{ include.store | escape }}">{{ include.label | escape }} <span aria-hidden="true">↗</span></a>
+{%- endif -%}

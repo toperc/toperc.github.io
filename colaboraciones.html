@@ -1,0 +1,25 @@
+---
+layout: page
+title: "Colaboraciones"
+eyebrow: "Marcas / Comunidad / RC"
+description: "El apoyo que llega al taller, las pruebas que compartimos y los enlaces con los que puedes ayudar a que TopeRC siga rodando."
+permalink: /colaboraciones/
+section: partners
+wide: true
+---
+<section class="partner-feature partner-hobbyking" aria-labelledby="hobbyking-title" id="hobbyking">
+  <div class="partner-feature-copy"><p class="partner-kind">Colaboración activa con TopeRC</p><h2 id="hobbyking-title" class="partner-name">HobbyKing</h2><p class="partner-lead">Una colaboración que ya forma parte de nuestras vueltas.</p><p>HobbyKing está apoyando activamente el proyecto con material que probamos en nuestros coches y compartimos en el canal y en la web. Estamos muy contentos con la colaboración y con poder enseñarte cómo nos funciona en el uso real.</p><p>Contamos lo que probamos, incluidas las limitaciones, los ajustes y los detalles que encontramos por el camino.</p><div class="partner-actions">{% include partner_link.html product_id=site.data.partners.hobbyking.link_product_id store='hobbyking' label='Comprar en HobbyKing' class='button partner-button-hk' %}<a class="partner-secondary" href="#pruebas-hobbyking">Leer las pruebas →</a></div></div>
+  <div class="partner-feature-note"><span class="partner-note-label">Apoya al canal</span><p>Si vas a comprar allí, entra desde nuestro enlace. Tu compra puede generar una comisión que ayuda a mantener TopeRC.</p><div class="partner-code"><span>Código del canal</span><strong>{{ site.data.partners.hobbyking.code | escape }}</strong></div><small>Consulta en la tienda si el código se aplica a tu pedido y las condiciones disponibles.</small></div>
+</section>
+
+<section class="partner-reviews" id="pruebas-hobbyking" aria-labelledby="hobbyking-reviews-title">
+  <div class="section-heading"><div><p class="eyebrow">Antes de elegir</p><h2 id="hobbyking-reviews-title">HobbyKing en nuestros coches.</h2></div></div>
+  <div class="partner-review-grid">{% for review in site.data.partners.hobbyking.reviews %}<a class="partner-review" href="{{ review.url | relative_url }}"><h3>{{ review.title | escape }}</h3><p>{{ review.detail | escape }}</p><span>Ver la prueba <span aria-hidden="true">↗</span></span></a>{% endfor %}</div>
+</section>
+
+<section class="partner-rlaarlo-section" id="rlaarlo" aria-labelledby="rlaarlo-title">
+  <div class="partner-rlaarlo-intro"><p class="partner-kind">Afiliación / Tienda oficial</p><h2 id="rlaarlo-title" class="partner-name">Rlaarlo</h2><p>Dos modelos que ya conocemos, con sus pruebas y sus enlaces de afiliado a la tienda oficial. Elige el que te interesa y revisa nuestra experiencia antes de decidir.</p></div>
+  <div class="partner-model-grid">{% for model in site.data.partners.rlaarlo.models %}<article class="partner-model"><p class="eyebrow">En el garaje TopeRC</p><h3>{{ model.title | escape }}</h3><p>{{ model.detail | escape }}</p><div class="partner-actions">{% include partner_link.html product_id=model.product_id store='rlaarlo' label='Ver en Rlaarlo' class='button partner-button-outline' %}<a class="partner-secondary" href="{{ model.review_url | relative_url }}">Leer la review →</a></div></article>{% endfor %}</div>
+</section>
+
+<section class="partner-transparency" aria-labelledby="partner-transparency-title"><h2 id="partner-transparency-title">Así funciona tu apoyo.</h2><p>Los botones hacia las tiendas son enlaces de afiliado. Si compras a través de ellos, TopeRC puede recibir una comisión. Cuando un artículo utiliza material facilitado por una marca, lo indicamos en esa publicación; también contamos las pruebas con material comprado por nosotros.</p><p>Los precios, los portes, la disponibilidad y las condiciones de los códigos los confirma cada tienda al hacer el pedido.</p></section>

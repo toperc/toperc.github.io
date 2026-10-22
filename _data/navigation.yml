@@ -19,6 +19,9 @@
 - title: Categorías
   url: /categorias/
   section: categories
+- title: Colaboraciones
+  url: /colaboraciones/
+  section: partners
 - title: Contacto
   url: /contacto/
   section: contact

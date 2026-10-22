@@ -1,0 +1,19 @@
+{% assign article_hobbyking = false %}{% assign article_rlaarlo_product = '' %}
+{% for product_id in page.affiliate_products %}
+  {% assign related_product = site.data.affiliate_links.products | where: 'id', product_id | first %}
+  {% for offer in related_product.offers %}{% if offer.status == 'active' %}{% if offer.store == 'hobbyking' %}{% assign article_hobbyking = true %}{% elsif offer.store == 'rlaarlo' %}{% assign article_rlaarlo_product = product_id %}{% endif %}{% endif %}{% endfor %}
+{% endfor %}
+{% if article_hobbyking or article_rlaarlo_product != '' %}
+<aside class="partner-article" aria-label="Apoya TopeRC a través de nuestras tiendas afiliadas">
+  <div><p class="eyebrow">Sigue apoyando TopeRC</p>
+    {% if article_hobbyking %}<h2>HobbyKing, también en nuestro taller.</h2><p>Colaboran activamente con el proyecto. Si vas a comprar en HobbyKing, puedes apoyar las próximas pruebas entrando desde nuestro enlace.</p>
+    {% else %}<h2>Rlaarlo, del vídeo a tu garaje.</h2><p>Consulta el modelo en la tienda oficial con nuestro enlace de afiliado y ayuda a que sigamos compartiendo experiencias de RC.</p>{% endif %}
+  </div>
+  <div class="partner-actions">
+    {% if article_hobbyking %}{% include partner_link.html product_id=site.data.partners.hobbyking.link_product_id store='hobbyking' label='Ir a HobbyKing' class='button partner-button-hk' %}{% endif %}
+    {% if article_rlaarlo_product != '' %}{% include partner_link.html product_id=article_rlaarlo_product store='rlaarlo' label='Ver el modelo en Rlaarlo' class='button partner-button-outline' %}{% endif %}
+    <a class="partner-secondary" href="{{ '/colaboraciones/' | relative_url }}">Cómo colaboramos →</a>
+  </div>
+  <p class="partner-disclosure">Enlaces de afiliado. TopeRC puede recibir una comisión por las compras realizadas a través de ellos.</p>
+</aside>
+{% endif %}
