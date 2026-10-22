@@ -37,6 +37,22 @@ Los filtros necesitan JavaScript; sin él, los archivos muestran todas sus publi
 
 ## Añadir una publicación
 
+La web tiene versiones en español e inglés. El selector ES/EN de la cabecera cambia a la misma página y conserva filtros y fragmento de URL. Recuerda la elección en `localStorage`; al volver a la portada aplica la preferencia guardada. Los enlaces directos conservan el idioma de su URL y ambas versiones funcionan sin JavaScript.
+
+El español mantiene sus URLs y el inglés usa el prefijo `/en/`. `_plugins/localization.rb` genera las páginas inglesas al compilar, sin duplicar publicaciones en los índices originales. Las etiquetas `lang`, `canonical` y `hreflang` identifican cada versión.
+
+Los textos compartidos se traducen en `_data/english.json` y los textos con valores variables en `_data/english_patterns.yml`. El contenido editorial inglés se guarda en `_translations/en/`, con la misma ruta que el archivo español, por ejemplo `_translations/en/_posts/reviews/2024-11-1-wltoys-k969.md`. El archivo contiene el cuerpo traducido y admite front matter opcional para sobrescribir título, descripción o subtítulo. Al añadir un artículo es necesario añadir su traducción: la compilación avisa si falta. Los vídeos y las capturas de aplicaciones conservan su idioma original.
+
+Para verificar el selector y las páginas generadas:
+
+```sh
+node --test _checks/language.test.mjs
+bundle exec jekyll build
+bundle exec ruby _checks/validate_languages.rb
+```
+
+Si compilas con un `baseurl`, pásalo como segundo argumento al validador: `bundle exec ruby _checks/validate_languages.rb _site /preview`.
+
 Crea un archivo `_posts/AAAA-MM-DD-titulo.md` o guárdalo en una de sus subcarpetas. Por ejemplo:
 
 ```yaml

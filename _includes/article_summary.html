@@ -1,4 +1,5 @@
 {% assign article = include.post | default: post %}
+{% assign article = article | localized_document %}
 {% assign searchable_tags = article.tags | join: ' ' %}
 {% assign searchable_categories = article.categories | join: ' ' %}
 {% assign card_heading = include.heading | default: 'h2' %}
