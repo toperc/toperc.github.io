@@ -94,6 +94,9 @@ La referencia de URLs, categorías y etiquetas originales está en `_checks/fixt
 - `/reviews`, `/guias/`, `/recambios`: secciones temáticas.
 - `/tag/…`: archivos de etiquetas existentes.
 - `/posts/`: acceso compatible al archivo del blog.
+- `/colaboraciones/`: colaboración activa con HobbyKing y afiliación a modelos de Rlaarlo, con accesos desde portada, menú, pie y artículos relacionados.
+
+Los enlaces externos de colaboración se resuelven desde `_data/affiliate_links.json`, mediante los identificadores de `_data/partners.json`. Se pueden actualizar desde el gestor de afiliados; las ofertas en revisión o desactivadas no generan botones de compra. La configuración de colaboraciones contiene solo textos, código del canal y referencias a artículos/productos, sin duplicar URLs de seguimiento. El gestor muestra también estos usos en la portada y la página de colaboraciones.
 
 Los artículos existentes no se han reescrito. Las páginas de contacto, equipo y legales se conservan. El formulario mantiene Formspree y la cabecera mantiene la integración existente de Google Tag Manager.
 

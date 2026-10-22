@@ -44,6 +44,35 @@ for (const file of files) {
   assert.ok(!/affiliate-github-app\.json$/.test(file), `Credenciales del prototipo publicadas: ${file}`);
 }
 const settings = JSON.parse(await readFile(new URL('_data/affiliate_admin.json', root), 'utf8'));
+// Los accesos de colaboración deben conservar exactamente la URL y el estado del catálogo.
+const partners = JSON.parse(await readFile(new URL('_data/partners.json', root), 'utf8'));
+for (const id of [partners.hobbyking.link_product_id, ...partners.rlaarlo.models.map(model => model.product_id)]) {
+  assert.ok(ids.has(id), `Referencia de colaboración inexistente: ${id}`);
+  assert.ok(context.usages[id].some(usage => usage.url.includes('/colaboraciones/')), `${id}: la colaboración debe aparecer en el gestor.`);
+}
+const readPage = path => readFile(new URL(`_site/${path}index.html`, root), 'utf8');
+for (const path of ['', 'colaboraciones/', 'reviews/turnigy-rapid-4s-mjx-7303/', 'reviews/rlaarlo-x12s/', 'reviews/jiabaile-rc-mini-drift/']) {
+  const html = await readPage(path);
+  for (const [tag] of html.matchAll(/<a\b[^>]*data-partner-product="[^"]+"[^>]*>/g)) {
+    const attrs = Object.fromEntries([...tag.matchAll(/([\w-]+)="([^"]*)"/g)].map(([, name, value]) => [name, value]));
+    const product = source.products.find(product => product.id === attrs['data-partner-product']);
+    const offer = product?.offers.find(offer => offer.store === attrs['data-partner-store'] && offer.status === 'active');
+    assert.ok(offer, `Acceso de colaboración sin oferta activa: ${attrs['data-partner-product']}`);
+    assert.equal(attrs.href, escapeHtml(offer.url), 'La colaboración debe conservar la URL de seguimiento completa.');
+    for (const rel of ['sponsored', 'noopener', 'noreferrer']) assert.ok(attrs.rel.split(' ').includes(rel));
+    assert.equal(attrs.target, '_blank');
+  }
+  if (path.startsWith('reviews/')) {
+    const post = context.references.find(post => post.path === `/${path}`);
+    const expected = post.products.some(id => source.products.find(product => product.id === id).offers.some(offer => offer.status === 'active' && ['hobbyking', 'rlaarlo'].includes(offer.store)));
+    assert.equal(html.includes('class="partner-article"'), expected, 'El bloque del artículo debe corresponder a una tienda de sus productos.');
+  }
+}
+const partnerPage = (await readPage('colaboraciones/')).split('<main')[1].split('</main>')[0];
+for (const [id, store] of [[partners.hobbyking.link_product_id, 'hobbyking'], ...partners.rlaarlo.models.map(model => [model.product_id, 'rlaarlo'])]) {
+  const active = source.products.find(product => product.id === id).offers.some(offer => offer.store === store && offer.status === 'active');
+  assert.equal(partnerPage.includes(`data-partner-product="${id}"`), active, `${id}: la página debe respetar el estado de su oferta.`);
+}
 assert.ok(settings.allowed_user_ids.length > 0);
 assert.ok(settings.private_url === '' || new URL(settings.private_url).protocol === 'https:', 'El destino privado debe usar HTTPS.');
 assert.equal(context.repository, settings.repository); assert.equal(context.branch, settings.branch); assert.deepEqual(context.allowed_user_ids, settings.allowed_user_ids);
