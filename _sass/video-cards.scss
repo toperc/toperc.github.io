@@ -1,0 +1,36 @@
+// La miniatura se obtiene del vídeo principal; el contenido sigue siendo HTML.
+.video-card { position:relative; isolation:isolate; overflow:hidden; background:#101114; }
+.video-card>:not(.video-card-background) { position:relative; z-index:1; }
+.video-card>.video-card-background,.partner-visual.video-card>.video-card-background { position:absolute; inset:0; z-index:0; pointer-events:none; }
+.video-card-background img { display:block; width:100%; height:auto; aspect-ratio:16/9; max-width:none; object-fit:cover; object-position:center; mask-image:linear-gradient(#000 25%,#000b 65%,transparent); transition:transform .4s ease; }
+.video-card-background::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(8,9,12,.24),rgba(8,9,12,.5) 26%,rgba(8,9,12,.94) 52%,#08090cf5 100%); }
+.video-card:hover .video-card-background img { transform:scale(1.025); }
+.article-card.video-card { min-height:410px; }
+.article-card.video-card .card-topline { margin-bottom:120px; }
+.video-card .card-topline .eyebrow,.video-card .card-brand { padding:4px 7px; background:#08090ce8; border:1px solid #ffffff26; }
+.video-card .card-brand { color:#eeeaed; }
+.video-card .card-bottom { border-color:#ffffff30; color:#d0cbd0; }
+.article-card.video-card>p { color:#ddd9df; }
+.video-card .card-model { color:#e6c0c3; }
+.featured-story.video-card { display:flex; align-items:flex-end; min-height:520px; }
+.featured-story.video-card .featured-story-copy { width:100%; }
+.featured-story.video-card .featured-story-copy>p:not(.eyebrow) { color:#ddd9df; }
+.featured-story.video-card .video-card-background::after { background:linear-gradient(180deg,#08090c26,#08090c55 25%,#08090ce8 55%,#08090cfa); }
+.featured-side .article-card.video-card { min-height:310px; }
+.featured-side .video-card .card-topline { margin-bottom:60px; }
+.partner-review.video-card { min-height:320px; padding-top:150px; }
+.partner-review.video-card p,.partner-model.video-card>p:not(.eyebrow) { color:#ddd9df; }
+.partner-model.video-card { min-height:390px; }
+.partner-model.video-card .eyebrow { padding:4px 7px; background:#08090ce8; border:1px solid #ffffff26; color:#eeeaed; }
+.partner-model.video-card h3 { margin-top:110px; }
+@media(max-width:700px) {
+  .article-card.video-card { min-height:400px; }
+  .article-card.video-card .card-topline { margin-bottom:110px; }
+  .featured-story.video-card { min-height:510px; }
+  .featured-side .article-card.video-card { min-height:380px; }
+  .featured-side .video-card .card-topline { margin-bottom:100px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .video-card-background img { transition:none; }
+  .video-card:hover .video-card-background img { transform:none; }
+}
