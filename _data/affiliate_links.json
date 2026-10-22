@@ -286,7 +286,8 @@
       "model_ids": [
         "wltoys-124017",
         "wltoys-144010",
-        "wltoys-104001"
+        "wltoys-104001",
+        "wltoys-144001"
       ],
       "notes": "Emisora y receptor citados en el vídeo de DumboRC. Comprobar versión y contenido del pack.",
       "offers": [
@@ -297,7 +298,7 @@
         },
         {
           "store": "aliexpress",
-          "url": "https://s.click.aliexpress.com/e/_c3Wtfmin",
+          "url": "https://s.click.aliexpress.com/e/_c39xJGyj",
           "status": "active"
         }
       ]
@@ -308,7 +309,8 @@
       "category": "Transmisión",
       "model_ids": [
         "wltoys-124017",
-        "wltoys-144010"
+        "wltoys-144010",
+        "wltoys-144001"
       ],
       "notes": "Enlace de la lista de piezas del comentario del canal. Comprueba la variante y los vasos más gruesos antes de comprar.",
       "offers": [
@@ -325,7 +327,8 @@
       "category": "Transmisión",
       "model_ids": [
         "wltoys-124017",
-        "wltoys-144010"
+        "wltoys-144010",
+        "wltoys-144001"
       ],
       "notes": "Enlace de la lista de piezas del comentario del canal. Selecciona cada pieza y comprueba longitudes, medidas y compatibilidad con tu montaje.",
       "offers": [
@@ -342,7 +345,8 @@
       "category": "Transmisión",
       "model_ids": [
         "wltoys-124017",
-        "wltoys-144010"
+        "wltoys-144010",
+        "wltoys-144001"
       ],
       "notes": "Comprueba qué ejes, engranajes y rodamientos incluye la variante seleccionada.",
       "offers": [
@@ -359,7 +363,8 @@
       "category": "Ruedas",
       "model_ids": [
         "wltoys-124017",
-        "wltoys-144010"
+        "wltoys-144010",
+        "wltoys-144001"
       ],
       "notes": "Comprueba diámetro, hexágono y holguras; la elección de asfalto no se traslada automáticamente a tierra.",
       "offers": [
