@@ -129,6 +129,16 @@
           "store": "amazon",
           "url": "https://amzn.to/4txNSbv",
           "status": "active"
+        },
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c4oWv16f",
+          "status": "active"
+        },
+        {
+          "store": "rlaarlo",
+          "url": "https://rlaarlo.com/products/rlaarlo-green-metal-omni-terminator-rz001g-a?ref=toperc",
+          "status": "active"
         }
       ]
     },
@@ -182,12 +192,14 @@
     },
     {
       "id": "turnigy-lihv-3s-2400-xt60",
-      "name": "Turnigy LiHV 3S 2400 mAh — XT60",
+      "name": "Turnigy BOLTX LiHV 3S 2400 mAh — XT60",
       "category": "Baterías",
       "model_ids": [
-        "wltoys-124017"
+        "wltoys-124017",
+        "jiusi-wb12pro",
+        "mjx-10304"
       ],
-      "notes": "Comprueba medidas y compatibilidad de cargador y electrónica con LiHV a plena carga, además del conector XT60.",
+      "notes": "Pack BOLTX citado en las pruebas del canal. Confirma medidas, conector XT60 y compatibilidad de cargador y electrónica con el voltaje LiHV a plena carga; que se haya probado en una unidad no valida cualquier versión del coche.",
       "offers": [
         {
           "store": "hobbyking",
@@ -550,6 +562,112 @@
         {
           "store": "aliexpress",
           "url": "https://s.click.aliexpress.com/e/_c3dddWBp",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "rlaarlo-x12s",
+      "name": "Rlaarlo X12S",
+      "category": "Coches",
+      "model_ids": [
+        "rlaarlo-x12s"
+      ],
+      "notes": "Comprueba la versión y el contenido del pack. La review utiliza otra batería 3S en su prueba de velocidad.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3Nw2w3l",
+          "status": "active"
+        },
+        {
+          "store": "rlaarlo",
+          "url": "https://rlaarlo.com/products/brushless-rtr-buggy-x12s?ref=toperc",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "pinones-rlaarlo-x12s",
+      "name": "Piñones Surpass Hobby citados para el X12S",
+      "category": "Transmisión",
+      "model_ids": [
+        "rlaarlo-x12s"
+      ],
+      "notes": "Selecciona módulo, número de dientes y diámetro del eje adecuados. La review no fija una variante universal ni mide el resultado del piñón extra incluido en la caja.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/3J0FAXb",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "jiusi-wb12pro",
+      "name": "Jiusi WB12Pro",
+      "category": "Coches",
+      "model_ids": [
+        "jiusi-wb12pro"
+      ],
+      "notes": "Comprueba cuántas baterías y qué cargador trae la variante. El pack de la review incluía tres baterías 3S y cargador ToolkitRC con modo almacenamiento.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c4Lt7CrH",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "mjx-10304",
+      "name": "MJX 10304",
+      "category": "Coches",
+      "model_ids": [
+        "mjx-10304"
+      ],
+      "notes": "La recomendación del canal corresponde al coche revisado y ajustado después de la primera prueba. Consulta ambas entradas y comprueba la versión de carrocería y el pack.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c32M5TnZ",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "mjx-hyper-go-14303",
+      "name": "MJX Hyper Go 14303",
+      "category": "Coches",
+      "model_ids": [
+        "mjx-hyper-go-14303"
+      ],
+      "notes": "Comprueba la versión y las baterías incluidas. En la unidad probada, las piedras bloquearon la dirección; tenlo en cuenta para ese tipo de terreno.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oFAEO4y",
+          "status": "active"
+        },
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4eQy2BG",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "mjx-7303",
+      "name": "MJX 7303",
+      "category": "Coches",
+      "model_ids": [
+        "mjx-7303"
+      ],
+      "notes": "Revisa la versión, el contenido del pack y el espacio de uso. La experiencia en circuito del vídeo incluye ajustes de altura; no acredita una conversión a 6S.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_EJUBUzW",
           "status": "active"
         }
       ]
