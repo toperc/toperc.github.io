@@ -1,6 +1,7 @@
 {% if page.video_id %}
 <section class="article-video" aria-labelledby="article-video-title">
   <h2 id="article-video-title">{% if page.video_title %}{{ page.video_title | escape }}{% elsif page.content_type == 'review' %}La review en vídeo{% else %}El vídeo de esta guía{% endif %}</h2>
+  {% include video_date.html video_id=page.video_id %}
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{ page.video_id | escape }}" title="{{ page.title | escape }} — vídeo de TopeRC" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <p><a href="https://www.youtube.com/watch?v={{ page.video_id | escape }}" target="_blank" rel="noopener noreferrer">Abrir el vídeo en YouTube ↗</a></p>
 </section>
@@ -8,6 +9,7 @@
 {% for video in page.additional_videos %}
 <section class="article-video" aria-labelledby="article-video-title-{{ forloop.index }}">
   <h2 id="article-video-title-{{ forloop.index }}">{{ video.title | escape }}</h2>
+  {% include video_date.html video_id=video.id %}
   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{ video.id | escape }}" title="{{ video.title | escape }} — vídeo de TopeRC" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <p><a href="https://www.youtube.com/watch?v={{ video.id | escape }}" target="_blank" rel="noopener noreferrer">Abrir el vídeo en YouTube ↗</a></p>
 </section>

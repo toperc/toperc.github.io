@@ -1,0 +1,4 @@
+{% assign video_publication = site.data.video_dates[include.video_id] %}
+{% if video_publication %}
+<p class="video-publication-date" data-video-published="{{ include.video_id | escape }}">Vídeo publicado el <time datetime="{{ video_publication.published_on }}">{{ video_publication.published_on | date: '%d/%m/%Y' }}</time></p>
+{% endif %}

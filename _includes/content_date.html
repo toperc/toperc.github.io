@@ -1,0 +1,7 @@
+{% assign dated_document = include.document %}
+{% assign original_video = site.data.video_dates[dated_document.video_id] %}
+{% if original_video %}
+<span class="content-date" data-content-video="{{ dated_document.video_id | escape }}">Vídeo del <time datetime="{{ original_video.published_on }}">{{ original_video.published_on | date: '%d/%m/%Y' }}</time></span>
+{% else %}
+<span class="content-date">Artículo del <time datetime="{{ dated_document.date | date_to_xmlschema }}">{{ dated_document.date | date: '%d/%m/%Y' }}</time></span>
+{% endif %}
