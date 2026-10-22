@@ -17,7 +17,13 @@ layout: default
     </div>
   </header>
   <div class="shell article-body">{% include model_context.html model_id=page.model_id %}{% include model_photos.html model_id=page.model_id %}{% include tags.html %}<div class="prose article-content">{% include youtube_video.html %}{{ content }}</div>{% include partners_article.html %}<nav class="post-navigation" aria-label="Más artículos">
-    {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}"><span class="eyebrow">← Artículo anterior</span><span>{{ page.previous.title | escape }}</span></a>{% endif %}
-    {% if page.next.url %}<a href="{{ page.next.url | relative_url }}"><span class="eyebrow">Siguiente artículo →</span><span>{{ page.next.title | escape }}</span></a>{% endif %}
+    {% assign chronological_posts = site.posts | video_chronology %}
+    {% for candidate in chronological_posts %}
+      {% if candidate.url == page.language_urls.es %}
+        {% unless forloop.last %}{% assign older_index = forloop.index0 | plus: 1 %}{% assign older_post = chronological_posts[older_index] %}<a href="{{ older_post.url | relative_url }}"><span class="eyebrow">← Artículo anterior</span><span>{{ older_post.title | escape }}</span></a>{% endunless %}
+        {% unless forloop.first %}{% assign newer_index = forloop.index0 | minus: 1 %}{% assign newer_post = chronological_posts[newer_index] %}<a href="{{ newer_post.url | relative_url }}"><span class="eyebrow">Siguiente artículo →</span><span>{{ newer_post.title | escape }}</span></a>{% endunless %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
   </nav></div>
 </article></main>

@@ -2,7 +2,8 @@
 layout: default
 ---
 {% assign home = site.data.home %}
-{% assign featured = site.posts | first | localized_document %}
+{% assign home_posts = site.posts | video_chronology %}
+{% assign featured = home_posts | first | localized_document %}
 <main id="main-content">
   <section class="shell editorial-intro" aria-labelledby="home-title">
     <div><p class="eyebrow">{{ home.eyebrow | escape }}</p><h1 id="home-title">{{ home.title | escape }}<br><span>{{ home.highlight | escape }}</span></h1><p class="intro-description">{{ home.description | escape }}</p><div class="button-group"><a class="button button-primary" href="{{ home.primary_link.url | relative_url }}">{{ home.primary_link.title | escape }} <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ home.secondary_link.url | relative_url }}">{{ home.secondary_link.title | escape }} <span aria-hidden="true">→</span></a></div></div>
@@ -19,7 +20,7 @@ layout: default
         {% if featured.video_id %}{% include video_card_background.html video_id=featured.video_id %}{% elsif featured.image %}<a class="featured-image" href="{{ featured.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ featured.image | relative_url }}" alt="" loading="lazy"></a>{% elsif featured_key %}{% include illustration.html key=featured_key %}{% endif %}
         <div class="featured-story-copy"><p class="eyebrow">{% assign featured_category = featured.categories | first %}{{ site.data.categories[featured_category].title | default: featured_category | escape }} · {% include content_date.html document=featured %}</p><h2><a href="{{ featured.url | relative_url }}">{{ featured.title | escape }}</a></h2><p>{{ featured.excerpt | strip_html | normalize_whitespace | truncatewords: 32 }}</p><a class="text-link" href="{{ featured.url | relative_url }}">Leer el artículo <span aria-hidden="true">↗</span></a></div>
       </article>
-      <div class="featured-side">{% for post in site.posts offset: 1 limit: 2 %}{% include article_summary.html post=post heading='h3' %}{% endfor %}</div>
+      <div class="featured-side">{% for post in home_posts offset: 1 limit: 2 %}{% include article_summary.html post=post heading='h3' %}{% endfor %}</div>
     </div>
   </section>
   {% endif %}

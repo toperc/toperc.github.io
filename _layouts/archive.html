@@ -4,6 +4,7 @@ wide: true
 ---
 {% assign archive_posts = site.posts %}
 {% if page.category %}{% assign archive_posts = site.categories[page.category] %}{% endif %}
+{% assign archive_posts = archive_posts | video_chronology %}
 <div class="search-toolbar"><p data-search-count role="status" aria-live="polite">{{ archive_posts.size }} publicaciones</p><label class="search-field" for="archive-search" data-search-controls hidden><span>Buscar en {{ page.title | escape }}</span><input id="archive-search" type="search" placeholder="Tema, marca o modelo…" data-search-input aria-controls="archive-list"></label></div>
 {% unless page.category %}
 <div class="category-filters" role="group" aria-label="Filtrar publicaciones por tipo" data-search-controls hidden><button type="button" data-type-value="" aria-pressed="true">Todo</button>{% for type in site.data.content_types %}{% assign type_posts = archive_posts | where: 'content_type', type[0] %}{% if type_posts.size > 0 %}<button type="button" data-type-value="{{ type[0] | escape }}" aria-pressed="false">{{ type[1].plural | escape }} <span>{{ type_posts.size }}</span></button>{% endif %}{% endfor %}</div>
