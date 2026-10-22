@@ -21,6 +21,10 @@ Una guía compartida puede declarar `related_model_ids: [wltoys-124017]`, ademá
 
 Al revisar una entrada existente, conserva su nombre de archivo y su fecha original. Añade `last_modified_at` con la fecha real de la revisión: el artículo muestra ambas fechas. Un artículo nuevo lleva su propia fecha de publicación.
 
+La fecha del artículo y la del vídeo son independientes. Las fechas originales verificadas de YouTube se guardan por ID en `_data/video_dates.json`: `published_at` conserva el instante y la zona horaria de los metadatos públicos `publishDate`, `published_on` contiene el día convertido a `Europe/Madrid`, `source_url` enlaza a la fuente y `checked_on` registra cuándo se verificó. El 22/10/2026 se contrastaron los 40 vídeos usados en las 38 entradas. No se consultan APIs ni se descargan datos de YouTube desde la web del lector.
+
+Al añadir un vídeo principal o una parte adicional, verifica su fecha en YouTube y añade su registro a ese catálogo. La cabecera separa «Vídeo original», «Artículo publicado» y «Artículo actualizado». Cada parte muestra su propia fecha junto al reproductor; las tarjetas y el destacado muestran la fecha del vídeo principal con la etiqueta «Vídeo del». Las entradas sin vídeo siguen mostrando la fecha del artículo. No cambies `date`, el nombre del archivo ni la URL del artículo para ajustarlos a YouTube.
+
 El primer lote relaciona las reviews del Jiabaila 1:43 y del Wltoys 124017, añade la guía de baterías del 124017 y migra el iframe anterior del MJX 14210 al mismo sistema. La migración del MJX no supone una revisión de su texto.
 
 Las transcripciones completas, las notas editoriales y la conexión a YouTube se gestionan en una herramienta local independiente, fuera de este repositorio. Las sugerencias del inventario no se convierten automáticamente en relaciones confirmadas ni en artículos publicados.
@@ -36,4 +40,4 @@ bundle exec jekyll build
 bundle exec ruby _checks/validate_videos.rb
 ```
 
-El validador comprueba IDs, ausencia de repeticiones dentro de cada entrada, orden de las partes, enlaces directos, títulos accesibles, fechas de actualización visibles y coherencia con las fichas. El segundo lote reúne cinco guías a partir de siete vídeos consultados en Studio el 22/10/2026; sus transcripciones y notas se conservan fuera del repositorio.
+El validador comprueba IDs, ausencia de repeticiones dentro de cada entrada, orden de las partes, enlaces directos, títulos accesibles, fechas originales y de actualización visibles en ambos idiomas, conversión horaria, fechas de las tarjetas y coherencia con las fichas. El segundo lote reúne cinco guías a partir de siete vídeos consultados en Studio el 22/10/2026; sus transcripciones y notas se conservan fuera del repositorio.

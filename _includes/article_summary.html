@@ -14,5 +14,5 @@
   {% if article.resource_status == 'pending' %}<span class="resource-status">Listado de piezas en preparación</span>{% endif %}
   <p>{{ article.subtitle | default: article.description | default: article.excerpt | strip_html | normalize_whitespace | truncatewords: 25 }}</p>
   {% if linked_model and linked_model.model_id != page.model_id %}<a class="card-model" href="{{ linked_model.url | relative_url }}">Todo sobre {{ linked_model.title | escape }} ↗</a>{% endif %}
-  <div class="card-bottom"><time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: '%d/%m/%Y' }}</time><a href="{{ article.url | relative_url }}" aria-label="Leer {{ article.title | escape }}">Leer artículo <span aria-hidden="true">↗</span></a></div>
+  <div class="card-bottom">{% include content_date.html document=article %}<a href="{{ article.url | relative_url }}" aria-label="Leer {{ article.title | escape }}">Leer artículo <span aria-hidden="true">↗</span></a></div>
 </article>

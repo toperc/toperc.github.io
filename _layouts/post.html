@@ -7,7 +7,14 @@ layout: default
     <a class="breadcrumb" href="{% if page.categories contains 'reviews' %}{{ '/reviews' | relative_url }}{% else %}{{ '/guias/' | relative_url }}{% endif %}">← {% if page.categories contains 'reviews' %}Todas las reviews{% else %}Todas las guías{% endif %}</a>
     <p class="eyebrow">{% if page.categories contains 'reviews' %}En el garaje / Review{% else %}En el taller / Guía{% endif %}</p>
     <h1>{{ page.title | escape }}</h1>{% if page.subtitle %}<p class="page-description">{{ page.subtitle | escape }}</p>{% endif %}
-    <div class="article-meta"><span>{{ page.author | default: site.author | escape }}</span><span>Publicado el {{ page.date | date: '%d/%m/%Y' }}</span>{% if page.last_modified_at %}<span>Actualizado el {{ page.last_modified_at | date: '%d/%m/%Y' }}</span>{% endif %}<span>{% include read_time.html content=page.content %}</span></div>
+    <div class="article-meta">
+      <span>{{ page.author | default: site.author | escape }}</span>
+      {% assign original_video = site.data.video_dates[page.video_id] %}
+      {% if original_video %}<span class="article-original-video-date">Vídeo original del <time datetime="{{ original_video.published_on }}">{{ original_video.published_on | date: '%d/%m/%Y' }}</time></span>{% endif %}
+      <span class="article-publication-date">Artículo publicado el <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%d/%m/%Y' }}</time></span>
+      {% if page.last_modified_at %}<span class="article-modified-date">Artículo actualizado el <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: '%d/%m/%Y' }}</time></span>{% endif %}
+      <span>{% include read_time.html content=page.content %}</span>
+    </div>
   </header>
   <div class="shell article-body">{% include model_context.html model_id=page.model_id %}{% include model_photos.html model_id=page.model_id %}{% include tags.html %}<div class="prose article-content">{% include youtube_video.html %}{{ content }}</div>{% include partners_article.html %}<nav class="post-navigation" aria-label="Más artículos">
     {% if page.previous.url %}<a href="{{ page.previous.url | relative_url }}"><span class="eyebrow">← Artículo anterior</span><span>{{ page.previous.title | escape }}</span></a>{% endif %}
