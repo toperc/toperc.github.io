@@ -7,7 +7,7 @@ navbar: false
 
 # Aviso de Privacidad
 
-En *TopeRC.es* (en adelante, "el sitio"), respetamos tu privacidad y nos comprometemos a proteger la información personal que compartas con nosotros. Este Aviso de Privacidad explica nuestras prácticas en relación con la recopilación, uso y protección de tu información personal cuando visitas nuestro sitio.
+En *TopeRC.com* (en adelante, "el sitio"), respetamos tu privacidad y nos comprometemos a proteger la información personal que compartas con nosotros. Este Aviso de Privacidad explica nuestras prácticas en relación con la recopilación, uso y protección de tu información personal cuando visitas nuestro sitio.
 
 ## 1. Información que Recopilamos
 

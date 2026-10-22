@@ -1,10 +1,10 @@
-# About TopeRC.es
+# About TopeRC.com
 
-Welcome to **TopeRC.es**, a website created by and for RC car enthusiasts. Our aim is to provide the information you need to enjoy this exciting hobby. Here you will find **detailed reviews**, **practical guides**, **tutorials** and a **spare parts catalogue** for leading RC car models.
+Welcome to **TopeRC.com**, a website created by and for RC car enthusiasts. Our aim is to provide the information you need to enjoy this exciting hobby. Here you will find **detailed reviews**, **practical guides**, **tutorials** and a **spare parts catalogue** for leading RC car models.
 
 # Our Mission
 
-At **TopeRC.es**, we believe radio control is much more than a pastime: it is a passion combining technology, creativity and adventure. Our mission is to be a leading resource for RC car enthusiasts, offering quality content that helps beginners and experts improve their skills and enjoy radio control.
+At **TopeRC.com**, we believe radio control is much more than a pastime: it is a passion combining technology, creativity and adventure. Our mission is to be a leading resource for RC car enthusiasts, offering quality content that helps beginners and experts improve their skills and enjoy radio control.
 
 # What We Offer
 
@@ -16,11 +16,11 @@ At **TopeRC.es**, we believe radio control is much more than a pastime: it is a 
 
 # Our Team
 
-**TopeRC.es** is made up of radio control enthusiasts with years of experience driving, modifying and maintaining RC vehicles. We love sharing our knowledge and learning with the community. We believe in the strength of that community and want to help the hobby grow and reach more people.
+**TopeRC.com** is made up of radio control enthusiasts with years of experience driving, modifying and maintaining RC vehicles. We love sharing our knowledge and learning with the community. We believe in the strength of that community and want to help the hobby grow and reach more people.
 
 # Our Community
 
-We want TopeRC.es to be a place where all radio control fans can share, learn and enjoy the hobby together. Join in by commenting on our reviews, taking part in the blog or connecting with us on social media.
+We want TopeRC.com to be a place where all radio control fans can share, learn and enjoy the hobby together. Join in by commenting on our reviews, taking part in the blog or connecting with us on social media.
 
 # Get in Touch
 
@@ -28,4 +28,4 @@ If you have a question, a suggestion or simply want to chat about RC cars, pleas
 
 ---
 
-Thank you for visiting **TopeRC.es**. We hope you find what you need and enjoy the radio control adventure as much as we do!
+Thank you for visiting **TopeRC.com**. We hope you find what you need and enjoy the radio control adventure as much as we do!

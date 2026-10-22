@@ -1,6 +1,6 @@
 # Privacy Notice
 
-At *TopeRC.es* (the "website"), we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Notice explains our practices for collecting, using and protecting your personal information when you visit the website.
+At *TopeRC.com* (the "website"), we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Notice explains our practices for collecting, using and protecting your personal information when you visit the website.
 
 ## 1. Information We Collect
 

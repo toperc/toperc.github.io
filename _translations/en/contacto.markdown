@@ -1,7 +1,7 @@
 ---
 description: "Contact TopeRC: questions, suggestions and conversations about RC cars."
 ---
-Thank you for visiting **TopeRC.es**. We are always happy to connect with other radio control enthusiasts. If you have a question, a suggestion or simply want to say hello, here is how to reach us.
+Thank you for visiting **TopeRC.com**. We are always happy to connect with other radio control enthusiasts. If you have a question, a suggestion or simply want to say hello, here is how to reach us.
 
 ## Telegram Channel
 
