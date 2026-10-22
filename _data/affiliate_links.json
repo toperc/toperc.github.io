@@ -278,13 +278,19 @@
       "category": "Emisoras",
       "model_ids": [
         "wltoys-124017",
-        "wltoys-144010"
+        "wltoys-144010",
+        "wltoys-104001"
       ],
       "notes": "Selecciona el conjunto que incluya receptor con giroscopio; una oferta puede reunir varias emisoras y receptores.",
       "offers": [
         {
           "store": "aliexpress",
           "url": "https://s.click.aliexpress.com/e/_c39xJGyj",
+          "status": "active"
+        },
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/45jclb1",
           "status": "active"
         }
       ]
@@ -669,6 +675,251 @@
           "store": "aliexpress",
           "url": "https://s.click.aliexpress.com/e/_EJUBUzW",
           "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "wltoys-104001",
+      "name": "Wltoys 104001",
+      "category": "Coches",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Modelo de origen del proyecto. Comprobar el contenido del pack.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oEhjEWO",
+          "status": "active"
+        },
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4kNfBjk",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "corona-lc-racing-104001",
+      "name": "Corona LC Racing del diferencial central 104001",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Referencia del montaje del vídeo. Comprobar variante y dentado.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_olZh2mS",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "diferencial-wltoys-104001",
+      "name": "Diferencial original Wltoys 104001",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_omNf1hy",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "dogbones-104001-central",
+      "name": "Dog bones 100 mm y 70 mm del proyecto 104001",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Elegir las medidas correspondientes; el montaje utiliza dos longitudes.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_omPsn2A",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "pinones-104001-central",
+      "name": "Kit de piñones del diferencial central 104001",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Comprobar módulo, diámetro del eje y relación del conjunto.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/45LmvkD",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "copas-wltoys-104001",
+      "name": "Copas o vasos Wltoys 104001",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Referencia de recambio de la descripción del vídeo.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_ooeLg1o",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "engranaje-diferencial-104001",
+      "name": "Engranaje de diferencial Wltoys 104001",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oElvMMe",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "bancada-wltoys-104001",
+      "name": "Bancada original Wltoys 104001",
+      "category": "Electrónica",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Enlace corregido en un comentario del canal sobre la conversión.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oBLjdfE",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "pinon-original-wltoys-104001",
+      "name": "Piñón para la corona original Wltoys 104001",
+      "category": "Transmisión",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Referencia corregida en comentarios. No confundir con los piñones de la corona LC Racing.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_opLAgnq",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "servo-surpass-9kg",
+      "name": "Servo Surpass Hobby 9 kg",
+      "category": "Electrónica",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Referencia de la descripción de la conversión. Revisar dimensiones y brazo.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/3HS0c2P",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "combo-surpass-60a-3500kv",
+      "name": "Combo Surpass 60 A y motor 3500 KV",
+      "category": "Electrónica",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Alternativa sin sensores de la descripción; no es el montaje con sensores del vídeo.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_oltG5n0",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "combo-surpass-120a-85t",
+      "name": "Combo Surpass 120 A y motor 8,5T con sensores",
+      "category": "Electrónica",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Alternativa de la descripción. El variador instalado en el vídeo es un Hobbywing distinto.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_opeQuTM",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "hg-eliminador-adhesivos",
+      "name": "HG eliminador de adhesivos utilizado en la carrocería",
+      "category": "Taller",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "Producto de la prueba del 104001. No se garantiza compatibilidad con otros plásticos: consultar sus instrucciones.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4kEbs1n",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "wltoys-124008",
+      "name": "Wltoys 124008",
+      "category": "Coches",
+      "model_ids": [
+        "wltoys-124008"
+      ],
+      "notes": "Referencia del modelo de una review con resultado negativo.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c4WxrQnf",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "conversion-104001-enlace-por-confirmar",
+      "name": "Conversión 104001 — enlace repetido por confirmar",
+      "category": "Electrónica",
+      "model_ids": [
+        "wltoys-104001"
+      ],
+      "notes": "La descripción repite este enlace para bancada, piñón y servo. Bancada y piñón corregidos en comentarios; identidad de este enlace pendiente.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_on1NqVo",
+          "status": "review"
         }
       ]
     }
