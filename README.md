@@ -98,6 +98,8 @@ La referencia de URLs, categorías y etiquetas originales está en `_checks/fixt
 
 Los enlaces externos de colaboración se resuelven desde `_data/affiliate_links.json`, mediante los identificadores de `_data/partners.json`. Se pueden actualizar desde el gestor de afiliados; las ofertas en revisión o desactivadas no generan botones de compra. La configuración de colaboraciones contiene solo textos, código del canal y referencias a artículos/productos, sin duplicar URLs de seguimiento. El gestor muestra también estos usos en la portada y la página de colaboraciones.
 
+Los fondos ilustrados de estas tarjetas se configuran también en `_data/partners.json`; son decorativos y se sirven como WebP locales con carga diferida. Los degradados mantienen el texto legible y el efecto de acercamiento respeta movimiento reducido. Su procedencia, archivos y prompts están en `docs/fondos-colaboraciones.md`.
+
 Los artículos existentes no se han reescrito. Las páginas de contacto, equipo y legales se conservan. El formulario mantiene Formspree y la cabecera mantiene la integración existente de Google Tag Manager.
 
 ## Publicación e iteraciones

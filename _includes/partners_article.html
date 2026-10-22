@@ -4,7 +4,8 @@
   {% for offer in related_product.offers %}{% if offer.status == 'active' %}{% if offer.store == 'hobbyking' %}{% assign article_hobbyking = true %}{% elsif offer.store == 'rlaarlo' %}{% assign article_rlaarlo_product = product_id %}{% endif %}{% endif %}{% endfor %}
 {% endfor %}
 {% if article_hobbyking or article_rlaarlo_product != '' %}
-<aside class="partner-article" aria-label="Apoya TopeRC a través de nuestras tiendas afiliadas">
+<aside class="partner-article partner-visual" aria-label="Apoya TopeRC a través de nuestras tiendas afiliadas">
+  {% if article_hobbyking %}{% include partner_scene.html src=site.data.partners.hobbyking.image compact=true %}{% else %}{% include partner_scene.html src=site.data.partners.rlaarlo.image compact=true %}{% endif %}
   <div><p class="eyebrow">Sigue apoyando TopeRC</p>
     {% if article_hobbyking %}<h2>HobbyKing, también en nuestro taller.</h2><p>Colaboran activamente con el proyecto. Si vas a comprar en HobbyKing, puedes apoyar las próximas pruebas entrando desde nuestro enlace.</p>
     {% else %}<h2>Rlaarlo, del vídeo a tu garaje.</h2><p>Consulta el modelo en la tienda oficial con nuestro enlace de afiliado y ayuda a que sigamos compartiendo experiencias de RC.</p>{% endif %}

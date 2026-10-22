@@ -65,7 +65,7 @@ for (const path of ['', 'colaboraciones/', 'reviews/turnigy-rapid-4s-mjx-7303/',
   if (path.startsWith('reviews/')) {
     const post = context.references.find(post => post.path === `/${path}`);
     const expected = post.products.some(id => source.products.find(product => product.id === id).offers.some(offer => offer.status === 'active' && ['hobbyking', 'rlaarlo'].includes(offer.store)));
-    assert.equal(html.includes('class="partner-article"'), expected, 'El bloque del artículo debe corresponder a una tienda de sus productos.');
+    assert.equal(/class="[^"]*\bpartner-article\b[^"]*"/.test(html), expected, 'El bloque del artículo debe corresponder a una tienda de sus productos.');
   }
 }
 const partnerPage = (await readPage('colaboraciones/')).split('<main')[1].split('</main>')[0];

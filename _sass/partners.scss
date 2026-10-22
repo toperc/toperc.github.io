@@ -60,6 +60,38 @@
 .partner-footer .partner-disclosure { margin-top:5px; font-size:10px; }
 .partner-footer .partner-shop-link { display:inline-flex; align-items:center; gap:13px; color:#edba7a; font-size:12px; font-weight:700; }
 .partner-shop-link:hover { text-decoration:underline; }
+
+// Fondos decorativos: el contenido y los enlaces siguen siendo HTML accesible.
+.partner-visual { position:relative; isolation:isolate; overflow:hidden; }
+.partner-visual>:not(.partner-scene):not(.partner-scene-credit) { position:relative; z-index:1; }
+.partner-scene { position:absolute; inset:0; z-index:0; pointer-events:none; overflow:hidden; background:#111318; }
+.partner-scene img { width:100%; height:100%; max-width:none; object-fit:cover; object-position:65% 50%; transition:transform .55s ease; }
+.partner-scene::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(7,9,12,.93),rgba(7,9,12,.64) 55%,rgba(7,9,12,.14)),linear-gradient(0deg,rgba(7,9,12,.96),rgba(7,9,12,.15) 75%); }
+.partner-scene-credit { position:absolute; right:14px; bottom:10px; z-index:2; color:#c6c3be; font-size:8px; line-height:1.5; letter-spacing:.03em; pointer-events:none; }
+.partners-home-grid { grid-template-columns:1.1fr 1fr; }
+.partner-card.partner-visual { min-height:420px; padding:30px 32px 38px; border-radius:3px; transition:border-color .2s ease; }
+.partner-card.partner-visual:hover { border-color:#b69970; }
+.partner-card.partner-visual:hover .partner-scene img { transform:scale(1.035); }
+.partner-card .partner-kind { align-self:flex-start; padding:5px 9px; margin-bottom:auto; border:1px solid #aa835450; background:#121316aa; }
+.partner-card .partner-name { font-size:43px; margin-top:75px; }
+.partner-card>p:not(.partner-kind) { max-width:400px; color:#e2ded7; margin-block:15px 20px; }
+.partner-card .partner-actions { margin-top:3px; }
+.partner-visual .partner-button-outline { background:#0e1016a6; border-color:#a6a3aa; }
+.partner-visual .partner-button-outline:hover { background:#30272d; border-color:#ffb8bc; }
+.partner-visual .partner-secondary { color:#f0ece6; }
+.partner-feature.partner-visual { min-height:500px; padding-bottom:48px; }
+.partner-feature .partner-scene::after { background:linear-gradient(90deg,rgba(7,9,12,.96),rgba(7,9,12,.83) 48%,rgba(7,9,12,.26)),linear-gradient(0deg,rgba(7,9,12,.85),transparent); }
+.partner-feature-note { background:#111316e6; border-color:#ad8b595c; backdrop-filter:blur(10px); }
+.partner-model.partner-visual { min-height:330px; display:flex; flex-direction:column; align-items:flex-start; padding-bottom:38px; }
+.partner-model .eyebrow { margin-bottom:auto; }
+.partner-model h3 { margin-top:70px; }
+.partner-model>p:not(.eyebrow) { max-width:310px; color:#ddd9d3; }
+.partner-model .partner-actions { margin-top:auto; }
+.partner-model:nth-child(2) .partner-scene img { object-position:78% 50%; }
+.partner-article .partner-scene::after { background:linear-gradient(90deg,rgba(7,9,12,.97),rgba(7,9,12,.86) 65%,rgba(7,9,12,.4)); }
+.partner-article .partner-scene img { object-position:80% 50%; }
+.partner-article { padding-bottom:34px; }
+.partner-article>div>p:not(.eyebrow) { color:#d4cfc8; max-width:630px; }
 @media(min-width:1201px) and (max-width:1400px) { .nav-links { gap:18px; } }
 @media(max-width:1200px) {
   .navigation { flex-wrap:wrap; min-height:90px; padding-block:14px; gap:16px; }
@@ -86,4 +118,15 @@
   .partner-article { padding:22px; }
   .partner-footer { align-items:flex-start; }
   .partner-footer .partner-actions { gap:14px; }
+  .partner-card.partner-visual { min-height:410px; padding:24px 24px 36px; }
+  .partner-card .partner-name { font-size:39px; margin-top:90px; }
+  .partner-card>p:not(.partner-kind) { max-width:100%; }
+  .partner-scene img { object-position:70% 50%; }
+  .partner-scene::after { background:linear-gradient(0deg,rgba(7,9,12,.98),rgba(7,9,12,.77) 45%,rgba(7,9,12,.14)),linear-gradient(90deg,rgba(7,9,12,.62),transparent); }
+  .partner-feature.partner-visual { padding:24px 24px 38px; }
+  .partner-feature .partner-scene::after { background:linear-gradient(0deg,rgba(7,9,12,.96),rgba(7,9,12,.84) 65%,rgba(7,9,12,.55)); }
+  .partner-feature-note { backdrop-filter:none; }
+  .partner-model.partner-visual { min-height:350px; padding:24px 24px 36px; }
+  .partner-model h3 { margin-top:100px; }
 }
+@media(prefers-reduced-motion:reduce) { .partner-card.partner-visual:hover .partner-scene img { transform:none; } }
