@@ -53,7 +53,7 @@ En la [guía de baterías]({{ '/manuales/baterias-wltoys-124017/#lihv-fíjate-en
 
 La última parte muestra el coche rodando y saltando después del montaje. No aporta velocidad medida, autonomía cronometrada o un ensayo de resistencia a largo plazo.
 
-El refuerzo de carrocería y el cambio de variador son decisiones separadas: puedes valorar el primero por el desgaste de tu coche sin aumentar su potencia. Encontrarás las publicaciones del modelo en la [ficha del Rlaarlo Omni Terminator]({{ '/coches/rlaarlo-omni-terminator/' | relative_url }}).
+El refuerzo de carrocería y el cambio de variador son decisiones separadas: puedes valorar el primero por el desgaste de tu coche sin aumentar su potencia. Para ver cómo se comportó antes de cambiar el variador, tienes la [review original del Omni Terminator en el skatepark]({{ '/reviews/rlaarlo-omni-terminator/' | relative_url }}). Encontrarás las publicaciones del modelo en la [ficha del Rlaarlo Omni Terminator]({{ '/coches/rlaarlo-omni-terminator/' | relative_url }}).
 
 ## Enlaces de compra del vídeo
 
