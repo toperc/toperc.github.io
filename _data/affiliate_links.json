@@ -106,12 +106,19 @@
       "id": "radiomaster-mt12",
       "name": "RadioMaster MT12",
       "category": "Emisoras",
-      "model_ids": [],
+      "model_ids": [
+        "tamiya-tt02"
+      ],
       "notes": "Elige la versión 4 en 1 o ExpressLRS según tus receptores y comprueba el contenido del pack.",
       "offers": [
         {
           "store": "aliexpress",
           "url": "https://s.click.aliexpress.com/e/_c3xsOH1R",
+          "status": "active"
+        },
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4s7tddF",
           "status": "active"
         }
       ]
@@ -281,16 +288,16 @@
         "wltoys-144010",
         "wltoys-104001"
       ],
-      "notes": "Selecciona el conjunto que incluya receptor con giroscopio; una oferta puede reunir varias emisoras y receptores.",
+      "notes": "Emisora y receptor citados en el vídeo de DumboRC. Comprobar versión y contenido del pack.",
       "offers": [
         {
-          "store": "aliexpress",
-          "url": "https://s.click.aliexpress.com/e/_c39xJGyj",
+          "store": "amazon",
+          "url": "https://amzn.to/4qSV8gR",
           "status": "active"
         },
         {
-          "store": "amazon",
-          "url": "https://amzn.to/45jclb1",
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3Wtfmin",
           "status": "active"
         }
       ]
@@ -920,6 +927,314 @@
           "store": "aliexpress",
           "url": "https://s.click.aliexpress.com/e/_on1NqVo",
           "status": "review"
+        }
+      ]
+    },
+    {
+      "id": "modulo-luces-dumborc",
+      "name": "Módulo de control de luces para receptor RC",
+      "category": "Electrónica",
+      "model_ids": [],
+      "notes": "Módulo de la demostración: comprobar tensión, conector y modos.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/48eutTl",
+          "status": "active"
+        },
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c39xNdWF",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "cable-pc-dumborc",
+      "name": "Adaptador de la DumboRC al PC",
+      "category": "Electrónica",
+      "model_ids": [],
+      "notes": "Comprobar compatibilidad del puerto de la emisora y del adaptador.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/3WQmp5L",
+          "status": "active"
+        },
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c42CMHbl",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "buscador-baterias-hobbyking",
+      "name": "Buscador de baterías HobbyKing",
+      "category": "Baterías",
+      "model_ids": [],
+      "notes": "",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://fas.st/t/2XDjXqBn",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "zeee-3s-2200-guia",
+      "name": "Zeee 3S 2200 mAh — referencia de la guía",
+      "category": "Baterías",
+      "model_ids": [],
+      "notes": "El vídeo no identifica el conector en el enlace: comprobar la variante. No implica compatibilidad universal.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/47V9vtF",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "zeee-3s-5200",
+      "name": "Zeee 3S 5200 mAh",
+      "category": "Baterías",
+      "model_ids": [],
+      "notes": "La guía menciona dos packs en serie para 6S: requiere un sistema preparado para ello.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/3LR7ndP",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "dxf-4s-6500-lihv",
+      "name": "DXF LiHV 4S 6500 mAh",
+      "category": "Baterías",
+      "model_ids": [],
+      "notes": "Referencia LiHV de la descripción. Comprobar tensión máxima admitida por todo el sistema.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c2vCh4jP",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "cargador-imax-b6",
+      "name": "Cargador Imax B6",
+      "category": "Cargadores",
+      "model_ids": [],
+      "notes": "Referencia de la descripción del vídeo. Revisar modelo, fuente de alimentación y potencia incluidos.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/47Va1rB",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "cargador-ovonic-x4",
+      "name": "Cargador Ovonic X4",
+      "category": "Cargadores",
+      "model_ids": [],
+      "notes": "Referencia de la descripción del vídeo. Revisar modelo, fuente de alimentación y potencia incluidos.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/49y8f0F",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "cargador-toolkitrc-guia",
+      "name": "Cargador ToolkitRC de la guía",
+      "category": "Cargadores",
+      "model_ids": [],
+      "notes": "Referencia de la descripción del vídeo. Revisar modelo, fuente de alimentación y potencia incluidos.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/3XGCn2D",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "traxxas-ez-peak-live-dual",
+      "name": "Cargador Traxxas EZ-Peak Live Dual",
+      "category": "Cargadores",
+      "model_ids": [],
+      "notes": "La review explica un problema con la app en la versión usada durante la grabación.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/3H2JiyA",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "baterias-traxxas-guia",
+      "name": "Baterías Traxxas de la review del cargador",
+      "category": "Baterías",
+      "model_ids": [],
+      "notes": "Comprobar número de celdas, capacidad y formato iD de la variante ofrecida.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/44Z4y08",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "turnigy-rapid-4s-6500",
+      "name": "Turnigy Rapid LiPo 4S 6500 mAh — XT90",
+      "category": "Baterías",
+      "model_ids": [
+        "mjx-7303"
+      ],
+      "notes": "Batería facilitada por HobbyKing para la prueba. Revisar dimensiones y parámetros de carga.",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://hobbyking.com/es_es/turnigy-rapid-6500mah-4s2p-140c-hardcase-lipo-battery-pack-w-xt90-connector.html?ref=toperc&tap_s=9064443-ac2a8c&utm_source=tapfiliate&utm_medium=referral&utm_campaign=toperc",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "turnigy-rapid-2s-5000",
+      "name": "Turnigy Rapid LiPo 2S 5000 mAh — EC5",
+      "category": "Baterías",
+      "model_ids": [
+        "losi-promoto-sm"
+      ],
+      "notes": "En el vídeo explico que compré estas unidades dentro del contexto de colaboración con la tienda.",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://hobbyking.com/es_es/turnigy-rapid-5000mah-2s-7-4v-100c-lipo-battery-pack-w-ec5-connector.html?ref=toperc&tap_s=9064443-ac2a8c&utm_source=tapfiliate&utm_medium=referral&utm_campaign=toperc",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "turnigy-rapid-lihv-2s-referencia",
+      "name": "Turnigy Rapid LiHV 2S — referencia de 6000 mAh",
+      "category": "Baterías",
+      "model_ids": [
+        "tamiya-tt02"
+      ],
+      "notes": "El enlace dice 6000 mAh; la unidad de la prueba se describe como 6400 mAh. Confirmar variante y límites de carga antes de comprar.",
+      "offers": [
+        {
+          "store": "hobbyking",
+          "url": "https://hobbyking.com/es_es/rapid-6000mah-2s2p-7-6v-140c-hv-hardcase.html?ref=toperc&tap_s=9064443-ac2a8c&utm_source=tapfiliate&utm_medium=referral&utm_campaign=toperc",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "losi-promoto-sm",
+      "name": "Losi Promoto SM",
+      "category": "Coches",
+      "model_ids": [
+        "losi-promoto-sm"
+      ],
+      "notes": "Comprobar si el pack incluye batería y cargador.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/3MulUfP",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "tamiya-tt02",
+      "name": "Tamiya TT-02 — coche base",
+      "category": "Coches",
+      "model_ids": [
+        "tamiya-tt02"
+      ],
+      "notes": "Revisar carrocería, electrónica y material incluido en el kit.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4s5ZSQR",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "bolas-baja-friccion-tt02",
+      "name": "Bolas de baja fricción para Tamiya TT-02",
+      "category": "Recambios y electrónica",
+      "model_ids": [
+        "tamiya-tt02"
+      ],
+      "notes": "Referencia de mi montaje. No garantiza autorización en una competición: consultar su reglamento.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/45iXz2S",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "rodamientos-tt02",
+      "name": "Kit de rodamientos Tamiya TT-02",
+      "category": "Recambios y electrónica",
+      "model_ids": [
+        "tamiya-tt02"
+      ],
+      "notes": "Referencia de mi montaje. No garantiza autorización en una competición: consultar su reglamento.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4jghFko",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "servo-ecoboost-tt02",
+      "name": "Servo Ecoboost del TT-02",
+      "category": "Recambios y electrónica",
+      "model_ids": [
+        "tamiya-tt02"
+      ],
+      "notes": "Referencia de mi montaje. No garantiza autorización en una competición: consultar su reglamento.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/4seqhvZ",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "hobbywing-justock-175t",
+      "name": "Combo Hobbywing Justock 17,5T",
+      "category": "Recambios y electrónica",
+      "model_ids": [
+        "tamiya-tt02"
+      ],
+      "notes": "Referencia de mi montaje. No garantiza autorización en una competición: consultar su reglamento.",
+      "offers": [
+        {
+          "store": "amazon",
+          "url": "https://amzn.to/498Suvp",
+          "status": "active"
         }
       ]
     }
