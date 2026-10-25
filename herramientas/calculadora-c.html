@@ -1,0 +1,43 @@
+---
+layout: page
+title: Calculadora de descarga C
+description: Convierte capacidad y tasa C en amperios, o calcula la tasa C para una corriente indicada.
+eyebrow: Baterías / Calculadoras
+permalink: /herramientas/calculadora-c/
+section: tools
+wide: true
+toc: false
+---
+<a class="tool-back" href="{{ '/herramientas/' | relative_url }}">← Todas las herramientas</a>
+<div class="fdr-app" data-c-app>
+<p>Los valores iniciales son un ejemplo. Cambia los campos para calcular tu caso.</p>
+<noscript><p>Activa JavaScript para utilizar la calculadora.</p></noscript>
+<form id="c-form">
+<div class="fdr-grid">
+<fieldset><legend>De C a amperios</legend>
+<label for="c-capacity">Capacidad de la batería (mAh)</label><input id="c-capacity" type="number" min="0.001" step="any" value="5000" required>
+<label for="c-continuous">Descarga continua (C)</label><input id="c-continuous" type="number" min="0.001" step="any" value="50" required aria-describedby="c-label-help">
+<label for="c-burst">Descarga de pico (C, opcional)</label><input id="c-burst" type="number" min="0.001" step="any" aria-describedby="c-burst-help">
+<p id="c-label-help">Usa los valores de descarga de la etiqueta. La tasa de carga es una especificación diferente.</p>
+<div id="c-amps" class="fdr-result" aria-live="polite"></div>
+<p id="c-burst-result" aria-live="polite"></p>
+</fieldset>
+<fieldset><legend>De amperios a C</legend>
+<label for="c-inverse-capacity">Capacidad de la batería (mAh)</label><input id="c-inverse-capacity" type="number" min="0.001" step="any" value="5000" required>
+<label for="c-current">Corriente de referencia (A)</label><input id="c-current" type="number" min="0.001" step="any" value="100" required aria-describedby="c-current-help">
+<p id="c-current-help">Introduce la corriente que quieres evaluar. Los amperios nominales del ESC no indican el consumo real del coche.</p>
+<div id="c-required" class="fdr-result" aria-live="polite"></div>
+</fieldset>
+</div>
+<button class="button" type="reset">Restablecer ejemplo</button>
+</form>
+<aside class="fdr-notes"><h2>Cómo se calcula</h2>
+<p>Corriente (A) = capacidad (mAh) ÷ 1000 × tasa C.</p>
+<p>Tasa C = corriente (A) ÷ capacidad (Ah). Por ejemplo, 100 A con 5000 mAh equivalen a 20 C.</p>
+<p>El resultado de descarga es nominal según los datos introducidos; no mide el rendimiento real ni confirma la compatibilidad del conjunto.</p>
+<p id="c-burst-help">La descarga de pico solo corresponde a la duración y condiciones que especifique el fabricante. No sustituye a la descarga continua.</p>
+<p>El número de celdas en serie no interviene en esta conversión entre mAh, C y amperios.</p>
+<p><a class="text-link" href="https://my.spektrumrc.com/ProdInfo/Files/EFL_LiPo_Battery_Guide.pdf" target="_blank" rel="noopener noreferrer">Referencia del fabricante <span aria-hidden="true">↗</span></a></p>
+</aside></div>
+<link rel="stylesheet" href="{{ '/assets/fdr.css' | relative_url }}">
+<script type="module" src="{{ '/assets/battery-c.js' | relative_url }}"></script>

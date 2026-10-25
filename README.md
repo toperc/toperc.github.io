@@ -127,3 +127,7 @@ Esta primera iteración establece la estructura del contenido y las plantillas c
 ### Calculadora de desarrollos RC
 
 Disponible en `/herramientas/calculadora-fdr/` y su versión `/en/`. La página usa `assets/fdr.js`, las fórmulas puras de `assets/fdr-core.mjs` y estilos en `assets/fdr.css`. Funciona con datos manuales, sin persistencia ni envío de los campos. Incluye FDR, avance por vuelta, comparación, búsqueda de piñón y compensación de ruedas. Textos estáticos ingleses en `_data/english.json`; mensajes dinámicos bilingües en el módulo JavaScript. Comprobar las fórmulas con `node --test _checks/fdr.test.mjs`.
+
+### Calculadora de descarga C
+
+`/herramientas/calculadora-c/` y `/en/herramientas/calculadora-c/`: conversión entre capacidad, C de descarga y amperios nominales. Incluye descarga continua, pico opcional y cálculo inverso independiente. Sin persistencia ni envío de campos. Fórmulas en `assets/battery-c-core.mjs`, interfaz bilingüe en `assets/battery-c.js`; reutiliza `assets/fdr.css`. Verificación: `node --test _checks/battery-c.test.mjs`.

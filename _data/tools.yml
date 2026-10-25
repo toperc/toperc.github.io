@@ -1,3 +1,14 @@
+- id: calculadora-c
+  name: Calculadora de descarga C
+  url: /herramientas/calculadora-c/
+  category: Baterías / Calculadoras
+  type: Calculadora web
+  browser: true
+  preview: C
+  preview_caption: C / DESCARGA DE BATERÍAS
+  platforms: [En tu navegador]
+  summary: Convierte mAh y C en amperios nominales y calcula los C equivalentes a una corriente de referencia.
+  tagline: Entiende los C de tu batería.
 - id: calculadora-fdr
   name: Calculadora de desarrollos RC
   url: /herramientas/calculadora-fdr/
