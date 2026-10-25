@@ -123,3 +123,7 @@ Los artículos existentes no se han reescrito. Las páginas de contacto, equipo 
 El flujo de `.github/workflows/jekyll.yml` publica en GitHub Pages cuando se suben cambios a `main`. El trabajo actual está en `codex/renovacion-web`.
 
 Esta primera iteración establece la estructura del contenido y las plantillas compartidas. Las siguientes pueden centrarse en la identidad visual, la portada o la lectura de artículos, manteniendo el contenido independiente del diseño.
+
+### Calculadora de desarrollos RC
+
+Disponible en `/herramientas/calculadora-fdr/` y su versión `/en/`. La página usa `assets/fdr.js`, las fórmulas puras de `assets/fdr-core.mjs` y estilos en `assets/fdr.css`. Funciona con datos manuales, sin persistencia ni envío de los campos. Incluye FDR, avance por vuelta, comparación, búsqueda de piñón y compensación de ruedas. Textos estáticos ingleses en `_data/english.json`; mensajes dinámicos bilingües en el módulo JavaScript. Comprobar las fórmulas con `node --test _checks/fdr.test.mjs`.

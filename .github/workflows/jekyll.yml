@@ -47,7 +47,7 @@ jobs:
         with:
           node-version: '22'
       - name: Check affiliate catalog and browser token access
-        run: node --test _checks/affiliate_core.test.mjs _checks/affiliate_token.test.mjs _checks/language.test.mjs
+        run: node --test _checks/affiliate_core.test.mjs _checks/affiliate_token.test.mjs _checks/language.test.mjs _checks/fdr.test.mjs
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"

@@ -1,3 +1,12 @@
+- id: calculadora-fdr
+  name: Calculadora de desarrollos RC
+  url: /herramientas/calculadora-fdr/
+  category: Transmisión / Calculadoras
+  type: Calculadora web
+  browser: true
+  platforms: [En tu navegador]
+  summary: "Piñón, corona, relación interna y ruedas: descubre cómo cambia el desarrollo de tu RC."
+  tagline: Calcula, compara y ajusta tu desarrollo.
 - id: mt12-overlay-studio
   name: MT12OverlayStudio
   url: /herramientas/mt12-overlay-studio/
