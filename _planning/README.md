@@ -1,5 +1,7 @@
 # Plan de evolución de TopeRC
 
+> Planificación, no cola de tareas ni autorización para publicar. Política vigente: `D:\TOPERC\AGENTS.md`. Confirmar el encargo y el estado implementado antes de aplicar una propuesta.
+
 Fecha: 21 de octubre de 2026. Estado: primera implementación comprobada; publicación autorizada en GitHub Pages.
 
 ## Objetivo y alcance

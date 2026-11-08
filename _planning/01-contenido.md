@@ -14,6 +14,8 @@ Convertir los artículos existentes en contenido útil, concreto y reconocible c
 
 Hay textos que hablan de pruebas propias y cifras de rendimiento. La presencia de esas afirmaciones no demuestra por sí sola que estén documentadas; las contrastaremos con el equipo y sus fuentes.
 
+Material recibido el 21/10/2026: dos fotografías del Jiabaila, integradas en su ficha y review con pies descriptivos. Véase `docs/fotos-jiabaila.md`. No se han dado por verificadas especificaciones técnicas a partir de las fotos.
+
 ## Tareas
 
 - [x] Inventariar los tipos de contenido y seleccionar un piloto provisional.

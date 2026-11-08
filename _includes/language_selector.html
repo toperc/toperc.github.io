@@ -1,0 +1,7 @@
+{% if page.language_urls %}
+<div class="language-selector" role="group" aria-label="Idioma / Language">
+  <a href="{{ page.language_urls.es | relative_url }}" lang="es" hreflang="es" data-language-link="es"{% if page.lang != 'en' %} aria-current="true"{% endif %} aria-label="Español">ES</a>
+  <span aria-hidden="true">/</span>
+  <a href="{{ page.language_urls.en | relative_url }}" lang="en" hreflang="en" data-language-link="en"{% if page.lang == 'en' %} aria-current="true"{% endif %} aria-label="English">EN</a>
+</div>
+{% endif %}

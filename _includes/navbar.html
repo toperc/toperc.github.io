@@ -1,6 +1,7 @@
 <header class="site-header">
   <nav class="shell navigation" aria-label="Navegación principal">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="TopeRC — Inicio"><img src="{{ '/img/toperc-logo.png' | relative_url }}" width="64" height="64" alt=""><span>TOPE<span class="text-accent">RC</span><small>RADIOCONTROL EN ESPAÑOL</small></span></a>
+    {% include language_selector.html %}
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" hidden><span>Menú</span><span aria-hidden="true">☰</span></button>
     <div class="nav-links" id="main-menu">
       {% for item in site.data.navigation %}

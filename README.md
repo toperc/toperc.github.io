@@ -1,5 +1,7 @@
 # TopeRC · Jekyll
 
+> Referencia técnica de TopeRC: la política vigente de agentes, permisos y rutas está en `D:\TOPERC\AGENTS.md`. Los ejemplos no autorizan su ejecución; los estados fechados son históricos y deben contrastarse con Studio/API.
+
 Web de radiocontrol con artículos en Markdown, categorías y etiquetas nativas de Jekyll. El diseño es propio y el despliegue existente continúa en GitHub Pages.
 
 ## Trabajar en local
@@ -23,6 +25,7 @@ bundle exec jekyll build
 | --- | --- |
 | Artículos, reviews y listados de piezas | `_posts/` |
 | Menú principal | `_data/navigation.yml` |
+| Catálogo de apps y sección Herramientas | `_data/tools.yml`, `herramientas.markdown` y `_layouts/tool.html` |
 | Textos y enlaces de la portada | `_data/home.yml` |
 | Nombres visibles y descripciones de categorías | `_data/categories.yml` |
 | Datos generales, redes y reglas de URLs | `_config.yml` |
@@ -35,6 +38,22 @@ bundle exec jekyll build
 Los filtros necesitan JavaScript; sin él, los archivos muestran todas sus publicaciones y los enlaces siguen funcionando. No se cargan Bootstrap, jQuery ni Clean Blog.
 
 ## Añadir una publicación
+
+La web tiene versiones en español e inglés. El selector ES/EN de la cabecera cambia a la misma página y conserva filtros y fragmento de URL. Recuerda la elección en `localStorage`; al volver a la portada aplica la preferencia guardada. Los enlaces directos conservan el idioma de su URL y ambas versiones funcionan sin JavaScript.
+
+El español mantiene sus URLs y el inglés usa el prefijo `/en/`. `_plugins/localization.rb` genera las páginas inglesas al compilar, sin duplicar publicaciones en los índices originales. Las etiquetas `lang`, `canonical` y `hreflang` identifican cada versión.
+
+Los textos compartidos se traducen en `_data/english.json` y los textos con valores variables en `_data/english_patterns.yml`. El contenido editorial inglés se guarda en `_translations/en/`, con la misma ruta que el archivo español, por ejemplo `_translations/en/_posts/reviews/2024-11-1-wltoys-k969.md`. El archivo contiene el cuerpo traducido y admite front matter opcional para sobrescribir título, descripción o subtítulo. Al añadir un artículo es necesario añadir su traducción: la compilación avisa si falta. Los vídeos y las capturas de aplicaciones conservan su idioma original.
+
+Para verificar el selector y las páginas generadas:
+
+```sh
+node --test _checks/language.test.mjs
+bundle exec jekyll build
+bundle exec ruby _checks/validate_languages.rb
+```
+
+Si compilas con un `baseurl`, pásalo como segundo argumento al validador: `bundle exec ruby _checks/validate_languages.rb _site /preview`.
 
 Crea un archivo `_posts/AAAA-MM-DD-titulo.md` o guárdalo en una de sus subcarpetas. Por ejemplo:
 
@@ -71,6 +90,8 @@ Las publicaciones relacionadas llevan en su front matter el mismo `model_id`, un
 
 Una página de recambios que todavía no contiene piezas se marca con `resource_status: pending`; el sitio comunica que el listado está en preparación. El campo no indica disponibilidad comercial de productos.
 
+Las fotos propias de un coche se declaran en `_data/model_photos.yml`, bajo su `model_id`, con imagen completa (`src`), vista previa (`preview`), dimensiones, texto alternativo y pie. Se muestran automáticamente en la ficha y sus reviews, con enlaces para ampliarlas. El campo opcional `image` del modelo o artículo añade una miniatura a las tarjetas. Los originales se conservan fuera de la web; las copias WebP publicadas no incluyen metadatos de cámara o ubicación.
+
 El blog admite enlaces con `marca`, `modelo`, `tipo`, `q` y la categoría histórica `categoria` en la URL. Los filtros necesitan JavaScript; las fichas y enlaces entre publicaciones se generan con Jekyll y funcionan también sin él.
 
 Para comprobar las relaciones y las URLs publicadas:
@@ -99,3 +120,7 @@ Los artículos existentes no se han reescrito. Las páginas de contacto, equipo 
 El flujo de `.github/workflows/jekyll.yml` publica en GitHub Pages cuando se suben cambios a `main`. El trabajo actual está en `codex/renovacion-web`.
 
 Esta primera iteración establece la estructura del contenido y las plantillas compartidas. Las siguientes pueden centrarse en la identidad visual, la portada o la lectura de artículos, manteniendo el contenido independiente del diseño.
+
+### Calculadora de desarrollos RC
+
+Disponible en `/herramientas/calculadora-fdr/` y su versión `/en/`. La página usa `assets/fdr.js`, las fórmulas puras de `assets/fdr-core.mjs` y estilos en `assets/fdr.css`. Funciona con datos manuales, sin persistencia ni envío de los campos. Incluye FDR, avance por vuelta, comparación, búsqueda de piñón y compensación de ruedas. Textos estáticos ingleses en `_data/english.json`; mensajes dinámicos bilingües en el módulo JavaScript. Comprobar las fórmulas con `node --test _checks/fdr.test.mjs`.

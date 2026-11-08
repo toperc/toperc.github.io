@@ -1,0 +1,29 @@
+---
+layout: page
+title: Calculadora de desarrollos RC
+description: Calcula el FDR, compara desarrollos y encuentra el piñón para tu próximo cambio.
+eyebrow: Transmisión / Calculadoras
+permalink: /herramientas/calculadora-fdr/
+section: tools
+wide: true
+toc: false
+---
+<a class="tool-back" href="{{ '/herramientas/' | relative_url }}">← Todas las herramientas</a>
+<div class="fdr-app" data-fdr-app>
+<p>Los valores iniciales son un ejemplo, no una recomendación. Introduce los de tu coche.</p>
+<noscript><p>Activa JavaScript para utilizar la calculadora.</p></noscript>
+<form id="fdr-form">
+<div class="fdr-grid">
+<fieldset><legend>Configuración actual</legend><label for="current-pinion">Piñón (dientes)</label><input id="current-pinion" name="current-pinion" type="number" min="1" step="1" value="20" required aria-describedby="fdr-help"><label for="current-spur">Corona (dientes)</label><input id="current-spur" name="current-spur" type="number" min="1" step="1" value="80" required aria-describedby="fdr-help"><label for="current-internal">Relación interna</label><input id="current-internal" name="current-internal" type="number" min="0.001" step="any" value="2.6" required aria-describedby="fdr-help"><label for="current-diameter">Diámetro de rueda (mm)</label><input id="current-diameter" name="current-diameter" type="number" min="0.001" step="any" value="65" required aria-describedby="fdr-help"><div class="fdr-result" id="current-result" aria-live="polite"></div></fieldset><fieldset><legend>Configuración propuesta</legend><label for="proposed-pinion">Piñón (dientes)</label><input id="proposed-pinion" name="proposed-pinion" type="number" min="1" step="1" value="22" required aria-describedby="fdr-help"><label for="proposed-spur">Corona (dientes)</label><input id="proposed-spur" name="proposed-spur" type="number" min="1" step="1" value="80" required aria-describedby="fdr-help"><label for="proposed-internal">Relación interna</label><input id="proposed-internal" name="proposed-internal" type="number" min="0.001" step="any" value="2.6" required aria-describedby="fdr-help"><label for="proposed-diameter">Diámetro de rueda (mm)</label><input id="proposed-diameter" name="proposed-diameter" type="number" min="0.001" step="any" value="65" required aria-describedby="fdr-help"><div class="fdr-result" id="proposed-result" aria-live="polite"></div></fieldset></div>
+<p id="fdr-help">La relación interna es la reducción entre la corona y las ruedas. Consúltala en el manual; usa 1 solo si no existe reducción adicional.</p>
+<section class="fdr-panel"><h2>Comparación</h2><p id="fdr-comparison" aria-live="polite"></p></section>
+<div class="fdr-grid">
+<section class="fdr-panel"><h2>Buscar piñón</h2><p>Introduce un FDR objetivo. Se usan la corona y relación interna propuestas.</p><label for="target-fdr">FDR objetivo</label><input id="target-fdr" type="number" min="0.001" step="any" value="10" required><p id="fdr-target" aria-live="polite"></p></section>
+<section class="fdr-panel"><h2>Compensar el cambio de ruedas</h2><p>Conserva aproximadamente el avance actual usando la corona, relación interna y ruedas de la configuración propuesta.</p><p id="fdr-compensate" aria-live="polite"></p></section>
+</div>
+<button class="button" type="reset">Restablecer ejemplo</button>
+</form>
+<aside class="fdr-notes"><p>FDR = (corona ÷ piñón) × relación interna. Un FDR mayor significa un desarrollo más corto.</p><p>El avance es la distancia teórica recorrida por vuelta del motor: π × diámetro de rueda ÷ FDR. Permite comparar configuraciones con ruedas distintas.</p><p>Los cálculos no comprueban que un piñón encaje ni los límites térmicos de motor y ESC. No contemplan deformación del neumático ni deslizamiento.</p></aside>
+</div>
+<link rel="stylesheet" href="{{ '/assets/fdr.css' | relative_url }}">
+<script type="module" src="{{ '/assets/fdr.js' | relative_url }}"></script>

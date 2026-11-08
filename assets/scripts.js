@@ -1,4 +1,5 @@
 (() => {
+  const english = document.documentElement.lang === 'en';
   const artwork = [...document.querySelectorAll('[data-parallax-art]')];
   const artworkMotion = window.matchMedia('(min-width: 1001px) and (prefers-reduced-motion: no-preference)');
   if (artwork.length) {
@@ -39,7 +40,7 @@
       }
     });
     document.addEventListener('click', (event) => { if (!event.target.closest('.navigation')) closeMenu(); });
-    window.matchMedia('(min-width: 1001px)').addEventListener('change', closeMenu);
+    window.matchMedia('(min-width: 1201px)').addEventListener('change', closeMenu);
   }
 
   const search = document.querySelector('[data-search-input]');
@@ -89,12 +90,12 @@
       if (modelSelect) modelSelect.value = state.model;
       if (legacyLabel) {
         legacyLabel.hidden = !state.category;
-        legacyLabel.textContent = state.category ? 'Categoría: ' + state.category + '. Puedes cambiar o limpiar los filtros.' : '';
+        legacyLabel.textContent = state.category ? (english ? 'Category: ' : 'Categoría: ') + state.category + (english ? '. You can change or clear the filters.' : '. Puedes cambiar o limpiar los filtros.') : '';
       }
       if (empty) empty.hidden = visible > 0;
       if (count) count.textContent = visible + (count.dataset.searchUnit === 'model'
-        ? (visible === 1 ? ' modelo' : ' modelos')
-        : (visible === 1 ? ' publicación' : ' publicaciones'));
+        ? (english ? (visible === 1 ? ' model' : ' models') : (visible === 1 ? ' modelo' : ' modelos'))
+        : (english ? (visible === 1 ? ' post' : ' posts') : (visible === 1 ? ' publicación' : ' publicaciones')));
     };
 
     const readFilters = () => {

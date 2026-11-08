@@ -13,6 +13,9 @@
 - title: Recambios
   url: /recambios
   section: recambios
+- title: Herramientas
+  url: /herramientas/
+  section: tools
 - title: Categorías
   url: /categorias/
   section: categories
