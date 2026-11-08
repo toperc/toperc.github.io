@@ -1,5 +1,7 @@
 # TopeRC · Jekyll
 
+La versión publicada se construye desde `main`. Al integrar una copia local antigua, comparar primero sus cambios con `origin/main`: un archivo que aparece modificado o sin seguimiento puede estar ya publicado en una versión más reciente. Conservar un commit de respaldo antes de reconciliar ambas historias.
+
 Web de radiocontrol con artículos en Markdown, categorías y etiquetas nativas de Jekyll. El diseño es propio y el despliegue existente continúa en GitHub Pages.
 
 ## Trabajar en local

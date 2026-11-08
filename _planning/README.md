@@ -1,5 +1,8 @@
 # Plan de evolución de TopeRC
 
+> Documento histórico de planificación. Las propuestas no describen necesariamente el estado actual del sitio ni constituyen una cola de tareas. Contrastar cada apartado con el código y la versión publicada antes de aplicarlo.
+
+
 Fecha: 21 de octubre de 2026. Estado: primera implementación comprobada; publicación autorizada en GitHub Pages.
 
 ## Objetivo y alcance
