@@ -1,4 +1,5 @@
 ---
+video_title: "Watch the Yikong 4107 Pro upgrades"
 title: "Yikong 4107 Pro upgrades: 3D parts, wheels and scale accessories"
 subtitle: "A front battery mount, central electronics, quick body clip and the details I added to my crawler."
 description: "The upgrades I made to my Yikong 4107 Pro: 3D printed mounts, battery and electronics layout, wheels, scale accessories and outdoor driving."
@@ -9,6 +10,8 @@ After several days of measuring, designing, printing and waiting for accessories
 This follows my [Yikong 4107 Pro review]({% post_url reviews/2026-11-08-yikong-4107-pro %}). I have not replaced the steering servo or all the electronics: much of the work is about repositioning the original components and adapting the truck to my preferences.
 
 <!--more-->
+
+**The video is currently private on YouTube.** Until its visibility changes, playback is available only to authorised accounts.
 
 ![Upgraded Yikong 4107 Pro with its wheels and accessories, alongside the custom 3D parts]({{ '/img/guias/mejoras-yikong-4107-pro/miniatura.webp' | relative_url }})
 
@@ -85,15 +88,15 @@ The following AliExpress links are **affiliate links**: TopeRC may receive a com
 
 ## Video chapters
 
-- **00:00** — Introduction: my upgraded Yikong
-- **00:44** — Custom 3D parts and shock towers
-- **01:39** — Quick body opening clip
-- **01:50** — Front battery and central electronics
-- **02:37** — New wheels and scale accessories
-- **03:09** — Rear ladder, wheel and fuel-can adapter
-- **03:37** — Underbody protection and bumper cables
-- **04:21** — Future plans: winch, MT12, ELRS and lights
-- **05:56** — Overview and remaining rubbing
-- **06:17** — Final bumper and fender trimming
-- **06:38** — Outdoor driving: rocks, ramps and ropes
-- **09:57** — TopeRC outro
+- [00:00 — Introduction: my upgraded Yikong](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=0s)
+- [00:44 — Custom 3D parts and shock towers](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=44s)
+- [01:39 — Quick body opening clip](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=99s)
+- [01:50 — Front battery and central electronics](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=110s)
+- [02:37 — New wheels and scale accessories](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=157s)
+- [03:09 — Rear ladder, wheel and fuel-can adapter](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=189s)
+- [03:37 — Underbody protection and bumper cables](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=217s)
+- [04:21 — Future plans: winch, MT12, ELRS and lights](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=261s)
+- [05:56 — Overview and remaining rubbing](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=356s)
+- [06:17 — Final bumper and fender trimming](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=377s)
+- [06:38 — Outdoor driving: rocks, ramps and ropes](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=398s)
+- [09:57 — TopeRC outro](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=597s)

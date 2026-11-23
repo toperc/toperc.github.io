@@ -8,7 +8,9 @@ subtitle: "Batería delante, electrónica centrada, cierre rápido y los detalle
 date: 2026-11-23
 categories: manuales
 tags: rc
-published: false
+published: true
+video_id: gnqu7tPFOw0
+video_title: "Las mejoras del Yikong 4107 Pro en vídeo"
 image: /img/guias/mejoras-yikong-4107-pro/miniatura.webp
 description: "Las mejoras que he realizado en mi Yikong 4107 Pro: soportes impresos en 3D, distribución de batería y electrónica, ruedas, accesorios y prueba exterior."
 affiliate_products: ["yikong-4107pro-cables-parachoques-acero", "yikong-4107pro-cajas-plastico", "yikong-4107pro-bicicleta-1-10", "yikong-4107pro-extintor", "yikong-4107pro-bidon-gasolina", "yikong-4107pro-bolsa-lona", "yikong-4107pro-protectores-bajos", "yikong-4107pro-antena"]
@@ -19,6 +21,8 @@ Después de varios días midiendo, diseñando, imprimiendo y esperando accesorio
 Si vienes de la [review del Yikong 4107 Pro]({% post_url reviews/2026-11-08-yikong-4107-pro %}), aquí continúo con las mejoras que quería hacerle. No he cambiado el servo ni sustituido toda la electrónica: buena parte del trabajo consiste en recolocar lo que ya trae y adaptarlo a mi gusto.
 
 <!--more-->
+
+**El vídeo está actualmente en privado en YouTube.** El reproductor solo estará disponible para las cuentas autorizadas mientras conserve esa visibilidad.
 
 ![Yikong 4107 Pro con las ruedas y accesorios montados, junto a las piezas diseñadas en 3D]({{ '/img/guias/mejoras-yikong-4107-pro/miniatura.webp' | relative_url }})
 
@@ -95,15 +99,15 @@ Los siguientes enlaces de AliExpress son **de afiliado**: TopeRC puede recibir u
 
 ## Capítulos del vídeo
 
-- **00:00** — Presentación: así he dejado el Yikong
-- **00:44** — Piezas diseñadas en 3D y torretas
-- **01:39** — Clip para abrir y cerrar la carrocería
-- **01:50** — Batería delantera y electrónica centrada
-- **02:37** — Ruedas nuevas y accesorios a escala
-- **03:09** — Escalera, rueda trasera y adaptador del bidón
-- **03:37** — Protección de bajos y cables del parachoques
-- **04:21** — Ideas futuras: winch, MT12, ELRS y luces
-- **05:56** — Balance y roces pendientes
-- **06:17** — Último ajuste de parachoques y aletas
-- **06:38** — Prueba exterior: piedras, rampas y cuerdas
-- **09:57** — Cierre TopeRC
+- [00:00 — Presentación: así he dejado el Yikong](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=0s)
+- [00:44 — Piezas diseñadas en 3D y torretas](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=44s)
+- [01:39 — Clip para abrir y cerrar la carrocería](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=99s)
+- [01:50 — Batería delantera y electrónica centrada](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=110s)
+- [02:37 — Ruedas nuevas y accesorios a escala](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=157s)
+- [03:09 — Escalera, rueda trasera y adaptador del bidón](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=189s)
+- [03:37 — Protección de bajos y cables del parachoques](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=217s)
+- [04:21 — Ideas futuras: winch, MT12, ELRS y luces](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=261s)
+- [05:56 — Balance y roces pendientes](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=356s)
+- [06:17 — Último ajuste de parachoques y aletas](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=377s)
+- [06:38 — Prueba exterior: piedras, rampas y cuerdas](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=398s)
+- [09:57 — Cierre TopeRC](https://www.youtube.com/watch?v=gnqu7tPFOw0&t=597s)
