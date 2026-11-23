@@ -1344,6 +1344,134 @@
           "status": "active"
         }
       ]
+    },
+    {
+      "id": "yikong-4107pro-cables-parachoques-acero",
+      "name": "Cables de acero para el parachoques",
+      "category": "Accesorios crawler",
+      "model_ids": [
+        "yikong-4107-pro"
+      ],
+      "notes": "Accesorio utilizado en el proyecto de mejoras de TopeRC. Comprueba la variante, medidas y fijaciones antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c2RyWXGv",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "yikong-4107pro-cajas-plastico",
+      "name": "Juego de cajas de plástico",
+      "category": "Accesorios crawler",
+      "model_ids": [
+        "yikong-4107-pro"
+      ],
+      "notes": "Accesorio utilizado en el proyecto de mejoras de TopeRC. Comprueba la variante, medidas y fijaciones antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c4SZ7sEt",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "yikong-4107pro-bicicleta-1-10",
+      "name": "Bicicleta 1:10",
+      "category": "Accesorios crawler",
+      "model_ids": [
+        "yikong-4107-pro"
+      ],
+      "notes": "Accesorio utilizado en el proyecto de mejoras de TopeRC. Comprueba la variante, medidas y fijaciones antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c39PZLvL",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "yikong-4107pro-extintor",
+      "name": "Extintor",
+      "category": "Accesorios crawler",
+      "model_ids": [
+        "yikong-4107-pro"
+      ],
+      "notes": "Accesorio utilizado en el proyecto de mejoras de TopeRC. Comprueba la variante, medidas y fijaciones antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3VBmzXr",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "yikong-4107pro-bidon-gasolina",
+      "name": "Bidón de gasolina",
+      "category": "Accesorios crawler",
+      "model_ids": [
+        "yikong-4107-pro"
+      ],
+      "notes": "Accesorio utilizado en el proyecto de mejoras de TopeRC. Comprueba la variante, medidas y fijaciones antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3Waj7Vj",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "yikong-4107pro-bolsa-lona",
+      "name": "Bolsa de lona",
+      "category": "Accesorios crawler",
+      "model_ids": [
+        "yikong-4107-pro"
+      ],
+      "notes": "Accesorio utilizado en el proyecto de mejoras de TopeRC. Comprueba la variante, medidas y fijaciones antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3KCOMlJ",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "yikong-4107pro-protectores-bajos",
+      "name": "Protectores de bajos",
+      "category": "Accesorios crawler",
+      "model_ids": [
+        "yikong-4107-pro"
+      ],
+      "notes": "Accesorio utilizado en el proyecto de mejoras de TopeRC. Comprueba la variante, medidas y fijaciones antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c3IWRywv",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "id": "yikong-4107pro-antena",
+      "name": "Antena",
+      "category": "Accesorios crawler",
+      "model_ids": [
+        "yikong-4107-pro"
+      ],
+      "notes": "Accesorio utilizado en el proyecto de mejoras de TopeRC. Comprueba la variante, medidas y fijaciones antes de comprar.",
+      "offers": [
+        {
+          "store": "aliexpress",
+          "url": "https://s.click.aliexpress.com/e/_c42Yph7J",
+          "status": "active"
+        }
+      ]
     }
   ]
 }
