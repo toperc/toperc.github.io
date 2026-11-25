@@ -26,6 +26,14 @@ The video animation shows the components separately before I explain their insta
 
 The project retains this [body clip reference on Thingiverse](https://www.thingiverse.com/thing:7284842). I distinguish my own parts and adaptations from third-party STL designs: the ladder and rear mount shown in the video come from someone else’s design; the adapter for my wheel and fuel can is a later modification.
 
+## Download the upgrade STL files
+
+The files for 3D printing the upgrades are now available on MakerWorld:
+
+**[Download the Yikong 4107 Pro STL files on MakerWorld](https://makerworld.com/en/models/3682034-yikong-4107-pro-improvements#profileId-4228411)**
+
+The listing contains the files and the shared print profile for this project.
+
 ## Battery forwards and tidier wiring
 
 Previously, servo wires crossed from one side of the chassis to the other. Moving the electronics to the centre and gathering the receiver wiring inside its box makes the installation tidier and easier for me to access.

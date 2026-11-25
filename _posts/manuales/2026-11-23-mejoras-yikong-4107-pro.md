@@ -37,6 +37,14 @@ La animación del vídeo permite ver por separado las piezas antes de enseñarla
 
 En el proyecto conservo esta [referencia del clip de carrocería en Thingiverse](https://www.thingiverse.com/thing:7284842). Distingo las piezas y adaptaciones propias de los STL de terceros: la escalera y el soporte trasero que enseño proceden de un diseño ajeno; el adaptador para mi rueda y el bidón es un trabajo posterior.
 
+## Descargar los STL de las mejoras
+
+Ya están disponibles los archivos de las mejoras para imprimir en 3D en MakerWorld:
+
+**[Descargar los STL del Yikong 4107 Pro en MakerWorld](https://makerworld.com/en/models/3682034-yikong-4107-pro-improvements#profileId-4228411)**
+
+En la ficha encontrarás los archivos y el perfil de impresión compartido para este proyecto.
+
 ## Batería delante y cables más recogidos
 
 Antes tenía cables de los servos que cruzaban desde un lado del chasis al otro. Al mover la electrónica al centro y ordenar el receptor dentro de su caja, el conjunto queda más recogido y me resulta más cómodo acceder a él.
